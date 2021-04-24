@@ -17,8 +17,17 @@
     width: 24%;
     text-align: center;
 }
-.footer-items div {
+.footer-items .about-us {
     margin-top: 20px;
+}
+.footer .about-us a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.footer a {
+    position: relative;
 }
 .footer .vr {
     content: "";
@@ -33,4 +42,25 @@
 .far.fa-clock, .fas.fa-map-marker-alt, .far.fa-envelope, .fas.fa-phone {
     color: white;
     font-size: 25px;
+}
+.footer a::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: width .4s;
+    background-color: white;
+}
+.footer a:hover {
+    color: rgb(11, 192, 216);
+}
+.footer a:hover::after {
+    width: 60%;
+}
+.fab.fa-facebook-square:hover, .fab.fa-instagram-square:hover, .fab.fa-twitter-square:hover, .fab.fa-pinterest-square:hover {
+    color: rgb(11, 192, 216);
 }

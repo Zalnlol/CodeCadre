@@ -1,0 +1,36 @@
+.backinDown {
+    animation: backinDown;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+.backinUp {
+    animation: backinUp;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+.fadeIn {
+    animation: fadeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.fadeOut {
+    animation: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes backinUp {
+    from {top: 0; opacity: 1;}
+    to {top: -400px; opacity: 0;}
+}
+@keyframes backinDown {
+    from {top: -400px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
