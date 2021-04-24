@@ -1,20 +1,20 @@
-.menu {
+.nvtb.container-fluid .menu {
     background-color: black;
     padding: 15px 0;
     position: relative;
 }
-.menu .container {
+.nvtb.container-fluid.menu .container {
     display: flex;
     justify-content: space-between;
 }
-.menu a {
+.nvtb.container-fluid.menu a {
     position: relative;
     color: white;
     margin-left: 15px;
     font-size: 18px;
     text-decoration: none;
 }
-.menu a::after {
+.nvtb.container-fluid.menu a::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -26,10 +26,10 @@
     transition: width .4s;
     background-color: white;
 }
-.menu a:hover {
+.nvtb.container-fluid.menu a:hover {
     color: rgb(11, 192, 216);
 }
-.menu a:hover::after {
+.nvtb.container-fluid.menu a:hover::after {
     width: 50%;
 }
 .fas.fa-bars {
@@ -41,7 +41,7 @@
         display: block;
         z-index: 3;
     }
-    .menu #menu-items {
+    .nvtb.container-fluid.menu #menu-items {
         display: none;
         left: 0;
         right: 0;
@@ -55,7 +55,7 @@
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0, 0, 0, 0.74); /* Black w/ opacity */
     }
-    .menu a {
+    .nvtb.container-fluid.menu a {
         display: block;
         margin-bottom: 15px;
     }
