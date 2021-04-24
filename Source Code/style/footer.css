@@ -1,0 +1,36 @@
+.footer {
+    background-color: black;
+    height: 800px;
+    color: white;
+    padding: 25px 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-items {
+    width: 24%;
+    text-align: center;
+}
+.footer-items div {
+    margin-top: 20px;
+}
+.footer .vr {
+    content: "";
+    width: 1px;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+.fab.fa-facebook-square, .fab.fa-instagram-square, .fab.fa-twitter-square, .fab.fa-pinterest-square {
+    color: white;
+    font-size: 25px;
+}
+.far.fa-clock, .fas.fa-map-marker-alt, .far.fa-envelope, .fas.fa-phone {
+    color: white;
+    font-size: 25px;
+}
