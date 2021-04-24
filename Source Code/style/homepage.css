@@ -1,0 +1,50 @@
+.section1 {
+    border: solid;
+    border-width: 0.1px;
+    height: 80rem;
+    width: auto;
+    background-image: url("../image/section1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#row-1 {
+    margin-top: 20rem;
+}
+
+#row-2 {
+    margin-top: 5%;
+    margin-left: 13%;
+}
+
+#title-hello {
+    padding-left: 5%;
+    font-family: BebasNeue;
+    font-size: 10rem;
+}
+
+#btn-press-here {
+    height: 10rem;
+    width: 30rem;
+    border: solid;
+     background-color: none;
+    border: none;
+    background-image: url("../image/home-btn-presshere-noclick.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+
+}
+#btn-press-here:hover{
+    background-image: url("../image/home-btn-presshere-click.png");
+}
+
+.section2{
+    border: solid;
+    border-width: 0.1px;
+    height: 80rem;
+    width: auto;
+    background-image: url("../image/section1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}

@@ -16,10 +16,14 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
     <!--add css-->
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/homepage.css">
     <!--add javacript-->
 
     <Script>
@@ -27,37 +31,7 @@
     </Script>
 
     <style>
-        .section1 {
-            border: solid;
-            border-width: 0.1px;
-            height: 80rem;
-            width: auto;
-            background-image: url("image/section1.jpg");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-        #row-1{
-            margin-top: 20rem;
-        }
-        #row-2{
-            margin-left: 13%;
-        }
-      
-        #title-hello{
-            padding-left: 5%;
-            font-family: BebasNeue;
-            font-size: 10rem;
-        }
-        #btn-press-here{
-            height: 10rem;
-            width: 30rem;
-            background-color:none;
-            border: none;
-            background-image: url("image/home-btn-presshere-noclick.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            mix-blend-mode: multiply;
-        }
+       
 
         @font-face {
             font-family: BebasNeue;
@@ -87,26 +61,43 @@
 
 
     <!-- Phan than chuong trinh -->
-    <section class="section1">
+    <section class="section1" data-aos="fade-up">
 
-        <div class="row" id="row-1">
-            <div class="col-sm-12" >
+        <div class="row" id="row-1"data-aos="fade-right">
+            <div class="col-sm-12">
                 <span id="title-hello">WELCOME TO FIT4LIFE</span>
             </div>
 
         </div>
 
-        <div class="row" id="row-2">
-            <div class="col-sm-12" >
-                <a href="" >
-                    <input type="button" id="btn-press-here">
+        <div class="row" id="row-2"data-aos="fade-right">
+            <div class="col-sm-12">
+                <a href="">
+                    <div id="btn-press-here">
+                        <img src="gif/click.gif" style="width: 40%; margin-left: 80%;" alt="">
+                    </div>
                 </a>
-               
             </div>
-         
+
+        </div>
+    </section>
+
+    <section class="section2" data-aos="fade-up">
+
+        <div class="row" id="row-2-1"data-aos="fade-right">
+            <div class="col-sm-12">
+                    <span id="title-section-2">DIET PLANT</span>
+                
+            </div>
         </div>
 
+        <div class="row" id="row-2-2"data-aos="fade-right">
+            <div class="col-sm-12">
+                
+                
+            </div>
 
+        </div>
     </section>
 
 
@@ -162,5 +153,12 @@
 
 
 </body>
+
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
 
 </html>
