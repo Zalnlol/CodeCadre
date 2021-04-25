@@ -145,17 +145,15 @@ text-align: center;
 }
 
 #title-section-4 {
-    padding-left: 50%;
+
     font-family: BebasNeue;
     color:rgb(247, 167, 19);
-    font-size: 8rem;
- 
+    font-size: 7rem;
+    border: 5px solid #2e1504;
 }
 
 #row-4-1{
-    margin-top: 2%;
-    text-align: left;
-    margin-left: 12%;
+text-align: center;
 }
 
 #Guidelines-2{
