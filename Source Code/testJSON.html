@@ -13,6 +13,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
+  <style>
+      img {
+          width: 200px;
+          height: 200px;
+      }
+      .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  </style>
   <body>
       <div class="container">
         <form id="ageandbmi" action="">
@@ -37,6 +48,7 @@
         $("#ageandbmi input").on("change", function () {
             bmi = $("input[name=bmi]:checked", "#ageandbmi").val();
             let result = age+bmi;
+            
             switch (result) {
                 case 'a1': 
                     $('#json').html('');
@@ -50,7 +62,30 @@
                     });
 
                     break;
-                case 'a2': $('#json').html('toi la ' + age+bmi); break;
+                case 'a2': 
+                    $('#json').html('');
+                    var count = 0;
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("pa")) {
+                                $('#json').append(
+                                    '<div class=\"flex\">',
+                                        '<div>',
+                                            '<img src=\"image/' + v.pic + '\" alt=\"\" >',
+                                            '<p>' + v.id + ' ' + v.name + '</p>',
+                                        '</div>',
+                                    '</div>'
+                                );
+                            }
+                            ++count;
+                            console.log(count);
+                            if (count == 4) {
+                                return false;
+                            }
+                        });
+                    });
+
+                    break;
                 case 'a3': $('#json').html('toi la ' + age+bmi); break;
                 case 'a4': $('#json').html('toi la ' + age+bmi); break;
 
