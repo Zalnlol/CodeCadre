@@ -1,8 +1,9 @@
 .footer {
     background-color: black;
-    height: 800px;
+    height: 650px;
+    width: auto;
     color: white;
-    padding: 25px 0;
+    padding: 10px 0;
 }
 .footer .container {
     display: flex;
@@ -25,6 +26,7 @@
     color: white;
     text-decoration: none;
     margin-top: 10px;
+    text-align: center;
 }
 .footer a {
     position: relative;
