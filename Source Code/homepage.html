@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>homepage</title>
 
   <!--Bootraps CDN-->
   <!-- Latest compiled and minified CSS -->
@@ -20,9 +20,12 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <!--add css-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/animation.css" />
+  <link rel="stylesheet" href="style/homepage.css" />
   <link rel="stylesheet" href="style/menu.css" />
   <link rel="stylesheet" href="style/footer.css" />
-  <link rel="stylesheet" href="style/homepage.css" />
   <!--add javacript-->
 
   <script></script>
@@ -36,8 +39,7 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -46,7 +48,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href=""><img src="image/Logo_black.png" width="100%" alt="" style="width: 180px; padding: 15px" /></a>
+      <a href="homepage.html"><img src="image/Logo_black.png" width="100%" alt=""
+          style="width: 180px; padding: 15px" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,192 +57,184 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Diet_and_Nutrition.html">Diet & Nutrition</a></li>
         <li><a href="Physical_Activity.html">Physical Activity</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
       </ul>
     </div>
   </nav>
-  <!-- /.navbar-collapse -->
-
-
-  <!-- Phan than chuong trinh -->
-
-  <section class="section1" data-aos="fade-up">
-    <div class="row" id="row-1" style="width: 60%" data-aos="fade-right">
-      <div class="col-sm-12">
-        <p id="title-hello">WELCOME TO FIT4LIFE</p>
-      </div>
-    </div>
-
-    <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
-      <div class="col-sm-12" style="width: auto">
-        <div id="btn-press-here">
-          <a href="">
-            <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" />
-          </a>
+  <div>
+    <section class="section1" data-aos="fade-up">
+      <div class="row" id="row-1" style="width: 60%" data-aos="fade-right">
+        <div class="col-sm-12">
+          <p id="title-hello">WELCOME TO FIT4LIFE</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="section2" data-aos="fade-up">
-    <div class="row" id="row-2-1" style="width: 60%" data-aos="fade-right">
-      <div class="col-sm-12">
-        <p id="title-section-2">DIET PLANT</p>
-      </div>
-    </div>
-
-    <div class="row" id="row-2-2" style="width: auto">
-      <a href="" id="home-a-box-1">
-        <div class="col-sm-2" id="col-sm-2" data-aos="fade-right">
-          <div id="home-box-1">
-            <div class="image-box">
-              <img src="image/sesion2-1.jpg" />
-            </div>
-
-            <h3 id="title1">Teen</h3>
-            <h4 id="mota">Range from 13 to 19</h4>
-
-            <div id="Guidelines" style="text-align: center">Guidelines</div>
+      <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
+        <div class="col-sm-12" style="width: auto">
+          <div id="btn-press-here">
+            <a href="">
+              <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" />
+            </a>
           </div>
         </div>
-      </a>
-      <a href="" id="home-a-box-1">
-        <div class="col-sm-2" id="col-sm-2" data-aos="fade-up">
-          <div id="home-box-1">
-            <div class="image-box">
-              <img src="image/sesion2-2.jpg" />
-            </div>
-
-            <h3 id="title1">Adult</h3>
-            <h4 id="mota">Range from 20 to 60</h4>
-
-            <div id="Guidelines" style="text-align: center">Guidelines</div>
-          </div>
-        </div>
-      </a>
-      <a href="" id="home-a-box-1">
-        <div class="col-sm-2" id="col-sm-2" data-aos="fade-left">
-          <div id="home-box-1">
-            <div class="image-box">
-              <img src="image/sesion2-3.jpg" />
-            </div>
-
-            <h3 id="title1">Orlder Adult</h3>
-            <h4 id="mota">60 years and older</h4>
-
-            <div id="Guidelines" style="text-align: center">Guidelines</div>
-          </div>
-        </div>
-      </a>
-      <div class="col-sm-3"></div>
-    </div>
-
-    <div lass="row" id="row-2-3">
-      <div class="col-sm-12" style="height: 20%; margin-top: 3%;">
-        <button data-aos="zoom-in-up" id="Guidelines-1">Learn more</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section3" data-aos="zoom-in-right">
-    <div class="row" id="row-3-1" data-aos="fade-right">
-      <div class="col-sm-12">
-        <p id="title-section-3">PHYSICAL ACTIVITY</p>
+    <section class="section2" data-aos="fade-up">
+      <div class="row" id="row-2-1" style="width: 60%" data-aos="fade-right">
+        <div class="col-sm-12">
+          <p id="title-section-2">DIET PLANT</p>
+        </div>
       </div>
-    </div>
 
-    <div lass="row" id="row-3-2" style="width: 80%">
-      <div class="col-sm-12" style="
+      <div class="row" id="row-2-2" style="width: auto">
+        <a href="" id="home-a-box-1">
+          <div class="col-sm-2" id="col-sm-2" data-aos="fade-right">
+            <div id="home-box-1">
+              <div class="image-box">
+                <img src="image/sesion2-1.jpg" />
+              </div>
+
+              <h3 id="title1">Teen</h3>
+              <h4 id="mota">Range from 13 to 19</h4>
+
+              <div id="Guidelines" style="text-align: center">Guidelines</div>
+            </div>
+          </div>
+        </a>
+        <a href="" id="home-a-box-1">
+          <div class="col-sm-2" id="col-sm-2" data-aos="fade-up">
+            <div id="home-box-1">
+              <div class="image-box">
+                <img src="image/sesion2-2.jpg" />
+              </div>
+
+              <h3 id="title1">Adult</h3>
+              <h4 id="mota">Range from 20 to 60</h4>
+
+              <div id="Guidelines" style="text-align: center">Guidelines</div>
+            </div>
+          </div>
+        </a>
+        <a href="" id="home-a-box-1">
+          <div class="col-sm-2" id="col-sm-2" data-aos="fade-left">
+            <div id="home-box-1">
+              <div class="image-box">
+                <img src="image/sesion2-3.jpg" />
+              </div>
+
+              <h3 id="title1">Orlder Adult</h3>
+              <h4 id="mota">60 years and older</h4>
+
+              <div id="Guidelines" style="text-align: center">Guidelines</div>
+            </div>
+          </div>
+        </a>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div lass="row" id="row-2-3">
+        <div class="col-sm-12" style="height: 20%; margin-top: 3%">
+          <button data-aos="zoom-in-up" id="Guidelines-1">Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3" data-aos="zoom-in-right">
+      <div class="row" id="row-3-1" data-aos="fade-right">
+        <div class="col-sm-12">
+          <p id="title-section-3">PHYSICAL ACTIVITY</p>
+        </div>
+      </div>
+
+      <div lass="row" id="row-3-2" style="width: 80%">
+        <div class="col-sm-12" style="
               height: 20%;
               margin-top: 3%;
               text-align: right;
               padding-right: 2%;
             ">
-        <button data-aos="zoom-in-up" id="Guidelines-1">Learn more</button>
+          <button data-aos="zoom-in-up" id="Guidelines-1">Learn more</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section4" data-aos="zoom-in-left">
-    <div class="row" id="row-4-1" data-aos="fade-right">
-      <div class="col-sm-12">
-        <p id="title-section-4">RESOURCES</p>
+    <section class="section4" data-aos="zoom-in-left">
+      <div class="row" id="row-4-1" data-aos="fade-right">
+        <div class="col-sm-12">
+          <p id="title-section-4">RESOURCES</p>
+        </div>
       </div>
-    </div>
 
-    <div lass="row" id="row-4-2">
-      <div class="col-sm-12" style="
+      <div lass="row" id="row-4-2">
+        <div class="col-sm-12" style="
               height: 20%;
               margin-top: 3%;
               text-align: right;
               padding-right: 29%;
             ">
-        <button data-aos="zoom-in-up" id="Guidelines-2">Learn more</button>
+          <button data-aos="zoom-in-up" id="Guidelines-2">Learn more</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-
-    <div class="footer">
-      <div class="container">
-
-        <!-- <div>
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <footer>
+      <!-- Khi nào sử dụng nhớ mở -->
+      <!-- <div>
+          <script src="js/platform.js" defer></script>
           <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
         </div> -->
-
-        <div class="logo footer-items">
-
-          <a href="#"><img src="image/Logo_white.png" style="width: 120px; margin-top: 1rem; " width="100%" /></a>
-        </div>
-        <div class="vr"></div>
-        <div class="footer-items" style="margin-top: 2.4rem;">
-          <div class="social">
-            <h4 class="title" style="margin-bottom: 6rem;">FOLLOW US</h4>
-            <div>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+      <div class="footer">
+        <div class="container">
+          <div class="logo footer-items">
+            <a href="homepage.html"><img src="image/Logo_white.png" style="width: 120px" width="100%" /></a>
+          </div>
+          <div class="vr"></div>
+          <div class="footer-items">
+            <div class="social">
+              <p class="title">FOLLOW US</p>
+              <div>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              </div>
+            </div>
+            <div class="about-us" style="margin-top: 4rem">
+              <a class="title">About us</a>
+              <a href="#">Who are we?</a>
+              <a href="#">What we do?</a>
+              <a href="#">What is fitness and why is it important?</a>
+              <a href="#">How many types of lifestyle are there?</a>
             </div>
           </div>
-          <div class="about-us">
-            <h5 class="title">About us</h5>
-            <a href="#">Who are we?</a>
-            <a href="#">What we do?</a>
-            <a href="#">What is fitness and why is it important?</a>
-            <a href="#">How many types of lifestyle are there?</a>
-          </div>
-        </div>
-        <div class="vr"></div>
-        <div class="footer-items">
-          <div class="contact">
-            <h4 class="title" style="margin-top: 3rem;">CONTACT</h4>
-            <div>
-              <i class="far fa-clock" style="margin-bottom: 2rem;"></i> Every day/ 7:00 - 20:00 (GMT +7)
-            </div>
-            <div>
-              <i class="fas fa-map-marker-alt"></i> 590 Cach Mang Thang 8 Street
-              District 3, Ho Chi Minh City
-            </div>
-            <div><i class="far fa-envelope"></i> Email: abcd@gmail.com</div>
-            <div><i class="fas fa-phone"></i> Phone: 123456 (Mr.Thien)</div>
-            <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831405649!3d10.786376992314784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1619237556387!5m2!1svi!2s"
-                width="100%" height="100%" style="border: 0; margin-top: 25px" allowfullscreen=""
-                loading="lazy"></iframe>
+          <div class="vr"></div>
+          <div class="footer-items">
+            <div class="contact">
+              <p class="title">CONTACT</p>
+              <div>
+                <i class="far fa-clock"></i> Every day/ 7:00 - 20:00 (GMT +7)
+              </div>
+              <div>
+                <i class="fas fa-map-marker-alt"></i> 590 Cach Mang Thang 8
+                Street District 3, Ho Chi Minh City
+              </div>
+              <div><i class="far fa-envelope"></i> Email: abcd@gmail.com</div>
+              <div><i class="fas fa-phone"></i> Phone: 123456 (Mr.Thien)</div>
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831405649!3d10.786376992314784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1619237556387!5m2!1svi!2s"
+                  width="100%" height="100%" style="border: 0; margin-top: 20px" allowfullscreen=""
+                  loading="lazy"></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 
 <script src="script/menu.js"></script>
