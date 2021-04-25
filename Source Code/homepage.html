@@ -55,14 +55,20 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        
+
         <li><a href="Diet_and_Nutrition.html">Diet & Nutrition</a></li>
         <li><a href="Physical_Activity.html">Physical Activity</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">About us</a></li>
         <li><a href="#">Contact us</a></li>
-        <li><div id="inner-name" ></div></li>
+        
+        <li>
+          <div id="inner-name" ></div>
+          <script>
+            document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+          </script>
+        </li>
 
       </ul>
     </div>
@@ -74,16 +80,24 @@
           <p id="title-hello">WELCOME TO FIT4LIFE</p>
         </div>
       </div>
+      <div id="checkUser" > </div>
 
-      <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
+      <script>
+         
+        if(sessionStorage.getItem("UserName")==null){
+          document.getElementById("checkUser").innerHTML='<div class="row" id="row-2" style="width: 30%" data-aos="fade-right"><div class="col-sm-12" style="width: auto"><div id="btn-press-here"><a href="#xmas-popup"> <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" /></a></div></div></div>';
+        }
+      </script>
+
+      <!-- <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
         <div class="col-sm-12" style="width: auto">
           <div id="btn-press-here">
-            <a href="">
+            <a href="#xmas-popup">
               <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" />
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="section2" data-aos="fade-up">
@@ -237,18 +251,39 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </footer>
+
+  <script>
+    function kt(){
+        var Rln=document.getElementById("popup-input").value
+            var Sln=/\w{1,}/
+            if(!Sln.test(Rln)){
+                alert("Name cannot Blank");
+                return false;
+            } else{
+              sessionStorage.setItem ("UserName",Rln);
+            }
+    }
+ 
+      
+   
+
+</script>
 
   <!-- Popup  -->
   <div id="xmas-popup" class="popup">
     <div class="popup-content">
-      <a href="#" class="close">x</a>
+      <a href="homepage.html" class="close">x</a>
       <p id="popup-tilte">Please let me know your name !</p>
-      <input type="text" id="popup-input" placeholder="Press Name !">
-      <br>
-      <input type="button"id="popup-click" class="btn btn-primary" value="Enter Name">
+
+      <form onsubmit="return kt()" action="homepage.html">
+        <input type="text" id="popup-input" placeholder="Press Name !">
+        <br>
+        <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name">
+      </form>
     </div>
+    
   </div>
 </body>
 
