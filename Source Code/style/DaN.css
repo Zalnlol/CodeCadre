@@ -10,18 +10,22 @@
 }
 #home-box-1{
     border: solid;
-    margin-left: 1rem;
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     height: 100%;
     padding-top: 3%;
     border-color: black;
     border-radius: 10%;
+}
+#DaN-a{
+    text-decoration: none;
 }
 
 /* làm đỡ */
 #section1{
     margin-bottom: 3%;
 }
+
 
 #title1{
     Text-align:center;
@@ -56,4 +60,27 @@
 .image-box:hover img {
     transform: scale(1.4);
     
+}
+
+.section2{
+
+    background-image: url("../image/bmi.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 10%;
+    width: auto;
+    height: auto;
+}
+.btn-group{
+    margin-left: 40%;
+    margin-top: 15%;
+}
+.section4{
+    background-image: url("../image/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 10%;
+
+    width: auto;
+    height: auto;
 }
