@@ -29,8 +29,13 @@
     <link rel="stylesheet" href="style/animation.css" />
     <link rel="stylesheet" href="style/menu.css" />
     <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/homepage.css" />
   </head>
-  <body style="background-image:  url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);">
+  <body
+    style="
+      background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);
+    "
+  >
     <nav
       class="navbar navbar-default"
       role="navigation"
@@ -66,20 +71,39 @@
           <li><a href="Resources.html">Resources</a></li>
           <li><a href="aboutus.html">About us</a></li>
           <li><a href="contactus.html">Contact us</a></li>
+
+          <li>
+            <div id="inner-name" style="font-weight: bold"></div>
+
+            <script>
+              if (sessionStorage.getItem("UserName") != null) {
+                document.getElementById("inner-name").innerHTML =
+                  "Hi! " + sessionStorage.getItem("UserName");
+              }
+            </script>
+          </li>
         </ul>
       </div>
     </nav>
 
     <div class="contact-us">
       <div class="d-flex justify-content-between">
-        <div style="text-align: center;">
-            <br><br>
-          <img style="width: 500px;" width="100%" src="image/contactus.png" alt="#" />
+        <div style="text-align: center">
+          <br /><br />
+          <img
+            style="width: 500px"
+            width="100%"
+            src="image/contactus.png"
+            alt="#"
+          />
         </div>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 3rem; margin-bottom: 3rem;"><a class="btn btn-primary" data-toggle="modal" href="#modal-id"
-      >SEND FEEDBACK</a></p>
+    <p style="text-align: center; margin-top: 3rem; margin-bottom: 3rem">
+      <a class="btn btn-primary" data-toggle="modal" href="#modal-id"
+        >SEND FEEDBACK</a
+      >
+    </p>
     <div class="modal fade" id="modal-id">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -219,12 +243,15 @@
             <p class="title">CONTACT</p>
             <div>
               <i class="far fa-clock"></i> Every day/ 7:00 - 20:00 (GMT +7)
-            </div><br>
+            </div>
+            <br />
             <div>
               <i class="fas fa-map-marker-alt"></i> 590 Cach Mang Thang 8 Street
               District 3, Ho Chi Minh City
-            </div><br>
-            <div><i class="far fa-envelope"></i> Email: abcd@gmail.com</div><br>
+            </div>
+            <br />
+            <div><i class="far fa-envelope"></i> Email: abcd@gmail.com</div>
+            <br />
             <div><i class="fas fa-phone"></i> Phone: 123456 (Mr.Thien)</div>
             <div>
               <iframe

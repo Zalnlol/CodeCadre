@@ -87,3 +87,8 @@
     width: auto;
     height: auto;
 }
+#inner-name {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+}
