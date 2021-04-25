@@ -143,6 +143,10 @@
             </div>
         </section>
 
+        <section>
+            <div id="innercode"></div>
+        </section>
+
 
         <!-- Phan footer -->
 
@@ -218,14 +222,12 @@
                 $.getJSON("js/data.json", function (data) {
                     $.each(data, function (i, v) { 
                         if (v.id.includes("pa")) {
-                            $('#json').append(
-                                '<div class=\"flex\">',
-                                    '<div>',
-                                        '<img src=\"image/' + v.pic + '\" alt=\"\" >',
-                                        '<p>' + v.id + ' ' + v.name + '</p>',
-                                    '</div>',
-                                '</div>'
-                            );
+                            document.getElementById("innercode").innerHTML='<div class=\"flex\">'+
+                                '<div>'+
+                                    '<img id = "pa01" src=\"image/' + v.pic + '\" alt=\"\" >'+
+                                    '<p>' + v.id + ' ' + v.name + '</p>'+
+                                '</div>'+
+                            '</div>'
                         }
                         ++count;
                         console.log(count);
