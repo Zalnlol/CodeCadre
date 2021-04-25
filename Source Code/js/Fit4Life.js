@@ -19,9 +19,9 @@ $("#ageandbmi input").on("change", function () {
                 });
 
                 break;
-            case 'a2': $('#json').html('toi la ' + age+bmi); break;
-            case 'a3': $('#json').html('toi la ' + age+bmi); break;
-            case 'a4': $('#json').html('toi la ' + age+bmi); break;
+            case 'a2': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'a3': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'a4': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
 
             case 'b1': 
                 $('#json').html('');
@@ -35,9 +35,9 @@ $("#ageandbmi input").on("change", function () {
                 });
 
                 break;
-            case 'b2': $('#json').html('toi la ' + age+bmi); break;
-            case 'b3': $('#json').html('toi la ' + age+bmi); break;
-            case 'b4': $('#json').html('toi la ' + age+bmi); break;
+            case 'b2': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'b3': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'b4': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
 
             case 'c1': 
                 $('#json').html('');
@@ -51,14 +51,14 @@ $("#ageandbmi input").on("change", function () {
                 });
 
                 break;
-            case 'c2': $('#json').html('toi la ' + age+bmi); break;
-            case 'c3': $('#json').html('toi la ' + age+bmi); break;
-            case 'c4': $('#json').html('toi la ' + age+bmi); break;
+            case 'c2': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'c3': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'c4': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
 
-            case 'd1': $('#json').html('toi la ' + age+bmi); break;
-            case 'd2': $('#json').html('toi la ' + age+bmi); break;
-            case 'd3': $('#json').html('toi la ' + age+bmi); break;
-            case 'd4': $('#json').html('toi la ' + age+bmi); break;
+            case 'd1': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'd2': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'd3': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
+            case 'd4': $('#json').html('My age: ' + age + 'and my bmi is: ' + bmi); break;
         }
     });
 });

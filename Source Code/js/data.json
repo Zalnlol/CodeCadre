@@ -35,15 +35,15 @@
 
     {"id":"fg04","name":"Meat", "pic":"../image/Meat.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
-    {"id":"fg05","name":"Milk_cheese", "pic":"Milk_cheese.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"fg05","name":"Milk_cheese", "pic":"../Milk_cheese.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
-    {"id":"patyp1","name":"Moderate–intensity aerobic","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"patyp1","name":"Moderate–intensity aerobic","description":"Lorem ipsum.", "cat":"phys activities"},
     
-    {"id":"patyp2","name":"Vigorous–intensity aerobic","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"patyp2","name":"Vigorous–intensity aerobic","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"patyp3","name":"Muscle-strength","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"patyp3","name":"Muscle-strength","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"nutrition"}
+    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"}
 
 ]
 
