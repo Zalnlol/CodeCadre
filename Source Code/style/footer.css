@@ -1,8 +1,9 @@
 .footer {
     background-color: black;
-    height: 800px;
+    height: 100%;
+    width: auto;
     color: white;
-    padding: 25px 0;
+    padding: 30px 0;
 }
 .footer .container {
     display: flex;
@@ -14,7 +15,7 @@
     justify-content: center;
 }
 .footer-items {
-    width: 24%;
+    width: 20%;
     text-align: center;
 }
 .footer-items .about-us {
@@ -25,15 +26,17 @@
     color: white;
     text-decoration: none;
     margin-top: 10px;
+    text-align: center;
 }
 .footer a {
     position: relative;
 }
 .footer .vr {
     content: "";
-    width: 1px;
+    width: 0.5px;
     height: inherit;
     background-color: rgba(255, 255, 255, 0.548);
+    margin-bottom: 0.5rem;
 }
 .fab.fa-facebook-square, .fab.fa-instagram-square, .fab.fa-twitter-square, .fab.fa-pinterest-square {
     color: white;

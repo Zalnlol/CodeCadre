@@ -22,9 +22,8 @@
         <link rel="stylesheet" href="style/animation.css">
         <link rel="stylesheet" href="style/menu.css">
         <link rel="stylesheet" href="style/footer.css">
-        <link rel="stylesheet" href="style/kidsZone.css">
+        <link rel="stylesheet" href="style/Fit4Life.css">
     <!--add javacript-->
-    <script src="script/Fit4life.js"></script>
 
     <Script>
        
@@ -39,28 +38,67 @@
     
     <div class="container-fluid" > 
     <!-- Phan menu -->
-    <div class="menu">
-        <div class="container">
-            <div><a href="#"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a></div>
-            <i class="fas fa-bars" id="menuBTN"></i>
-            <div id="menu-items">
-                <a href="#">Diet & Nutrition</a>
-                <a href="#">Physical Activity</a>
-                <a href="#">Resources</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
-            </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-ex1-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href=""
+            ><img
+              src="image/Logo_black.png"
+              width="100%"
+              alt=""
+              style="width: 180px; padding: 15px"
+          /></a>
         </div>
-    </div>
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Diet & Nutrition</a></li>
+            <li><a href="#">Physical Activity</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        </nav>
 
         
         <!-- Phan than chuong trinh -->
         <section>
-        <h2>Enter your age & body mass index for personalized recommendation</h2>
-        <p>Please input age between 0 and 100:</p>
-        <input id="numb">
-        <button type="button" onclick="myFunction()">Submit</button>
-        <p id="demo"></p>
+            <h2>Food Essentials</h2>
+            <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. 
+                Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets. 
+                Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+    
+            <h3>Get recommendation by tell us about you with: </h3>
+    
+            <h4>Age range</h4>
+            <div class="btn-group">
+                <button>Pre-School (3-5 yrs)</button>
+                <button>School age children (6-17)</button>
+                <button>Adult (18-64 yrs)</button>
+                <button>Older Adult (65+ yrs)</button>
+            </div>
+    
+            <h4>BMI range</h4>
+            <div class="btn-group">
+                <button>Below 18.5 (Underweight)</button>
+                <button>18.5 - 24.9 (Normal)</button>
+                <button>25.0 - 29.9 (Overweight)</button>
+                <button>30+ (Obese)</button>
+            </div>
         </section>
 
 
