@@ -112,15 +112,12 @@
 
 #Guidelines-1{
     font-family: bebasNeue;
-    border: solid;
     width: 15%;
     height: auto;
-
     border-radius: 35px;
     color: white;
     background-color: #1bcaff;
     border-color: #1bcaff;
-
     font-size: 20pt;
     margin-left: 15%;
 }
@@ -177,7 +174,7 @@
 
 #row-3-1{  
 padding-top: 2rem;
-text-align: bottom;
+text-align: center;
 }
 
 #title-section-3 {
