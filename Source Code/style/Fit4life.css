@@ -300,3 +300,7 @@ pre {
   .btn-group button:hover {
     background-color: #3e8e41;
   }
+
+  #pa01 {
+    width: 50%;
+  }

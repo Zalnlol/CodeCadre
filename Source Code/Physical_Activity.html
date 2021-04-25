@@ -85,10 +85,9 @@
         <!-- Phan than chuong trinh -->
         <section>
             <div class = "container">
-                <h2>Food Essentials</h2>
-                <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. 
-                    Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets. 
-                    Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+                <h2></h2>
+                <p>Regular physical activity is one of the most important things people can do to improve their health. 
+                    Moving more and sitting less have tremendous benefits for everyone, regardless of age, sex, race, ethnicity, or current fitness level.</p>
                 <h3>Get recommendation by tell us about you with: </h3>
                 <form id = ageandbmi action="">
                     <h4>Age range</h4>
@@ -152,6 +151,10 @@
                 </form>
                 <div id="json"></div>
             </div>
+        </section>
+
+        <section>
+            <div id="innercode"></div>
         </section>
 
 
@@ -220,14 +223,12 @@
                 $.getJSON("js/data.json", function (data) {
                     $.each(data, function (i, v) { 
                         if (v.id.includes("pa")) {
-                            $('#json').append(
-                                '<div class=\"flex\">',
-                                    '<div>',
-                                        '<img src=\"image/' + v.pic + '\" alt=\"\" >',
-                                        '<p>' + v.id + ' ' + v.name + '</p>',
-                                    '</div>',
-                                '</div>'
-                            );
+                            document.getElementById("innercode").innerHTML='<div class=\"flex\">'+
+                                '<div>'+
+                                    '<img id = "pa01" src=\"image/' + v.pic + '\" alt=\"\" >'+
+                                    '<p>' + v.id + ' ' + v.name + '</p>'+
+                                '</div>'+
+                            '</div>'
                         }
                         ++count;
                         console.log(count);
