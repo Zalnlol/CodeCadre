@@ -1,0 +1,8 @@
+.form-group {
+    position: relative;
+}
+.form-control {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+}

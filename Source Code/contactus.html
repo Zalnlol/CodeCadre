@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+    <link rel="stylesheet" href="style/contactus.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="container-fluid">
+            <div>
+                <a id="logo" href="#"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a>
+            </div>
+            <i class="fas fa-bars" id="menuBTN"></i>
+            <div id="menu-items">
+                <a href="#">Diet & Nutrition</a>
+                <a href="#">Physical Activity</a>
+                <a href="#">Resources</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="contact-us">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <img style="width: 600px;" src="image/contactus.png" alt="#">
+                    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831405649!3d10.786376992314784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1619237556387!5m2!1svi!2s" width="40%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>SEND FEEDBACK</a>
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Connect to us</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="feedbackForm" action="https://www.facebook.com/">
+                                <div class="form-group">
+                                    <label class="firstname" for="firstname">First name</label>
+                                    <input type="text" class="form-control" id="firstname" name="firstname">
+                                </div>
+                                <div class="form-group">
+                                    <label class="lb" for="lastname">Last name</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname">
+                                </div>
+                                <div class="form-group">
+                                    <label class="lb" for="gender">Gender</label> 
+                                    <input type="radio" id="gender" name="gender" value="Male"> Male
+                                    <input type="radio" id="gender" name="gender" value="Female"> Female
+                                    <input type="radio" id="gender" name="gender" value="Undefinded"> Undefinded
+                                </div>
+                                <div class="form-group">
+                                    <label class="lb" for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="lb" for="phone">Phone</label>
+                                    <input type="text" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label class="lb" for="message">Message</label>
+                                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <div style="text-align: left; font-size: 16px;" id="messages"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="logo footer-items">
+                <a id="logo" href="#"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a>
+            </div>
+            <div class="vr"></div>
+            <div class="footer-items">
+                <div class="social">
+                    <h5 class="title">FOLLOW US</h5>
+                    <div>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h5 class="title">ABOUT US</h5>
+                    <a style="width: 160px;" href="#">Who are we?</a>
+                    <a style="width: 160px;" href="#">What we do?</a>
+                    <a style="width: 250px;" href="#">How can we help you?</a>
+                    <a style="width: 480px;" href="#">What is fitness and why is it important?</a>
+                    <a style="width: 460px;" href="#">How many types of lifestyle are there?</a>
+                </div>
+            </div>
+            <div class="vr"></div>
+            <div class="footer-items">
+                <div class="contact-us">
+                    <h5 class="title">CONTACT</h5>
+                    <div>
+                        <i class="far fa-clock"></i> Every day/ 7:00 - 20:00 (GMT +7)
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i> 590 Cach Mang Thang 8 Street District 3 (behind Large Market Electonic Supermarket), Ho Chi Minh City
+                    </div>
+                    <div><i class="far fa-envelope"></i> Email: abcd@gmail.com</div>
+                    <div><i class="fas fa-phone"></i> Phone: 123456 (Mr.Thien)</div>
+                    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831405649!3d10.786376992314784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1619237556387!5m2!1svi!2s" width="100%" height="250" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+<script src="script/feedbackValidate.js"></script>
+<script src="script/menu.js"></script>
+</html>
