@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+        <form id="ageandbmi" action="">
+            <input class="checkage" type="radio" name="age" value="a" /> a
+            <input class="checkage" type="radio" name="age" value="b" /> b
+            <input class="checkage" type="radio" name="age" value="c" /> c
+            <input class="checkage" type="radio" name="age" value="d" /> d <br />
+            <input class="checkbmi" type="radio" name="bmi" value="1" /> 1
+            <input class="checkbmi" type="radio" name="bmi" value="2" /> 2
+            <input class="checkbmi" type="radio" name="bmi" value="3" /> 3
+            <input class="checkbmi" type="radio" name="bmi" value="4" /> 4
+          </form>
+          <div id="json"></div>
+      </div>
+  </body>
+  <script>
+    var age;
+    var bmi;
+
+    $("#ageandbmi input").on("change", function () {
+        age = $("input[name=age]:checked", "#ageandbmi").val();
+        $("#ageandbmi input").on("change", function () {
+            bmi = $("input[name=bmi]:checked", "#ageandbmi").val();
+            let result = age+bmi;
+            switch (result) {
+                case 'a1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("pa")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'a2': $('#json').html('toi la ' + age+bmi); break;
+                case 'a3': $('#json').html('toi la ' + age+bmi); break;
+                case 'a4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'b1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("fg")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'b2': $('#json').html('toi la ' + age+bmi); break;
+                case 'b3': $('#json').html('toi la ' + age+bmi); break;
+                case 'b4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'c1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("patyp")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'c2': $('#json').html('toi la ' + age+bmi); break;
+                case 'c3': $('#json').html('toi la ' + age+bmi); break;
+                case 'c4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'd1': $('#json').html('toi la ' + age+bmi); break;
+                case 'd2': $('#json').html('toi la ' + age+bmi); break;
+                case 'd3': $('#json').html('toi la ' + age+bmi); break;
+                case 'd4': $('#json').html('toi la ' + age+bmi); break;
+            }
+        });
+    });
+    
+  </script>
+</html>
