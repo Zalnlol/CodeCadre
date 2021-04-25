@@ -1,39 +1,39 @@
 [
-    {"id":"pa01","name":"Walking", "pic":"Walking.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa01","name":"Walking", "pic":"../image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
     
-    {"id":"pa02","name":"Running", "pic":"Running.PNG","description":"Lorem ipsum.","cat":"phys activities"},
+    {"id":"pa02","name":"Running", "pic":"../image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
 
-    {"id":"pa03","name":"Swimming", "pic":"Swimming.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa03","name":"Swimming", "pic":"../image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa04","name":"Gymnastics", "pic":"Gymnastics.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa04","name":"Gymnastics", "pic":"../image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa05","name":"Hiking", "pic":"Hiking.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa05","name":"Hiking", "pic":"../image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa06","name":"Martial-Art", "pic":"Martial_Art.PNG","description":"Lorem ipsum", "cat":"phys activities"},
+    {"id":"pa06","name":"Martial-Art", "pic":"../image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"phys activities"},
 
-    {"id":"pa07","name":"Bicycle Riding", "pic":"Bicycle Riding.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa07","name":"Bicycle Riding", "pic":"../image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa08","name":"Football", "pic":"Football.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa08","name":"Football", "pic":"../image/Football.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa09","name":"Tennis", "pic":"Tennis.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa09","name":"Tennis", "pic":"../image/Tennis.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa10","name":"Tug of war", "pic":"Tug of war.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa10","name":"Tug of war", "pic":"../image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa11","name":"Jumping rope", "pic":"Jumping rope.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa11","name":"Jumping rope", "pic":"../image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa12","name":"Dancing", "pic":"Dancing.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa12","name":"Dancing", "pic":"../image/Dancing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
     
-    {"id":"pa13","name":"Climbing", "pic":"Climbing.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa13","name":"Climbing", "pic":"../image/Climbing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"pa14","name":"Yoga", "pic":"Yoga.PNG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa14","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"fg01","name":"Vegies_beans", "pic":"Vegies_beans.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"fg01","name":"Vegies_beans", "pic":"../image/Vegies_beans.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
-    {"id":"fg02","name":"Fruit", "pic":"Fruit.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"fg02","name":"Fruit", "pic":"../image/Fruit.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
-    {"id":"fg03","name":"Grain", "pic":"Grain.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"fg03","name":"Grain", "pic":"../image/Grain.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
-    {"id":"fg04","name":"Meat", "pic":"Meat.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
+    {"id":"fg04","name":"Meat", "pic":"../image/Meat.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
     {"id":"fg05","name":"Milk_cheese", "pic":"Milk_cheese.PNG","description":"Lorem ipsum.", "cat":"nutrition"},
 
