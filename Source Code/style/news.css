@@ -16,9 +16,11 @@
 }
 
 .news3 {
-    background-image: url("../image/news3.jpg");
-    width: 70%;
-    height: 100%;
+    background-image: url("../image/news3.png");
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    height: 70rem;
+    width: auto;
 }
 
 .news4 {
@@ -174,6 +176,7 @@
 
 #row-3-1{  
 padding-top: 2rem;
+text-align: bottom;
 }
 
 #title-section-3 {
