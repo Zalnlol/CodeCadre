@@ -13,8 +13,7 @@
     border: solid;
     border-width: 0.1px;
     height: 100%;
-    padding-bottom: 10%;
-    width: auto;
+    width: 100%;
     background-image: url("../image/section1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -41,13 +40,13 @@
     border: solid;
      background-color: none;
     border: none;
-    background-image: url("../image/home-btn-presshere-noclick.png");
+    background-image: url("../image/home-btn-c4m-noclick.png");
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 
 }
 #btn-press-here:hover{
-    background-image: url("../image/home-btn-presshere-click.png");
+    background-image: url("../image/home-btn-c4m-click.png");
 }
 
 .section2{
