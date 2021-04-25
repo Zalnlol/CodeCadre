@@ -178,7 +178,7 @@ body {
 .section4 {
   border: solid;
   border-width: 0.1px;
-  height: 68rem;
+  height: 74rem;
   padding-bottom: 25%;
   width: auto;
   background-image: url("../image/section4.jpg");
@@ -277,7 +277,7 @@ body {
 }
 
 #inner-name {
-  text-align: center;
-  margin-top: 1rem;
-  display: flex;
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
 }
