@@ -1,0 +1,55 @@
+.about-us .introduction:not(#banner) {
+    position: relative;
+    margin: 25px 0;
+}
+.about-us .introduction img {
+    width: 100%;
+    z-index: 2;
+    height: 800px;
+}
+.about-us .introduction .text {
+    text-align: justify;
+    position: absolute;
+    font-size: 24px;
+    color: black;
+    top: 35%;
+    width: 50%;
+    font-size: 1.5vw;
+    transform: translate(-50%, -50%);
+}
+.about-us .introduction .title {
+    text-align: center;
+}
+.about-us .introduction .description {
+    text-align: justify;
+}
+.about-us .introduction .button {
+    text-align: center;
+}
+.about-us .introduction .btn-help {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 217, 255);
+}
+.about-us .introduction:hover:not(#banner) {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 1s;
+}
+.about-us .introduction .btn-help:hover {
+    background-color: paleturquoise;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% {transform: rotate(0)}
+    20% {transform: rotate(20deg)}
+    40% {transform: rotate(-20deg)}
+    60% {transform: rotate(20deg)}
+    80% {transform: rotate(-20deg)}
+    100% {transform: rotate(0deg)}
+}
+@keyframes identifier {
+    
+}

@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="style/animation.css">
         <link rel="stylesheet" href="style/menu.css">
         <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/DaN.css">
     <!--add javacript-->
 
     <Script>
@@ -29,6 +30,10 @@
     </Script>
 
         <style>
+            @font-face {
+            font-family: BebasNeue;
+            src: url(fonts/BebasNeue-Regular.ttf);
+        }
            
         </style>
 </head>
@@ -37,26 +42,91 @@
     
     <div class="container-fluid" > 
     <!-- Phan menu -->
-    <div class="menu">
-        <div class="container">
-            <div><a href="#"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a></div>
-            <i class="fas fa-bars" id="menuBTN"></i>
-            <div id="menu-items">
-                <a href="#">Diet & Nutrition</a>
-                <a href="#">Physical Activity</a>
-                <a href="#">Resources</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
-            </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-ex1-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href=""
+            ><img
+              src="image/Logo_black.png"
+              width="100%"
+              alt=""
+              style="width: 180px; padding: 15px"
+          /></a>
         </div>
-    </div>
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Diet & Nutrition</a></li>
+            <li><a href="#">Physical Activity</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        </nav>
 
         
         <!-- Phan than chuong trinh -->
-        <section>
+        <section id="section1">
             
-            djbkb
+            <h3 id="Title-DaN">DIET PLANT</h3>
+            <div class="row" id="row-1-1" data-aos="fade-right">
+                <div class="col-sm-4" >
+                    <div id="home-box-1">
+                        <div class="image-box">
+                            <img src="image/sesion2-1.jpg" />
+                        </div>
 
+                        <h3 id="title1">Teen</h3>
+                        <h4 id="mota">Range from 13 to 19</h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div id="home-box-1">
+                        <div class="image-box">
+                            <img src="image/sesion2-1.jpg" />
+                        </div>
+
+                        <h3 id="title1">Teen</h3>
+                        <h4 id="mota">Range from 13 to 19</h4>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div id="home-box-1">
+                        <div class="image-box">
+                            <img src="image/sesion2-1.jpg" />
+                        </div>
+
+                        <h3 id="title1">Teen</h3>
+                        <h4 id="mota">Range from 13 to 19</h4>
+
+
+
+                    </div>
+                    
+                </div>
+                
+            </div>
 
 
         </section>
