@@ -45,7 +45,7 @@ suggest.controller('myData', function($scope) {
             
                 {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa13","name":"Climbing", "pic":"image/Climbing.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
@@ -74,9 +74,9 @@ suggest.controller('myData', function($scope) {
         case 'b2': // 6-17 yrs & normal
             console.log(result); // debug
             $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+                {"id":"pa04","name":"Gymnastics", "pic":"image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa09","name":"Tennis", "pic":"image/Tennis.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
                 {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
@@ -87,16 +87,49 @@ suggest.controller('myData', function($scope) {
             $scope.id = [ // thu cong
                 {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa05","name":"Hiking", "pic":"image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa15","name":"Weights", "pic":"image/Weight.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
         case 'b4': // 6-17 yrs & obese
             console.log(result); // debug
             $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+                {"id":"pa07","name":"Bicycle Riding", "pic":"image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+            
+                {"id":"pa05","name":"Hiking", "pic":"image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+        
+                {"id":"pa11","name":"Jumping rope", "pic":"image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+            ];
+            
+            break;
+        case 'c1': // 18 - 64 yrs & Underweight
+            console.log(result); // debug
+            $scope.id = [ // thu cong
+                {"id":"pa08","name":"Football", "pic":"image/Football.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+            
+                {"id":"pa06","name":"Martial-Art", "pic":"image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"phys activities"},
+        
+                {"id":"pa04","name":"Gymnastics", "pic":"image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+            ];
+            
+            break;
+        case 'c2': // 18 - 64 yrs & Normal
+            console.log(result); // debug
+            $scope.id = [ // thu cong
+                {"id":"pa15","name":"Weights", "pic":"image/Weight.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+            
+                {"id":"pa16","name":"Kayak", "pic":"image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+        
+                {"id":"pa14","name":"Yoga", "pic":"image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+            ];
+            
+            break;
+        case 'c3': // 18 - 64 yrs & Overweight
+            console.log(result); // debug
+            $scope.id = [ // thu cong
+                {"id":"pa05","name":"Hiking", "pic":"image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
                 {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
         
@@ -104,91 +137,58 @@ suggest.controller('myData', function($scope) {
             ];
             
             break;
-        case 'c1': // 3-5 tuoi va gay go
+        case 'c4': // 18 - 64 yrs & Obesity
             console.log(result); // debug
             $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+                {"id":"pa05","name":"Hiking", "pic":"image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
                 {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa17","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
-        case 'c2': // 3-5 tuoi va gay go
+        case 'd1': // 65+ & Underweight
             console.log(result); // debug
             $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+                {"id":"pa18","name":"Tai Chi", "pic":"image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa14","name":"Yoga", "pic":"image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa17","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
-        case 'c3': // 3-5 tuoi va gay go
+        case 'd2': // 65+ & normal
             console.log(result); // debug
             $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+                {"id":"pa09","name":"Tennis", "pic":"image/Tennis.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa14","name":"Yoga", "pic":"image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa17","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
-        case 'c4': // 3-5 tuoi va gay go
+        case 'd3': // 65+ & Overweight
             console.log(result); // debug
             $scope.id = [ // thu cong
                 {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa14","name":"Yoga", "pic":"image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa17","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;
-        case 'd1': // 3-5 tuoi va gay go
+        case 'd4': // 65+ & Obesity
             console.log(result); // debug
             $scope.id = [ // thu cong
                 {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+                {"id":"pa18","name":"Tai Chi", "pic":"image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
         
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
-            ];
-            
-            break;
-        case 'd2': // 3-5 tuoi va gay go
-            console.log(result); // debug
-            $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
-            
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
-        
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
-            ];
-            
-            break;
-        case 'd3': // 3-5 tuoi va gay go
-            console.log(result); // debug
-            $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
-            
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
-        
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
-            ];
-            
-            break;
-        case 'd4': // 3-5 tuoi va gay go
-            console.log(result); // debug
-            $scope.id = [ // thu cong
-                {"id":"pa01","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
-            
-                {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
-        
-                {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+                {"id":"pa17","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
             ];
             
             break;

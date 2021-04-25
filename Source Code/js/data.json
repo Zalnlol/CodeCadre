@@ -27,6 +27,14 @@
 
     {"id":"pa14","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
 
+    {"id":"pa15","name":"Weights", "pic":"../image/Weight.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"pa16","name":"Kayak", "pic":"../image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"pa17","name":"Golf", "pic":"../image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"pa18","name":"Tai Chi", "pic":"../image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+
     {"id":"fg01","name":"Vegies_beans", "pic":"../image/Vegies_beans.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
     {"id":"fg02","name":"Fruit", "pic":"../image/Fruit.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
