@@ -1,10 +1,9 @@
 .footer {
     background-color: black;
-    height: 800px;
     color: white;
-    padding: 25px 0;
+    padding: 50px 0;
 }
-.footer .container {
+.footer .container-fluid {
     display: flex;
     justify-content: space-between;
 }
@@ -17,10 +16,10 @@
     width: 24%;
     text-align: center;
 }
-.footer-items .about-us {
+.footer-items .about-us, .footer-items .news {
     margin-top: 20px;
 }
-.footer .about-us a {
+.footer .about-us a, .footer .news a {
     display: block;
     color: white;
     text-decoration: none;
@@ -28,6 +27,7 @@
 }
 .footer a {
     position: relative;
+    text-align: left;
 }
 .footer .vr {
     content: "";
@@ -35,13 +35,16 @@
     height: inherit;
     background-color: rgba(255, 255, 255, 0.548);
 }
+.footer .contact-us div {
+    text-align: left;
+}
 .fab.fa-facebook-square, .fab.fa-instagram-square, .fab.fa-twitter-square, .fab.fa-pinterest-square {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 .far.fa-clock, .fas.fa-map-marker-alt, .far.fa-envelope, .fas.fa-phone {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 .footer a::after {
     position: absolute;
@@ -51,14 +54,13 @@
     bottom: -4px;
     right: 0;
     left: 0;
-    margin: 0 auto;
     transition: width .4s;
     background-color: white;
 }
 .footer a:hover {
     color: rgb(11, 192, 216);
 }
-.footer a:hover::after {
+.footer a:hover:not(#logo):after {
     width: 60%;
 }
 .fab.fa-facebook-square:hover, .fab.fa-instagram-square:hover, .fab.fa-twitter-square:hover, .fab.fa-pinterest-square:hover {
