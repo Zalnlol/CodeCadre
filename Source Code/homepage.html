@@ -64,9 +64,12 @@
         <li><a href="#">Contact us</a></li>
         
         <li>
-          <div id="inner-name" ></div>
+          <div id="inner-name" style="font-weight: bold;" ></div>
           <script>
-            document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+            if(sessionStorage.getItem("UserName")!=null){
+              document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+            }
+            
           </script>
         </li>
 
