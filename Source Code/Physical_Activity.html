@@ -24,10 +24,9 @@
         <link rel="stylesheet" href="style/footer.css">
         <link rel="stylesheet" href="style/Fit4Life.css">
     <!--add javacript-->
+    <script>
 
-    <Script>
-       
-    </Script>
+    </script>
 
         <style>
            
@@ -74,27 +73,73 @@
         
         <!-- Phan than chuong trinh -->
         <section>
-            <h2>Food Essentials</h2>
-            <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. 
-                Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets. 
-                Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
-    
-            <h3>Get recommendation by tell us about you with: </h3>
-    
-            <h4>Age range</h4>
-            <div class="btn-group">
-                <button>Pre-School (3-5 yrs)</button>
-                <button>School age children (6-17)</button>
-                <button>Adult (18-64 yrs)</button>
-                <button>Older Adult (65+ yrs)</button>
-            </div>
-    
-            <h4>BMI range</h4>
-            <div class="btn-group">
-                <button>Below 18.5 (Underweight)</button>
-                <button>18.5 - 24.9 (Normal)</button>
-                <button>25.0 - 29.9 (Overweight)</button>
-                <button>30+ (Obese)</button>
+            <div class = "container">
+                <h2>Food Essentials</h2>
+                <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. 
+                    Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets. 
+                    Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+                <h3>Get recommendation by tell us about you with: </h3>
+                <form id = ageandbmi action="">
+                    <h4>Age range</h4>
+                    <div class="radio">
+                        <div class="btn-group btn-group-toggle" 
+                            data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" id="button1" name="age" value="a" autocomplete="off" 
+                                    checked> Pre-School<br>(3-5 yrs)
+                            </label>
+                  
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="age" value="b"
+                                id="button2" autocomplete="off">
+                                School age kid<br>(6-17 yrs)
+                            </label>
+                  
+                            <label class="btn btn-primary">
+                                <input type="radio" name="age" value="c" 
+                                id="button3" autocomplete="off">
+                                Adult<br>(18-64 yrs)
+                            </label>
+                  
+                            <label class="btn btn-primary">
+                                <input type="radio" name="age" value="d"
+                                id="button4" autocomplete="off">
+                                Older Senior<br>(65+ yrs)
+                            </label>
+                        </div>
+                    </div>
+            
+                    <h4>BMI range</h4>
+                    <div class="radio">
+                        <div class="btn-group btn-group-toggle" 
+                            data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="bmi" value="1"
+                                    id="button1" autocomplete="off" 
+                                    checked> Below 18.5<br>(Underweight)
+                            </label>
+                  
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="bmi" value="2"
+                                id="button2" autocomplete="off">
+                                18.5 - 24.9 <br> (Normal)
+                            </label>
+                  
+                            <label class="btn btn-primary">
+                                <input type="radio" name="bmi" value="3"
+                                id="button3" autocomplete="off">
+                                25.0 - 29.9 <br> (Overweight)
+                            </label>
+                  
+                            <label class="btn btn-primary">
+                                <input type="radio" name="bmi" value="4"
+                                id="button4" autocomplete="off">
+                                30 or higher <br> (Obese)
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <div id="json"></div>
             </div>
         </section>
 
@@ -104,7 +149,7 @@
         <div class="footer">
             <div class="container">
                 <div class="logo footer-items">
-                    <a href="#"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a>
+                    <a href="homepage.html"><img src="image/Logo_white.png" style="width: 140px;" width="100%"></a>
                 </div>
                 <div class="vr"></div>
                 <div class="footer-items">
@@ -145,4 +190,73 @@
     
 
 </body>
+<Script>
+    var age;
+    var bmi;
+
+    $("#ageandbmi input").on("change", function () {
+        age = $("input[name=age]:checked", "#ageandbmi").val();
+        $("#ageandbmi input").on("change", function () {
+            bmi = $("input[name=bmi]:checked", "#ageandbmi").val();
+            let result = age+bmi;
+            switch (result) {
+                case 'a1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("pa")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'a2': $('#json').html('toi la ' + age+bmi); break;
+                case 'a3': $('#json').html('toi la ' + age+bmi); break;
+                case 'a4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'b1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("fg")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'b2': $('#json').html('toi la ' + age+bmi); break;
+                case 'b3': $('#json').html('toi la ' + age+bmi); break;
+                case 'b4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'c1': 
+                    $('#json').html('');
+                    $.getJSON("js/data.json", function (data) {
+                        $.each(data, function (i, v) { 
+                            if (v.id.includes("patyp")) {
+                                $('#json').append('<p>' + v.id + '</p>');
+                                console.log(v);
+                            }
+                        });
+                    });
+
+                    break;
+                case 'c2': $('#json').html('toi la ' + age+bmi); break;
+                case 'c3': $('#json').html('toi la ' + age+bmi); break;
+                case 'c4': $('#json').html('toi la ' + age+bmi); break;
+
+                case 'd1': $('#json').html('toi la ' + age+bmi); break;
+                case 'd2': $('#json').html('toi la ' + age+bmi); break;
+                case 'd3': $('#json').html('toi la ' + age+bmi); break;
+                case 'd4': $('#json').html('toi la ' + age+bmi); break;
+            }
+        });
+    });
+    
+       
+    </Script>
+    <!-- <script src="js/Fit4Life.js"></script> -->
 </html>

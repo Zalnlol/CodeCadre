@@ -272,6 +272,10 @@
 }
 #popup-tilte{
     font-size: 20pt;
-    margin-top: 10%;
+    margin-top: 3%;
     text-align: center;
+}
+#popup-input{
+    margin-left: 30%;
+    margin-top: 7%;
 }
