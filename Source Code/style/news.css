@@ -18,12 +18,13 @@
 .news3 {
     background-image: url("../image/news3.jpg");
     width: 70%;
+    height: 100%;
 }
 
 .news4 {
     padding-bottom: 25%;
     background-image: url("../image/news4.jpg");
-    width: 70%;
+
 }
 
 #row-1 {
