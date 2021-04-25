@@ -212,7 +212,30 @@
                     });
 
                     break;
-                case 'a2': $('#json').html('My age: ' + age + ' and my bmi is: ' + bmi); break;
+                case 'a2': 
+                $('#json').html('');
+                var count = 0;
+                $.getJSON("js/data.json", function (data) {
+                    $.each(data, function (i, v) { 
+                        if (v.id.includes("pa")) {
+                            $('#json').append(
+                                '<div class=\"flex\">',
+                                    '<div>',
+                                        '<img src=\"image/' + v.pic + '\" alt=\"\" >',
+                                        '<p>' + v.id + ' ' + v.name + '</p>',
+                                    '</div>',
+                                '</div>'
+                            );
+                        }
+                        ++count;
+                        console.log(count);
+                        if (count == 4) {
+                            return false;
+                        }
+                    });
+                });
+
+                break;
                 case 'a3': $('#json').html('My age: ' + age + ' and my bmi is: ' + bmi); break;
                 case 'a4': $('#json').html('My age: ' + age + ' and my bmi is: ' + bmi); break;
 
