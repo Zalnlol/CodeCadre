@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+
+
+/* Column for Gallery page*/
+.column-gallery {
+    float: left;
+    width: 25%;
+    padding: 0 50px;
+}
+/* Column for Panguin page*/
+.column-4 {
+    float: left;
+    width: 25%;
+    padding: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+  
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -15px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 900px) {
+    .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+
+
+h1 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+} 
+
+h2 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+} 
+
+h3 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+}
+
+p { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    font-size: 20px;
+}
+
+blockquote { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+} 
+pre { 
+    font-family: "Open Sans";
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+}
+
+#home-tbg{
+    height: 220px; 
+    width: 200px;   
+    box-shadow: 1px 1px 5px gray ;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.image-box{
+    margin-bottom: 12%; 
+    margin-top: 3%;  
+    border-radius: 10px;
+}
+
+
+/*Style button chung*/
+.btn-common {
+    display: inline-block;
+    background: #3bac53;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+    
+.btn-common:hover{
+    background:#4fc769;
+    color:#fff;
+}
+
+/* Slider Banner homepage */
+#slideshow { 
+    margin: auto; 
+    position: relative; 
+    padding: 10px;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 10px; 
+}
+
+/* Animation */
+/* <!--class = "animated animatedFadeInUp fadeInUp"--> */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #3bac3b;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+/*jssor slider loading skin double-tail-spin css*/
+.jssorl-004-double-tail-spin img {
+    animation-name: jssorl-004-double-tail-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-004-double-tail-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 031 css*/
+.jssorb031 {position:absolute;}
+.jssorb031 .i {position:absolute;cursor:pointer;}
+.jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+.jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+.jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+.jssorb031 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+/*Image Zoom*/
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.image-box img {
+    max-width: 100%;
+    transition: all 0.6s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    
+}
+
+.image-box:hover img {
+    transform: scale(1.4);
+    
+}
+
+/* Button group physical activities */
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
