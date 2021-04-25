@@ -150,7 +150,17 @@ text-align: center;
     margin-top: 40%;
     font-size: 7rem;
     background-repeat: no-repeat;
-    background-color: #925506;
+    padding-top: 40%;
+    text-align: center;
+}
+
+#title-section-4:hover {
+    font-family: BebasNeue;
+    color:rgb(219, 99, 1);
+    margin-top: 40%;
+    font-size: 7.4rem;
+    background-repeat: no-repeat;
+    padding-top: 40%;
     text-align: center;
 }
 
