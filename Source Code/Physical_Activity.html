@@ -53,11 +53,14 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 5% ;
+        bottom: 5%;
         color: white;
         font-weight: bold;
         margin: 0 auto;
         text-align: center;
+      }
+      .physical-img {
+        width: 100%;
       }
   </style>
 </head>
@@ -172,16 +175,13 @@
                     </div>
                     <input type="button" id="display" ng-click="loadJson()" value="Suggest">
                 </form>
-                <div id="json">
-                    <div id="json">
-                        <div class="result">
-                          <div class="items" ng-repeat="x in id">
-                            <img src="{{x.pic}}" alt="">
-                            <p>{{x.name}}</p>
-                            
-                          </div>
-                        </div>
-                      </div>
+                <div id="row">
+                  <div class="result">
+                    <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="x in id">
+                      <img class="physical-img" src="{{x.pic}}" alt="">
+                      <p>{{x.name}}</p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </section>
