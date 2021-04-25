@@ -1,69 +1,31 @@
 .footer {
-    background-color: black;
-    height: 100%;
-    width: auto;
+    background-color: darkslategrey;
+    padding: 2rem;
+}
+
+.tx1 p{
     color: white;
-    padding: 20px 0;
+    font-size: 2rem;
+    padding-top: 4rem;
 }
-.footer .container {
-    display: flex;
-    justify-content: space-between;
+.tx1 a i{
+    color: white;
+    font-size: 4rem;
 }
-.footer .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.tx1 li a{
+    color: white;
+    font-size: 2rem;
 }
-.footer-items {
-    width: 20%;
+
+.tx1 ul{
+    color: white;
+}
+
+.copyright{
     text-align: center;
-}
-.footer-items .about-us {
-    margin-top: 20px;
-}
-.footer .about-us a {
-    display: block;
     color: white;
-    text-decoration: none;
-    margin-top: 10px;
-    text-align: center;
-}
-.footer a {
-    position: relative;
-}
-.footer .vr {
-    content: "";
-    width: 0.5px;
-    height: inherit;
-    background-color: rgba(255, 255, 255, 0.548);
-    margin-bottom: 0.5rem;
-}
-.fab.fa-facebook-square, .fab.fa-instagram-square, .fab.fa-twitter-square, .fab.fa-pinterest-square {
-    color: white;
-    font-size: 25px;
-}
-.far.fa-clock, .fas.fa-map-marker-alt, .far.fa-envelope, .fas.fa-phone {
-    color: white;
-    font-size: 25px;
-}
-.footer a::after {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 0;
-    bottom: -4px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    transition: width .4s;
-    background-color: white;
-}
-.footer a:hover {
-    color: rgb(11, 192, 216);
-}
-.footer a:hover::after {
-    width: 60%;
-}
-.fab.fa-facebook-square:hover, .fab.fa-instagram-square:hover, .fab.fa-twitter-square:hover, .fab.fa-pinterest-square:hover {
-    color: rgb(11, 192, 216);
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-top: 2rem;
 }
