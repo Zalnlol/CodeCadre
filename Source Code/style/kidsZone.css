@@ -3,11 +3,7 @@
 }
 
 /* Float four columns side by side */
-.column {
-    float: left;
-    width: 33%;
-    padding: 0 50px;
-}
+
 
 /* Column for Gallery page*/
 .column-gallery {
@@ -51,19 +47,7 @@
 }
 
 /* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 0px 0px 5px 0px;
-    text-align: center;
-    background-color: #ffffff;
-}
 
-.card-gallery {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    padding: 0px 0px 5px 0px;
-    text-align: center;
-    background-color: #ffffff;
-}
 
 h1 { 
     font-family: "Open Sans"; 
