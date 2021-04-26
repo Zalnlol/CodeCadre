@@ -51,7 +51,17 @@
 
     {"id":"patyp3","name":"Muscle-strength","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"}
+    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+
+    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+
+
 
 ]
 

@@ -144,34 +144,8 @@
                     </div>
             
                     <h4>BMI range</h4>
-                    <div class="radio">
-                        <div class="btn-group btn-group-toggle" 
-                            data-toggle="buttons">
-                            <label class="btn btn-primary">
-                                <input class="checkbmi" type="radio" name="bmi" value="1"
-                                    id="button1" autocomplete="off" 
-                                    checked> Below 18.5<br>(Underweight)
-                            </label>
-                  
-                            <label class="btn btn-primary active">
-                                <input class="checkbmi" type="radio" name="bmi" value="2"
-                                id="button2" autocomplete="off">
-                                18.5 - 24.9 <br> (Normal)
-                            </label>
-                  
-                            <label class="btn btn-primary">
-                                <input class="checkbmi" type="radio" name="bmi" value="3"
-                                id="button3" autocomplete="off">
-                                25.0 - 29.9 <br> (Overweight)
-                            </label>
-                  
-                            <label class="btn btn-primary">
-                                <input class="checkbmi" type="radio" name="bmi" value="4"
-                                id="button4" autocomplete="off">
-                                30 or higher <br> (Obese)
-                            </label>
-                        </div>
-                    </div>
+
+
                     <input type="button" id="display" ng-click="loadJson()" value="Suggest">
                 </form>
                 <div id="row">
@@ -224,9 +198,16 @@
                   </div>
               </div>
             </div>
+            <marquee width="100%" direction="left" height="30px" scrollamount="20">
+              <p id="current_dateandtime"></p>
+            </marquee>
         </footer>
     
 
 </body>
+<script>
+
+  </script>
 <script src="json.js"></script>
+<script src="script/datetime.js"></script>
 </html>
