@@ -8,16 +8,6 @@
     background-size: 100% 100%;
 }
 
-.news2 {
-    border: solid;
-    border-width: 0.1px;
-    height: 74rem;
-    width: auto;
-    background-image: url("../image/news2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 .news3 {
     border: solid;
     border-width: 0.1px;
@@ -63,20 +53,19 @@
 }
 
 #title-hello2 {
-    font-size: 50px;
+    font-size: 4rem;
     font-family: bebasNeue;
-    color: rgb(224, 182, 133);
+    color: white;
+    text-decoration: none;
 }
 
 #title-hello3 {
-    font-size: 50px;
+    font-size: 4rem;
     font-family: bebasNeue;
     color: rgb(224, 182, 133);
+    text-decoration: none;
 }
 
-#title-hello2:hover {
-    font-size: 53px;
-}
 
 #btn-press-here {
     height: 8rem;
@@ -122,7 +111,7 @@
 }
 
 #mota{
-    Text-align:center; 
+    text-align:center; 
     color: white;
 }
 
@@ -168,11 +157,6 @@
     font-family: bebasNeue;
 }
 
-#row-3-1:hover{  
-    padding-left: 4.2rem;
-    font-size: 5.3rem;
-    font-family: bebasNeue;
-}
 
 #title-section-3 {
     padding-left: 5%;
