@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Float four columns side by side */
-
-
-/* Column for Gallery page*/
-.column-gallery {
-    float: left;
-    width: 25%;
-    padding: 0 50px;
-}
-/* Column for Panguin page*/
-.column-4 {
-    float: left;
-    width: 25%;
-    padding: 0px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
