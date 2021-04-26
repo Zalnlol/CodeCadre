@@ -274,20 +274,17 @@ body {
 }
 #popup-height{
   display: flex;
-  margin-top: 1%;
+  margin-top: 0.5%;
   margin: auto;
   border-radius: 10px;
   width: auto;
 }
 #popup-weight{
-  margin-top: 1%;
+  margin-top: 0.5%;
   display: flex;
   margin: auto;
   border-radius: 10px;
   width: auto;
-}
-#popup-click {
-  box-shadow: 1px 1px 7px gray;
 }
 
 #inner-name {
