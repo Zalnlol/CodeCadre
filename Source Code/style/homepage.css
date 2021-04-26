@@ -268,11 +268,22 @@ body {
 #popup-input {
   display: flex;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 4%;
   border-radius: 10px;
   width: auto;
 }
-
+#popup-height{
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  width: auto;
+}
+#popup-weight{
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  width: auto;
+}
 #popup-click {
   box-shadow: 1px 1px 7px gray;
 }
