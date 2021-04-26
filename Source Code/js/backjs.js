@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var data = [];
-    var age = 'tre';
+    var age = '1';
     var result = 5;
 
     $.getJSON("data.json", function (items) {
