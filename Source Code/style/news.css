@@ -63,12 +63,19 @@
 }
 
 #title-hello2 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: bebasNeue;
-    color: rgb(224, 182, 133)
+    color: rgb(224, 182, 133);
 }
+
+#title-hello3 {
+    font-size: 50px;
+    font-family: bebasNeue;
+    color: rgb(224, 182, 133);
+}
+
 #title-hello2:hover {
-    text-decoration: none;
+    font-size: 53px;
 }
 
 #btn-press-here {
@@ -158,6 +165,13 @@
 #row-3-1{  
     padding-left: 4rem;
     font-size: 5rem;
+    font-family: bebasNeue;
+}
+
+#row-3-1:hover{  
+    padding-left: 4.2rem;
+    font-size: 5.3rem;
+    font-family: bebasNeue;
 }
 
 #title-section-3 {
@@ -178,11 +192,6 @@
 #title-section-4:hover {
     font-family: BebasNeue;
     color:rgb(219, 99, 1);
-    margin-top: 40%;
-    font-size: 7.4rem;
-    background-repeat: no-repeat;
-    padding-top: 40%;
-    text-align: center;
 }
 
 #row-4-1{
@@ -228,7 +237,9 @@
 }
 
 .styled:hover {
+    color: white;
     background-color: rgba(255, 0, 0, 1);
+    font-size: 3.5rem;
 }
 
 .styled:active {
