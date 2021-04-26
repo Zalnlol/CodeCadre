@@ -32,7 +32,7 @@
 
 
 
-
+  <script src="script/MyLib.js"></script>
 
 
   <style>
@@ -77,7 +77,7 @@
             if (sessionStorage.getItem("BMI") != null) {
               ab += " <p style='font-size: 1.4rem; margin-bottom:2rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</p>";
             }
-            
+
             document.getElementById("inner-name").innerHTML = ab;
 
           </script>
@@ -164,7 +164,7 @@
 
       <div lass="row" id="row-2-3">
         <div class="col-sm-12" style="height: 10%; margin-top: -1%; padding: 2rem; margin-left: 1.2%;">
-          <a href="Diet_and_Nutrition.html"><button  data-aos="zoom-in-up" id="Guidelines-1">Learn more</button></a>
+          <a href="Diet_and_Nutrition.html"><button data-aos="zoom-in-up" id="Guidelines-1">Learn more</button></a>
         </div>
       </div>
     </section>
@@ -210,47 +210,48 @@
     </section>
     <footer>
       <div class="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6">
-                      <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;"
-                              src="image/Logo_white.png" alt="" /></a>
-                      <div style= "width: 100%;">
-                          <script src="js/platform.js" defer></script>
-                          <div style="width: 100%;" class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 tx1">
-                      <ul>
-                          <p class="title">FOLLOW US</p>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-instagram-square"></i></a>
-                          <a href="#"><i class="fab fa-twitter-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                          <hr />
-                          <li><a class="title" href="#">About us</a></li>
-                          <li><a href="#">Who are we?</a></li>
-                          <li><a href="#">What we do?</a></li>
-                          <li>
-                              <a href="#">What is fitness and why is it important?</a>
-                          </li>
-                          <li><a href="#">How many types of lifestyle are there?</a></li>
-                      </ul>
-                  </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;" src="image/Logo_white.png"
+                  alt="" /></a>
+              <div style="width: 100%;">
+                <script src="js/platform.js" defer></script>
+                <div style="width: 100%;" class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
               </div>
-              <div class="row">
-                <footer class="copyright">
-                    Copy &copy; Website produced by team CodeCadre . All rights
-                    reserved.
-                </footer><br>
-                <marquee width="100%" direction="left" height="30px">
-                    <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
-                </marquee><br>
+            </div>
+            <div class="col-md-6 tx1">
+              <ul>
+                <p class="title">FOLLOW US</p>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                <hr />
+                <li><a class="title" href="#">About us</a></li>
+                <li><a href="#">Who are we?</a></li>
+                <li><a href="#">What we do?</a></li>
+                <li>
+                  <a href="#">What is fitness and why is it important?</a>
+                </li>
+                <li><a href="#">How many types of lifestyle are there?</a></li>
+              </ul>
             </div>
           </div>
+          <div class="row">
+            <footer class="copyright">
+              Copy &copy; Website produced by team CodeCadre . All rights
+              reserved.
+            </footer><br>
+            <marquee width="100%" direction="left" height="30px">
+              <p id="current_dateandtime"
+                style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+            </marquee><br>
+          </div>
+        </div>
       </div>
-      
-  </footer>
+
+    </footer>
     <script src="script/MyLib.js"></script>
 
     <script>
@@ -282,24 +283,44 @@
           return false;
         }
 
-        var pe = document.getElementById("popup-age").value
-        var Sln = /\d{1,}/
-        if (!Sln.test(pe)) {
-          alert("Age cannot Empty or not number");
-          return false;
-        } else if (parseFloat(pe) < 0 || parseFloat(pe) > 100) {
-          alert("The Age must be greater than 0 and less than 100");
-          return false;
-        } else {
+        if (document.getElementById("option0").selected){
+          alert("Please choose Age!!");
+        }
+
+        if (document.getElementById("option1").selected){
           sessionStorage.setItem("weight", pw);
           sessionStorage.setItem("height", ph);
-          sessionStorage.setItem("age", pe);
+          sessionStorage.setItem("ageID", document.getElementById("option1").value);
           sessionStorage.setItem("UserName", Rln);
           let bmi = BMI(pw, ph);
           sessionStorage.setItem("BMI", bmi);
           let bmiId = getBmiId(bmi);
           sessionStorage.setItem("BMIId", bmiId);
         }
+        if (document.getElementById("option2").selected){
+          sessionStorage.setItem("weight", pw);
+          sessionStorage.setItem("height", ph);
+          sessionStorage.setItem("ageID", document.getElementById("option2").value);
+          sessionStorage.setItem("UserName", Rln);
+          let bmi = BMI(pw, ph);
+          sessionStorage.setItem("BMI", bmi);
+          let bmiId = getBmiId(bmi);
+          sessionStorage.setItem("BMIId", bmiId);
+        }
+        if (document.getElementById("option3").selected){
+          sessionStorage.setItem("weight", pw);
+          sessionStorage.setItem("height", ph);
+          sessionStorage.setItem("ageID", document.getElementById("option3").value);
+          sessionStorage.setItem("UserName", Rln);
+          let bmi = BMI(pw, ph);
+          sessionStorage.setItem("BMI", bmi);
+          let bmiId = getBmiId(bmi);
+          sessionStorage.setItem("BMIId", bmiId);
+        }
+    
+       
+          
+        
       }
 
 
@@ -324,10 +345,16 @@
           <input type="text" id="popup-height" placeholder=""><br>
           <p style="text-align: center;">Press Weight(0kg - 200kg)</p>
           <input type="text" id="popup-weight" placeholder="">
-          <p style="text-align: center;">Press age (1-100)</p>
-          <input type="text" id="popup-age" placeholder="">
-          <input type="submit" id="popup-click" class="btn btn-primary" value="Submit"
-            style=" margin:auto; display: flex; margin-top: 2rem;">
+          <p style="text-align: center;">Choose age</p>
+          <select name="Age">
+            <option value="0" id="option0" checked>Choose your age...</option>
+            <option value="1" id="option1" >Teen (From 13 to 19)</option>
+            <option value="2" id="option2" >Adult (From 20 to 60)</option>
+            <option value="3" id="option3">Older Adult (60 and Older)</option>
+
+              <select>
+              <input type="submit" id="popup-click" class="btn btn-primary" value="Submit"
+                style=" margin:auto; display: flex; margin-top: 2rem;">
 
         </form>
       </div>
