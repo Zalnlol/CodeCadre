@@ -1,38 +1,38 @@
 [
-    {"id":"1 2 3","name":"Walking", "pic":"image/Walking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"1 2 3","name":"Walking", "pic":"/image/Walking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
     
-    {"id":"1 2","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"under normal over obsese"},
+    {"id":"1 2","name":"Running", "pic":"/image/Running.JPG","description":"Lorem ipsum.","cat":"under normal over obsese"},
 
-    {"id":"1 2","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"1 2","name":"Swimming", "pic":"/image/Swimming.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"1 2","name":"Gymnastics", "pic":"image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2","name":"Gymnastics", "pic":"/image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2 3","name":"Hiking", "pic":"image/Hiking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"1 2 3","name":"Hiking", "pic":"/image/Hiking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"1 2 3","name":"Martial-Art", "pic":"image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"under normal over"},
+    {"id":"1 2 3","name":"Martial-Art", "pic":"/image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"under normal over"},
 
-    {"id":"1 2 3","name":"Bicycle Riding", "pic":"image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"1 2 3","name":"Bicycle Riding", "pic":"/image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"1 2","name":"Football", "pic":"image/Football.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2","name":"Football", "pic":"/image/Football.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2 3","name":"Tennis", "pic":"image/Tennis.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2 3","name":"Tennis", "pic":"/image/Tennis.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2","name":"Tug of war", "pic":"image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"normal over obsese"},
+    {"id":"1 2","name":"Tug of war", "pic":"/image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"normal over obsese"},
 
-    {"id":"1 2 3","name":"Jumping rope", "pic":"image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2 3","name":"Jumping rope", "pic":"/image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2","name":"Dancing", "pic":"image/Dancing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2","name":"Dancing", "pic":"/image/Dancing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
     
-    {"id":"1 2","name":"Climbing", "pic":"image/Climbing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2","name":"Climbing", "pic":"/image/Climbing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2 3","name":"Yoga", "pic":"image/Yoga.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2 3","name":"Yoga", "pic":"/image/Yoga.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"1 2","name":"Weights", "pic":"image/Weight.JPG","description":"Lorem ipsum.", "cat":"under normal over "},
+    {"id":"1 2","name":"Weights", "pic":"/image/Weight.JPG","description":"Lorem ipsum.", "cat":"under normal over "},
 
-    {"id":"1 2","name":"Kayak", "pic":"image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
+    {"id":"1 2","name":"Kayak", "pic":"/image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"2 3","name":"Golf", "pic":"image/Golf.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"2 3","name":"Golf", "pic":"/image/Golf.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"2 3","name":"Tai Chi", "pic":"image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"under normal over"}
+    {"id":"2 3","name":"Tai Chi", "pic":"/image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"under normal over"}
 ]
 
