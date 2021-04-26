@@ -35,7 +35,7 @@ suggest.controller('myData', function($scope) {
         case 'a1': // 3-5 age & underweight
             console.log(result); // debug
 
-            document.getElementById('tuvan').innerHTML = 'gggjhh';
+            document.getElementById('tuvan').innerHTML = 'Preschool-aged children (ages 3 through 5 years) should be physically active throughout the day to enhance growth and development. Low BMI level ';
 
             $scope.id = [ // thu cong
                 {"id":"pa01","name":"Walking", "pic":"image/Walking.jpg","description":"Lorem ipsum.", "cat":"phys activities"},
@@ -48,6 +48,9 @@ suggest.controller('myData', function($scope) {
             break;
         case 'a2': // 3-5 yrs & normal
             console.log(result); // debug
+
+            document.getElementById('tuvan').innerHTML = 'Preschool-aged children (ages 3 through 5 years) should be physically active throughout the day to enhance growth and development. Normal BMI is great indicator for healthy growth';
+
             $scope.id = [ // thu cong
                 {"id":"pa11","name":"Jumping rope", "pic":"image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             
@@ -59,6 +62,9 @@ suggest.controller('myData', function($scope) {
             break;
         case 'a3': // 3-5 yrs & overweight
             console.log(result); // debug
+
+            document.getElementById('tuvan').innerHTML = 'Preschool-aged children (ages 3 through 5 years) should be physically active throughout the day to enhance growth and development. Overweight kid at this age are normal and it is best to watch out for their diet';
+
             $scope.id = [ // thu cong
                 {"id":"pa10","name":"Tug of war", "pic":"image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
             

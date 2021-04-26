@@ -120,10 +120,10 @@
                             data-toggle="buttons">
                             <label class="btn btn-primary">
                                 <input class="checkage" type="radio" id="button1" name="age" value="a" autocomplete="off" 
-                                    checked> Pre-School<br>(3-5 yrs)
+                                    > Pre-School<br>(3-5 yrs)
                             </label>
                   
-                            <label class="btn btn-primary active">
+                            <label class="btn btn-primary">
                                 <input class="checkage" type="radio" name="age" value="b"
                                 id="button2" autocomplete="off">
                                 School age kid<br>(6-17 yrs)
@@ -131,7 +131,7 @@
                   
                             <label class="btn btn-primary">
                                 <input class="checkage" type="radio" name="age" value="c" 
-                                id="button3" autocomplete="off">
+                                id="button3" autocomplete="off" checked>
                                 Adult<br>(18-64 yrs)
                             </label>
                   
@@ -142,7 +142,6 @@
                             </label>
                         </div>
                     </div>
-            
                     <h4>BMI range</h4>
                     <div class="radio">
                         <div class="btn-group btn-group-toggle" 
@@ -153,9 +152,9 @@
                                     checked> Below 18.5<br>(Underweight)
                             </label>
                   
-                            <label class="btn btn-primary active">
+                            <label class="btn btn-primary">
                                 <input class="checkbmi" type="radio" name="bmi" value="2"
-                                id="button2" autocomplete="off">
+                                id="button2" autocomplete="off" checked>
                                 18.5 - 24.9 <br> (Normal)
                             </label>
                   
@@ -175,6 +174,7 @@
                     <input type="button" id="display" ng-click="loadJson()" value="Suggest">
                 </form>
                 <div id="row">
+                  <div id="tuvan"></div>
                   <div class="result">
                     <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="x in id">
                       <img class="physical-img" src="{{x.pic}}" alt="">
@@ -224,13 +224,16 @@
                   </div>
               </div>
             </div>
-            <marquee width="100%" direction="left" height="30px" scrollamount="20">
+            <marquee width="100%" direction="left" height="30px">
               <p id="current_dateandtime"></p>
             </marquee>
         </footer>
     
 
 </body>
+<script>
+
+  </script>
 <script src="json.js"></script>
 <script src="script/datetime.js"></script>
 </html>

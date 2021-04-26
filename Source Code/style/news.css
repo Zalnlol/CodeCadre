@@ -63,12 +63,20 @@
 }
 
 #title-hello2 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: bebasNeue;
-    color: rgb(224, 182, 133)
+    color: rgb(224, 182, 133);
 }
+
+#title-hello3 {
+    font-size: 50px;
+    font-family: bebasNeue;
+    color: rgb(224, 182, 133);
+}
+
 #title-hello2:hover {
-    text-decoration: none;
+    color: rgb(224, 182, 133);
+    font-size: 53px;
 }
 
 #btn-press-here {
@@ -158,6 +166,7 @@
 #row-3-1{  
     padding-left: 4rem;
     font-size: 5rem;
+    font-family: bebasNeue;
 }
 
 #title-section-3 {
@@ -203,3 +212,32 @@
     background-color: #221f1f;
     border-color: #221f1f;
 }   
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+    border-radius: 20px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 1);
+    font-size: 3.5rem;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
