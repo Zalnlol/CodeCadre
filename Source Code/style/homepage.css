@@ -5,14 +5,15 @@ body {
   border: solid;
   border-width: 0.1px;
   height: 74rem;
-  width: auto;
+  width: 100%;
   background-image: url("../image/section1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #row-1 {
-  margin-top: 16%;
+  padding-top: 14%;
+  margin-top: 2rem;
 }
 
 #row-2 {
@@ -21,10 +22,10 @@ body {
 }
 
 #title-hello {
-  padding-left: 5%;
+  margin-top: 2rem;
+  padding-left: 4rem;
   font-family: BebasNeue;
-  font-size: 9rem;
-  width: 100%;
+  font-size: 7.4rem;
 }
 
 #btn-press-here {
@@ -64,9 +65,9 @@ body {
 
 #home-box-1 {
   border: none;
-  margin-right: 10rem;
+  margin-right: 1%;
   width: 100%;
-  height: 50%;
+  height: 100%;
   border: solid;
   border-color: white;
   border-radius: 10px;
@@ -102,9 +103,9 @@ body {
   color: white;
   background-color: #29b30b;
   border-color: #29b30b;
-  margin-top: 2%;
+  margin-top: 1%;
   font-size: 17pt;
-  margin-left: 18%;
+  margin-left: 17.8%;
 }
 #Guidelines-1:hover {
   background-color: #3bed15;
@@ -154,7 +155,7 @@ body {
 .section3 {
   border: solid;
   border-width: 0.1px;
-  height: 68rem;
+  height: 74rem;
 
   padding-bottom: 25%;
   width: auto;

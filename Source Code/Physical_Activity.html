@@ -84,7 +84,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
     
-            <li><a href="Healthy.html">Healthy Nutrition</a></li>
+            <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
             <li><a href="Physical_Activity.html">Physical Activity</a></li>
             <li><a href="news.html">Resources</a></li>
             <li><a href="aboutus.html">About us</a></li>
@@ -120,10 +120,10 @@
                             data-toggle="buttons">
                             <label class="btn btn-primary">
                                 <input class="checkage" type="radio" id="button1" name="age" value="a" autocomplete="off" 
-                                    checked> Pre-School<br>(3-5 yrs)
+                                    > Pre-School<br>(3-5 yrs)
                             </label>
                   
-                            <label class="btn btn-primary active">
+                            <label class="btn btn-primary">
                                 <input class="checkage" type="radio" name="age" value="b"
                                 id="button2" autocomplete="off">
                                 School age kid<br>(6-17 yrs)
@@ -131,7 +131,7 @@
                   
                             <label class="btn btn-primary">
                                 <input class="checkage" type="radio" name="age" value="c" 
-                                id="button3" autocomplete="off">
+                                id="button3" autocomplete="off" checked>
                                 Adult<br>(18-64 yrs)
                             </label>
                   
@@ -142,8 +142,16 @@
                             </label>
                         </div>
                     </div>
-            
-                    <h4>BMI range</h4>
+                    <h3>BMI range</h3>
+                    <div class="container">
+                      
+                      <div style="width:100%; height: auto;" >
+                        <img src="image/BMI formmula.png" style="float:left;width:48%;height:100%;">
+                        <img src="image/BMI level.png" style="float:left;width:48%;height:100%;">
+                      </div>
+                    </div>
+                    
+                    
                     <div class="radio">
                         <div class="btn-group btn-group-toggle" 
                             data-toggle="buttons">
@@ -153,9 +161,9 @@
                                     checked> Below 18.5<br>(Underweight)
                             </label>
                   
-                            <label class="btn btn-primary active">
+                            <label class="btn btn-primary">
                                 <input class="checkbmi" type="radio" name="bmi" value="2"
-                                id="button2" autocomplete="off">
+                                id="button2" autocomplete="off" checked>
                                 18.5 - 24.9 <br> (Normal)
                             </label>
                   
@@ -175,6 +183,7 @@
                     <input type="button" id="display" ng-click="loadJson()" value="Suggest">
                 </form>
                 <div id="row">
+                  <div id="tuvan"></div>
                   <div class="result">
                     <div class="items col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="x in id">
                       <img class="physical-img" src="{{x.pic}}" alt="">
@@ -189,48 +198,56 @@
 
         <!-- Phan footer -->
 
-        <footer>
-            <div class="footer">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <a href="#"><img style="margin-top: 5%; width: 200px; padding-left: 4rem;" 
-                                  src="image/Logo_white.png" alt=""></a>
-                                  <div>
-                                    <script src="js/platform.js" defer></script>
-                                    <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
-                                  </div> 
+        <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img style="margin-top: 2%; width: 160px; padding-left: 1.2rem;"
+                              src="image/Logo_white.png" alt="" /></a>
+                      <div>
+                          <script src="js/platform.js" defer></script>
+                          <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
                       </div>
-                      <div class="col-md-6 tx1">
-                        <ul>
+                  </div>
+                  <div class="col-md-6 tx1">
+                      <ul>
                           <p class="title">FOLLOW US</p>
                           <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-instagram-square"></i></a> 
+                          <a href="#"><i class="fab fa-instagram-square"></i></a>
                           <a href="#"><i class="fab fa-twitter-square"></i></a>
                           <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                          <hr>
+                          <hr />
                           <li><a class="title" href="#">About us</a></li>
                           <li><a href="#">Who are we?</a></li>
                           <li><a href="#">What we do?</a></li>
-                          <li><a href="#">What is fitness and why is it important?</a></li>
+                          <li>
+                              <a href="#">What is fitness and why is it important?</a>
+                          </li>
                           <li><a href="#">How many types of lifestyle are there?</a></li>
                       </ul>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <footer class="copyright">
-                      Copy &copy; Website produced by team CodeCadre . All rights reserved.
-                  </footer>
                   </div>
               </div>
-            </div>
-            <marquee width="100%" direction="left" height="30px" scrollamount="20">
-              <p id="current_dateandtime"></p>
-            </marquee>
-        </footer>
-    
-
+              <div class="row">
+                  <footer class="copyright">
+                      Copy &copy; Website produced by team CodeCadre . All rights
+                      reserved.
+                  </footer><br>
+                  <marquee width="100%" direction="left" height="30px">
+                      <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+                  </marquee><br>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
+<script>
+
+  </script>
 <script src="json.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
 <script src="script/datetime.js"></script>
 </html>

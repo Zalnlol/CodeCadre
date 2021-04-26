@@ -29,7 +29,8 @@
   <link rel="stylesheet" href="style/footer.css" />
   <link rel="stylesheet" href="style/DaN.css" />
   <!--add javacript-->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
   <style></style>
 </head>
 
@@ -52,7 +53,7 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
 
-        <li><a href="Diet_and_Nutrition.html">Diet & Nutrition</a></li>
+        <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
         <li><a href="Physical_Activity.html">Physical Activity</a></li>
         <li><a href="news.html">Resources</a></li>
         <li><a href="aboutus.html">About us</a></li>
@@ -75,11 +76,23 @@
   <!-- Phan than chuong trinh -->
 
   <section id="section1">
-    <h1 style="text-align: center;">Food Essentials</h1>
-    <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups.
+    <div class="container">
+    <h1 style="text-align: center; font-size: 3.4rem;">Food Essentials</h1>
+    <p style="font-size: 1.8rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups.
       Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
       Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
-    <h3>Get recommendation by telling us about you with: </h3>
+    
+      <div style="width:100%; height: auto;" >
+        <img src="image/BMI formmula.png" style="float:left;width:48%;height:100%;">
+        <img src="image/BMI level.png" style="float:left;width:48%;height:100%;">
+      </div>
+      </div>
+    <br>
+   <div class="container">
+    <h3 style="font-size: 2.4rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
+   </div>
+
+
     <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
 
       <div class="col-sm-4" style="padding: 2rem;">
@@ -126,11 +139,10 @@
 
 
 
-
   </section>
-
+  <div style="background-image: url(image/BMIbackground.png);">
   <section id="section2">
-    <h1 id="BMI" style="text-align: center; color: white; padding-top: 5%;">BMI</h1>
+    <h1 id="BMI" style="font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 4%; font-size: 4rem;">BMI</h1>
     <div class="row">
 
       <div class="col-md-3" id="col-button">
@@ -141,24 +153,23 @@
       </div>
       <div class="col-md-3" id="col-button">
         <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
-          Below 18.5
-          (Underweight)
+          18.5 - 24.9
+          (Normal)
         </button>
       </div>
       <div class="col-md-3" id="col-button">
         <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
-          Below 18.5
-          (Underweight)
+          25.0 - 29.9
+          (Overweight)
         </button>
       </div>
       <div class="col-md-3" id="col-button">
         <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
-          Below 18.5
-          (Underweight)
+          30 or higher
+          (Obese)
         </button>
       </div>
     </div>
-
   </section>
 
   <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;"></div>
@@ -167,101 +178,107 @@
   <div id="set-3"></div>
 
   <!-- Cai phan dau -->
-  <!-- 
+
   <section id="section3" data-aos="fade-left">
-    <div class="row row-sc">
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        <div class="col-md-4">
 
-      <div class="col-md-4" id="sc3-image-col-1">
-        <p id="Title-section-1">Breakfast</p>
-        <p id="text-section-1">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
-          peanut butter spread) </p>
+          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
+      </div>
       </div>
 
 
-      <div class="col-md-7">
+     
 
-        <img src="image/test.jpg" id="col-image" alt="">
-
-      </div>
-
-  </section> -->
+  </section> 
 
   <!-- Cai phan hai -->
-  <!-- <section id="section4" data-aos="fade-right">
-    <div class="row row-sc">
-      <div class="col-md-7">
+  <section id="section4" data-aos="fade-right">
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-4">
 
-        <img src="image/test.jpg" id="col-image" alt="">
-
+          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        
       </div>
-
-      <div class="col-md-4" id="sc3-image-col-1">
-        <p id="Title-section-1">Breakfast</p>
-        <p id="text-section-1">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
-          peanut butter spread) </p>
-      </div>
-  </section> -->
+  </section> 
   <!-- Cai phan ba -->
-  <!-- <section id="section5" data-aos="fade-left">>
-    <div class="row row-sc">
+   <section id="section5" data-aos="fade-left">>
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        <div class="col-md-4">
 
-      <div class="col-md-4" id="sc3-image-col-1">
-        <p id="Title-section-1">Breakfast</p>
-        <p id="text-section-1">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
-          peanut butter spread) </p>
+          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
       </div>
 
-
-      <div class="col-md-7">
-
-        <img src="image/test.jpg" id="col-image" alt="">
-
-      </div>
-
-  </section> -->
-
-
+  </section> 
 
   <!-- Phan footer -->
 
-  <footer>
-    <div class="footer">
-      <div class="container">
+  <div class="footer">
+    <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <a href="#"><img width="180px" style="margin-top: 5%; width: 50%" src="image/Logo_white.png" alt="" /></a>
-            <div>
-              <script src="js/platform.js" defer></script>
-              <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
+            <div class="col-md-6">
+                <a href="#"><img style="margin-top: 2%; width: 160px; padding-left: 1.2rem;"
+                        src="image/Logo_white.png" alt="" /></a>
+                <div>
+                    <script src="js/platform.js" defer></script>
+                    <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 tx1">
-            <ul>
-              <p class="title">FOLLOW US</p>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-pinterest-square"></i></a>
-              <hr />
-              <li><a class="title" href="#">About us</a></li>
-              <li><a href="#">Who are we?</a></li>
-              <li><a href="#">What we do?</a></li>
-              <li>
-                <a href="#">What is fitness and why is it important?</a>
-              </li>
-              <li><a href="#">How many types of lifestyle are there?</a></li>
-            </ul>
-          </div>
+            <div class="col-md-6 tx1">
+                <ul>
+                    <p class="title">FOLLOW US</p>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                    <hr />
+                    <li><a class="title" href="#">About us</a></li>
+                    <li><a href="#">Who are we?</a></li>
+                    <li><a href="#">What we do?</a></li>
+                    <li>
+                        <a href="#">What is fitness and why is it important?</a>
+                    </li>
+                    <li><a href="#">How many types of lifestyle are there?</a></li>
+                </ul>
+            </div>
         </div>
         <div class="row">
           <footer class="copyright">
-            Copy &copy; Website produced by team CodeCadre . All rights
-            reserved.
-          </footer>
-        </div>
+              Copy &copy; Website produced by team CodeCadre . All rights
+              reserved.
+          </footer><br>
+          <marquee width="100%" direction="left" height="30px">
+              <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+          </marquee><br>
       </div>
     </div>
-  </footer>
+</div>
+
+</footer>
 </body>
 
 <script>
@@ -420,5 +437,10 @@
 
 
 </script>
-
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
+<script src="script/datetime.js"></script>
 </html>

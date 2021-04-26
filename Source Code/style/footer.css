@@ -1,39 +1,38 @@
 .footer {
-    background-color: darkslategrey;
-    padding: 1%;
+  background-color: darkslategrey;
+  padding: 1%;
 }
 
-.tx1 p{
-    color: white;
-    font-size: 2rem;
-    padding-top: 5rem;
+.tx1 p {
+  color: white;
+  font-size: 2rem;
+  padding-top: 5rem;
 }
-.tx1 a i{
-    color: white;
-    font-size: 4rem;
-}
-
-.tx1 li a{
-    color: white;
-    font-size: 2rem;
+.tx1 a i {
+  color: white;
+  font-size: 4rem;
 }
 
-.tx1 ul{
-    color: white;
+.tx1 li a {
+  color: white;
+  font-size: 2rem;
 }
 
-.copyright{
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
-    padding: 1%;
-    margin-top: 3rem;
+.tx1 ul {
+  color: white;
 }
-.eapp-visitor-counter-root-layout-component.jsx-1599241831{
-    padding: 2rem;
-    margin-left: 2rem;
+
+.copyright {
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1%;
+  margin-top: 3rem;
 }
-.kjIukz{
-    width: 70%;
-    
+.eapp-visitor-counter-root-layout-component.jsx-1599241831 {
+  padding: 2rem;
+  margin-left: 2rem;
+}
+.kjIukz {
+  width: 70%;
 }
