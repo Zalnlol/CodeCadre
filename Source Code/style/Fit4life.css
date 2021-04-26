@@ -49,33 +49,6 @@
 /* Style the counter cards */
 
 
-h1 { 
-    font-family: "Open Sans"; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-} 
-
-h2 { 
-    font-family: "Open Sans"; 
-    font-style: normal; 
-    font-variant: normal; 
-} 
-
-h3 { 
-    font-family: "Open Sans"; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-}
-
-p { 
-    font-family: "Open Sans"; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    font-size: 20px;
-}
 
 blockquote { 
     font-family: "Open Sans"; 
