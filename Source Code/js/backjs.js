@@ -2,14 +2,87 @@ $(document).ready(function () {
     var data = [];
     var age = sessionStorage.getItem('ageID').toString();
     var result = sessionStorage.getItem('BMI');
+    var tuvan = document.getElementById('tuvan');
 
     console.log(result);
+
+    function tuvan() {
+        if (result < 18.5) { //gay
+            switch (age) {
+                case '1': //tre
+                    tuvan.innerHTML = ''; //tre gay nen lam gi do
+
+                    break;
+                case '2': //nglon
+                    tuvan.innerHTML = ''; //nguoi lon gay nen lam gi do
+
+                    break;
+                case '3': //gia
+                    tuvan.innerHTML = ''; //gia gay nen lam gi do
+
+                    break;
+            }
+        }
+
+        else if (result > 18.5 && result <= 25 ) { //binh thuong
+            switch (age) {
+                case '1': //tre
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '2': //nglon
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '3': //gia
+                    tuvan.innerHTML = '';
+
+                    break;
+            }
+        }
+
+        else if (result > 25 && result <= 29.9 ) { //thua can
+            switch (age) {
+                case '1': //tre
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '2': //nglon
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '3': //gia
+                    tuvan.innerHTML = '';
+
+                    break;
+            }
+        }
+        else { //beo phi
+            switch (age) {
+                case '1': //tre
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '2': //nglon
+                    tuvan.innerHTML = '';
+
+                    break;
+                case '3': //gia
+                    tuvan.innerHTML = '';
+
+                    break;
+            }
+        }
+    }
 
     $.getJSON("data.json", function (items) {
         // console.log(items);
         data = items;
+        if (result < 18.5) {
+            var resultBmi = 'under';
+        }
 
-        if (result > 18.5 && result <= 25 ) {
+        else if (result >= 18.5 && result <= 25 ) {
             var resultBmi = 'normal';
         }
 
