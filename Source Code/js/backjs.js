@@ -64,14 +64,23 @@ $(document).ready(function () {
 
 function displayData(items) {
     let s = ``;
+    let count = 0;
 
     $.each(items, function (k, v) {
+        
 
+        //Limit display
+        // if (count == 3) { //limit 3
+        //     return false;
+        // }
+
+        count++;
         s +=    `<div class="items">
-                    <img src="${v.pic}" alt="">
+                    <img class="physical-img" src="${v.pic}" alt="">
                     <p>${v.name}</p>
                 </div>`;
         });
 
     $(".result").html(s);
+    
 }
