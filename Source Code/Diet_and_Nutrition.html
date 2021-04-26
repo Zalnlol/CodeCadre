@@ -32,61 +32,59 @@
 
   <script>
     var id = "";
+    var id1 = ""
     var data;
     function check01(gt1) {
       if (id != "") {
         id == "";
       }
-      document.getElementById("set-1").innerHTML ="";
-      document.getElementById("set-2").innerHTML ="";
-      document.getElementById("set-3").innerHTML ="";
       id = gt1;
-    }
-    function check02(gt2) {
-      if ((id != "") && (id.length < 2)) {
-        id += gt2;
+      id += id1;
+      if ((id != "") && (id.length <= 2)) {
         call()
       }
-
+    }
+    function check03(gt) {
+      id1 = gt;
     }
 
     function call() {
       for (i = 0; i <= 11; i++) {
         if (data[i].id == id) {
           document.getElementById("set-1").innerHTML =
-                      '<section id="section3" data-aos="fade-left">'+
-                      '<div class="row row-sc"> '+
-                          '<div class="col-md-4" id="sc3-image-col-1">'+
-                              '<p id="Title-section-1">' + data[i].title1 +'</p>'+
-                              '<p id="text-section-1"></p>' + data[i].text1 +
-                          '</div>' +
-                        '<div class="col-md-7">' +
-                            '<img src="' + data[i].image1 + '" id="col-image" alt="">' +
-                          '</div>' +
-                      '</section>'
+            '<section id="section3" data-aos="fade-left">' +
+            '<div class="row row-sc"> ' +
+            '<div class="col-md-4" id="sc3-image-col-1">' +
+            '<p id="Title-section-1">' + data[i].title1 + '</p>' +
+            '<p id="text-section-1"></p>' + data[i].text1 +
+            '</div>' +
+            '<div class="col-md-7">' +
+            '<img src="' + data[i].image1 + '" id="col-image" alt="">' +
+            '</div>' +
+            '</section>'
           document.getElementById("set-2").innerHTML =
-                      '<section id="section4" data-aos="fade-right">' +
-                        '<div class="row row-sc">' +
-                          ' <div class="col-md-7">' +
-                            '<img src="'+data[i].image2+'" id="col-image" alt="">' +
-                        '</div>' +
-                      ' <div class="col-md-4" id="sc3-image-col-1">' +
-                        ' <p id="Title-section-1">'+data[i].title2+'</p>' +
-                          '<p id="text-section-1">'+data[i].text2+' </p>' +
-                        '</div >' +
-                      '</section>'
+            '<section id="section4" data-aos="fade-right">' +
+            '<div class="row row-sc">' +
+            ' <div class="col-md-7">' +
+            '<img src="' + data[i].image2 + '" id="col-image" alt="">' +
+            '</div>' +
+            ' <div class="col-md-4" id="sc3-image-col-1">' +
+            ' <p id="Title-section-1">' + data[i].title2 + '</p>' +
+            '<p id="text-section-1">' + data[i].text2 + ' </p>' +
+            '</div >' +
+            '</section>'
 
           document.getElementById("set-3").innerHTML =
-                      '<section id="section5" data-aos="fade-left">'+
-                        '<div class="row row-sc">'+
-                          '<div class="col-md-4" id="sc3-image-col-1">'+
-                              '<p id="Title-section-1">'+data[i].title3+'</p>'+
-                              '<p id="text-section-1">'+data[i].text3+'</p>'+
-                          '</div>'+
-                        '<div class="col-md-7">'+
-                            '<img src="'+data[i].image3+'" id="col-image" alt="">'+
-                        '</div>'+
-                      '</section>'
+            '<section id="section5" data-aos="fade-left">' +
+            '<div class="row row-sc">' +
+            '<div class="col-md-4" id="sc3-image-col-1">' +
+            '<p id="Title-section-1">' + data[i].title3 + '</p>' +
+            '<p id="text-section-1">' + data[i].text3 + '</p>' +
+            '</div>' +
+            '<div class="col-md-7">' +
+            '<img src="' + data[i].image3 + '" id="col-image" alt="">' +
+            '</div>' +
+            '</section>'
         }
       }
 
@@ -129,7 +127,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
-          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;"/></a>
+          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,14 +140,14 @@
         <li><a href="aboutus.html">About us</a></li>
         <li><a href="contactus.html">Contact us</a></li>
         <li>
-          <div id="inner-name" style="font-weight: bold;" ></div>
+          <div id="inner-name" style="font-weight: bold;"></div>
 
 
           <script>
-            if(sessionStorage.getItem("UserName")!=null){
-              document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+            if (sessionStorage.getItem("UserName") != null) {
+              document.getElementById("inner-name").innerHTML = "Hi! " + sessionStorage.getItem("UserName");
             }
-            
+
           </script>
         </li>
 
@@ -157,18 +155,18 @@
     </div>
   </nav>
   <!-- Phan than chuong trinh -->
-  
+
   <section id="section1">
     <h1 style="text-align: center;">Food Essentials</h1>
-      <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. 
-        Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets. 
-        Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
-      <h3>Get recommendation by telling us about you with: </h3>
+    <p>The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups.
+      Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
+      Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+    <h3>Get recommendation by telling us about you with: </h3>
     <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
 
       <div class="col-sm-4" style="padding: 2rem;">
         <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('1')">
+          <a href="#section3" style="text-decoration: none;" onclick="return check01('1')">
             <div class="image-box">
               <img src="image/sesion2-1.jpg" />
             </div>
@@ -178,11 +176,11 @@
           </a>
         </div>
       </div>
-      
+
 
       <div class="col-sm-4" style="padding: 2rem;">
         <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('2')">
+          <a href="#section3" style="text-decoration: none;" onclick="return check01('2')">
             <div class="image-box">
               <img src="image/sesion2-2.jpg" />
             </div>
@@ -196,7 +194,7 @@
 
       <div class="col-sm-4" style="padding: 2rem;">
         <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('3')">
+          <a href="#section3" style="text-decoration: none;" onclick="return check01('3')">
             <div class="image-box">
               <img src="image/sesion2-3.jpg" />
             </div>
@@ -214,34 +212,91 @@
   </section>
 
   <section id="section2">
-    <h1 id="BMI" style="text-align: center; color: white; padding-top: 5%;">BMI</h1>
+    <h1 id="BMI" style="text-align: center; color: white; padding-top: 5%;">Information</h1>
     <div class="row">
-
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
-          Below 18.5
-          (Underweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
-          Below 18.5
-          (Underweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
-          Below 18.5
-          (Underweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
-          Below 18.5
-          (Underweight)
-        </button>
+      <div class="col-md-12" id="col-button">
+        <p id="Information"> </p>
       </div>
     </div>
+    <script>
+      var name = sessionStorage.getItem("UserName");
+      var weight = sessionStorage.getItem("weight");
+      var height = sessionStorage.getItem("height");
+      var BMI = parseFloat(weight) / (parseFloat(height) * parseFloat(height));
+      BMI = BMI.toFixed(2)
+
+
+      if (BMI < 18.5) {
+        document.getElementById("Information").innerHTML = 'Infomation' +
+          '<br/>' +
+          'Your Name:' + name +
+          '<br/>' +
+          'Your Height:' + height +
+          '<br/>' +
+          'Your Weight:' + weight +
+          '<br/>' +
+          'Your BMI:' + BMI +
+          '<br/>'+
+          'Loi khuyen:'+
+          '<br/>'
+          +'Chon do tuoi ben tren de chung toi dua ra che do an uong hop ly cho ban'
+
+
+        check03("1")
+
+      }
+      if ((BMI >= 18.5) && (BMI < 25)) { 
+        document.getElementById("Information").innerHTML = 'Infomation' +
+        '<br/>' +
+          'Your Name:' + name +
+          '<br/>' +
+          'Your Height:' + height +
+          '<br/>' +
+          'Your Weight:' + weight +
+          '<br/>' +
+          'Your BMI:' + BMI +
+          '<br/>'+
+          'Loi khuyen'+
+          '<br/>'
+          +'Chon do tuoi ben tren de chung toi dua ra che do an uong hop ly cho ban'
+        
+        check03("2") }
+      if ((BMI >= 25) && (BMI < 30)) { 
+      document.getElementById("Information").innerHTML = 'Infomation' +
+      '<br/>' +
+          'Your Name:' + name +
+          '<br/>' +
+          'Your Height:' + height +
+          '<br/>' +
+          'Your Weight:' + weight +
+          '<br/>' +
+          'Your BMI:' + BMI +
+          '<br/>'+
+          'Loi khuyen'+
+          '<br/>'
+          +'Chon do tuoi ben tren de chung toi dua ra che do an uong hop ly cho ban'
+
+          check03("3")
+    }
+      if ((BMI >= 30)) { 
+        document.getElementById("Information").innerHTML = 'Infomation' +
+      '<br/>' +
+          'Your Name:' + name +
+          '<br/>' +
+          'Your Height:' + height +
+          '<br/>' +
+          'Your Weight:' + weight +
+          '<br/>' +
+          'Your BMI:' + BMI +
+          '<br/>'+
+          'Loi khuyen'+
+          '<br/>'
+          +'Chon do tuoi ben tren de chung toi dua ra che do an uong hop ly cho ban'
+          check03("3")
+    }
+
+    </script>
+
 
   </section>
 
