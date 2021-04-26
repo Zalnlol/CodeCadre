@@ -32,40 +32,51 @@
     <link rel="stylesheet" href="style/homepage.css" />
   </head>
   <body>
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto;">
+    <nav
+      class="navbar navbar-default"
+      role="navigation"
+      style="margin-bottom: auto"
+    >
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-ex1-collapse"
+        >
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
-            style="width: 160px; padding: 12px; margin-bottom: 0.5rem;"/></a>
+        <a href="homepage.html"
+          ><img
+            src="image/Logo_color.png"
+            width="100%"
+            alt=""
+            style="width: 160px; padding: 12px; margin-bottom: 0.5rem"
+        /></a>
       </div>
-  
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
-  
+        <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem">
           <li><a href="Healthy.html">Healthy Nutrition</a></li>
           <li><a href="Physical_Activity.html">Physical Activity</a></li>
           <li><a href="news.html">Resources</a></li>
           <li><a href="aboutus.html">About us</a></li>
           <li><a href="contactus.html">Contact us</a></li>
           <li>
-            <div id="inner-name" style="font-weight: bold;" ></div>
-  
-  
+            <div id="inner-name" style="font-weight: bold"></div>
+
             <script>
-              if(sessionStorage.getItem("UserName")!=null){
-                document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+              if (sessionStorage.getItem("UserName") != null) {
+                document.getElementById("inner-name").innerHTML =
+                  "Hi! " + sessionStorage.getItem("UserName");
               }
-              
             </script>
           </li>
-  
         </ul>
       </div>
     </nav>
@@ -76,9 +87,12 @@
       </div>
       <div class="introduction">
         <img src="image/whoarewe.png" alt="#" />
-        <div class="text" style="left: 50%; top: 57%; font-size: 90%; width: 50%;">
-          <h1 class="title" style="font-size: 2.8rem;">WHO ARE WE?</h1>
-          <p class="description" style="font-size: 1.4rem;">
+        <div
+          class="text"
+          style="left: 50%; top: 57%; font-size: 90%; width: 50%"
+        >
+          <h1 class="title" style="font-size: 2.8rem">WHO ARE WE?</h1>
+          <p class="description" style="font-size: 1.4rem">
             We begin our journey in 1990. With the desire to help all people
             improve their health, our company - Fit4Life carries a noble
             mission, we ensure 100% our clients have the best fitness and
@@ -89,9 +103,12 @@
       <div>
         <div class="introduction">
           <img src="image/aboutus-whatwedo.jpg" alt="#" />
-          <div class="text" style="left: 70%; top: 32%; font-size: 90%; width: 45%;">
-            <h1 class="title" style="font-size: 3rem;">What we do?</h1>
-            <p class="description" style="font-size: 1.7rem;">
+          <div
+            class="text"
+            style="left: 70%; top: 32%; font-size: 90%; width: 45%"
+          >
+            <h1 class="title" style="font-size: 3rem">What we do?</h1>
+            <p class="description" style="font-size: 1.7rem">
               We are the professional consultant in fitness and lifestyle. Our
               recipe about health are the combination between traning and
               healthy eating.
@@ -111,8 +128,10 @@
               width: 50%;
             "
           >
-            <h1 class="title" style="font-size: 3rem;">What is fitness and why is it important?</h1>
-            <p class="description" style="font-size: 1.55rem;">
+            <h1 class="title" style="font-size: 3rem">
+              What is fitness and why is it important?
+            </h1>
+            <p class="description" style="font-size: 1.55rem">
               Physical activity or exercise can improve your health and reduce
               the risk of developing several diseases like type 2 diabetes,
               cancer and cardiovascular disease. Physical activity and exercise
@@ -133,16 +152,16 @@
             <div class="col-md-6">
               <a href="#"
                 ><img
-                style="margin-top: 5%; width: 200px; padding-left: 4rem;" 
+                  style="margin-top: 5%; width: 200px; padding-left: 4rem"
                   src="image/Logo_white.png"
                   alt=""
               /></a>
-               <div>
+              <div>
                 <script src="js/platform.js" defer></script>
                 <div
                   class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"
                 ></div>
-              </div> 
+              </div>
             </div>
             <div class="col-md-6 tx1">
               <ul>
@@ -167,15 +186,27 @@
               Copy &copy; Website produced by team CodeCadre . All rights
               reserved.
             </footer>
+            <br />
+            <marquee width="100%" direction="left" height="30px">
+              <p
+                id="current_dateandtime"
+                style="
+                  color: white;
+                  font-size: 16px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              ></p> </marquee
+            ><br />
           </div>
         </div>
       </div>
-      <marquee width="100%" direction="left" height="30px">
-        <p id="current_dateandtime"></p>
-      </marquee>
     </footer>
-    
   </body>
   <script src="script/menu.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
   <script src="script/datetime.js"></script>
 </html>
