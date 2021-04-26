@@ -228,7 +228,9 @@
 }
 
 .styled:hover {
+    color: white;
     background-color: rgba(255, 0, 0, 1);
+    font-size: 3.5rem;
 }
 
 .styled:active {
