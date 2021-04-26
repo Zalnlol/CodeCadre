@@ -258,8 +258,8 @@ body {
 }
 #popup-tilte {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20pt;
-  margin-top: 4rem;
+  font-size: 22pt;
+  margin-top: 2%;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 12px red, 0 0 1px darkred;
@@ -268,17 +268,18 @@ body {
 #popup-input {
   display: flex;
   margin: auto;
-  margin-top: 4%;
   border-radius: 10px;
   width: auto;
 }
 #popup-height{
   display: flex;
+  margin-top: 1%;
   margin: auto;
   border-radius: 10px;
   width: auto;
 }
 #popup-weight{
+  margin-top: 1%;
   display: flex;
   margin: auto;
   border-radius: 10px;

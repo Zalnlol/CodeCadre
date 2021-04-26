@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>healthy_nutrition</title>
   <!--Favicon logo-->
   <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
 
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="style/DaN.css" />
   <!--add javacript-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
   <style></style>
 </head>
 
@@ -82,15 +82,25 @@
       Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
       Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
     
-      <div style="width:100%; height: auto;" >
-        <img src="image/BMI formmula.png" style="float:left;width:48%;height:100%;">
-        <img src="image/BMI level.png" style="float:left;width:48%;height:100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+        </div>
+        <div class="col-sm-5">
+          <img src="image/BMI level.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+        </div>
+      </div>
+    </div>
+        
+       
       </div>
       </div>
+    
     <br>
-   <div class="container">
-    <h3 style="font-size: 2.4rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
-   </div>
+    <div class="container">
+      <h3 style="font-size: 2.4rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
+    </div>
 
 
     <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
@@ -142,7 +152,7 @@
   </section>
   <div style="background-image: url(image/BMIbackground.png);">
   <section id="section2">
-    <h1 id="BMI" style="font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 4%; font-size: 4rem;">BMI</h1>
+    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 4%; font-size: 4rem; color: white;">BMI</h1>
     <div class="row">
 
       <div class="col-md-3" id="col-button">
@@ -169,17 +179,17 @@
           (Obese)
         </button>
       </div>
+      </div>
+    </section>
     </div>
-  </section>
+    <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
+    </div>
+    <div id="set-1"></div>
+    <div id="set-2"></div>
+    <div id="set-3"></div>
+    <!-- Cai phan dau -->
 
-  <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;"></div>
-  <div id="set-1"></div>
-  <div id="set-2"></div>
-  <div id="set-3"></div>
-
-  <!-- Cai phan dau -->
-
-  <section id="section3" data-aos="fade-left">
+    <!-- <section id="section3" data-aos="fade-left">
     <div class="container" style="padding: 2rem;">
       <div class="row">
         <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
@@ -189,7 +199,7 @@
         </div>
         <div class="col-md-4">
 
-          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
   
         </div>
       </div>
@@ -198,15 +208,15 @@
 
      
 
-  </section> 
+  </section>  -->
 
-  <!-- Cai phan hai -->
-  <section id="section4" data-aos="fade-right">
+    <!-- Cai phan hai -->
+    <!-- <section id="section4" data-aos="fade-right">
     <div class="container" style="padding: 2rem;">
       <div class="row">
         <div class="col-md-4">
 
-          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
   
         </div>
         <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
@@ -216,9 +226,9 @@
         </div>
         
       </div>
-  </section> 
-  <!-- Cai phan ba -->
-   <section id="section5" data-aos="fade-left">>
+  </section>  -->
+    <!-- Cai phan ba -->
+    <!-- <section id="section5" data-aos="fade-left">>
     <div class="container" style="padding: 2rem;">
       <div class="row">
         <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
@@ -228,57 +238,58 @@
         </div>
         <div class="col-md-4">
 
-          <img src="image/test.jpg" style="width: 100%;" id="col-image" alt="">
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
   
         </div>
       </div>
 
-  </section> 
+  </section>  -->
 
-  <!-- Phan footer -->
+    <!-- Phan footer -->
 
-  <div class="footer">
-    <div class="container">
+    <div class="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <a href="#"><img style="margin-top: 2%; width: 160px; padding-left: 1.2rem;"
-                        src="image/Logo_white.png" alt="" /></a>
-                <div>
-                    <script src="js/platform.js" defer></script>
-                    <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
-                </div>
+          <div class="col-md-6">
+            <a href="#"><img style="margin-top: 2%; width: 160px; padding-left: 1.2rem;" src="image/Logo_white.png"
+                alt="" /></a>
+            <div>
+              <script src="js/platform.js" defer></script>
+              <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
             </div>
-            <div class="col-md-6 tx1">
-                <ul>
-                    <p class="title">FOLLOW US</p>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                    <hr />
-                    <li><a class="title" href="#">About us</a></li>
-                    <li><a href="#">Who are we?</a></li>
-                    <li><a href="#">What we do?</a></li>
-                    <li>
-                        <a href="#">What is fitness and why is it important?</a>
-                    </li>
-                    <li><a href="#">How many types of lifestyle are there?</a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="col-md-6 tx1">
+            <ul>
+              <p class="title">FOLLOW US</p>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <hr />
+              <li><a class="title" href="#">About us</a></li>
+              <li><a href="#">Who are we?</a></li>
+              <li><a href="#">What we do?</a></li>
+              <li>
+                <a href="#">What is fitness and why is it important?</a>
+              </li>
+              <li><a href="#">How many types of lifestyle are there?</a></li>
+            </ul>
+          </div>
         </div>
         <div class="row">
           <footer class="copyright">
-              Copy &copy; Website produced by team CodeCadre . All rights
-              reserved.
+            Copy &copy; Website produced by team CodeCadre . All rights
+            reserved.
           </footer><br>
           <marquee width="100%" direction="left" height="30px">
-              <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+            <p id="current_dateandtime"
+              style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
           </marquee><br>
+        </div>
       </div>
     </div>
-</div>
 
-</footer>
+    </footer>
 </body>
 
 <script>
@@ -383,38 +394,49 @@
         document.getElementById("set-0").innerHTML = caption;
         document.getElementById("set-1").innerHTML =
           '<section id="section3" data-aos="fade-left">' +
-          '<div class="row row-sc"> ' +
-          '<div class="col-md-4" id="sc3-image-col-1">' +
-          '<p id="Title-section-1">' + data[i].title1 + '</p>' +
-          '<p id="text-section-1"></p>' + data[i].text1 +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title1 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text1 + ' </p>' +
           '</div>' +
-          '<div class="col-md-7">' +
-          '<img src="' + data[i].image1 + '" id="col-image" alt="">' +
+          '<div class="col-md-4">' +
+          '<img src="' + data[i].image1 + '" style="width: 100%;" id="col-image" alt="">' +
           '</div>' +
-          '</section>'
+          '</div>' +
+          '</div>' +
+          '</section> '
         document.getElementById("set-2").innerHTML =
           '<section id="section4" data-aos="fade-right">' +
-          '<div class="row row-sc">' +
-          ' <div class="col-md-7">' +
-          '<img src="' + data[i].image2 + '" id="col-image" alt="">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-4">' +
+
+          '<img src="' + data[i].image2 + '" style="width: 100%;" id="col-image" alt="">' +
+
           '</div>' +
-          ' <div class="col-md-4" id="sc3-image-col-1">' +
-          ' <p id="Title-section-1">' + data[i].title2 + '</p>' +
-          '<p id="text-section-1">' + data[i].text2 + ' </p>' +
-          '</div >' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title2 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text2 + ' </p>' +
+          '</div>' +
+          '</div>' +
           '</section>'
 
         document.getElementById("set-3").innerHTML =
-          '<section id="section5" data-aos="fade-left">' +
-          '<div class="row row-sc">' +
-          '<div class="col-md-4" id="sc3-image-col-1">' +
-          '<p id="Title-section-1">' + data[i].title3 + '</p>' +
-          '<p id="text-section-1">' + data[i].text3 + '</p>' +
+          '<section id="section5" data-aos="fade-left">'+
+          '<div class="container" style="padding: 2rem;">'+
+          '<div class="row">'+
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">'+
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title3 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text3 + ' </p>' +
           '</div>' +
-          '<div class="col-md-7">' +
-          '<img src="' + data[i].image3 + '" id="col-image" alt="">' +
+          '<div class="col-md-4">' +
+
+          '<img src="' + data[i].image3 + '" style="width: 100%;" id="col-image" alt="">' +
+
           '</div>' +
-          '</section>'
+          '</div>' +
+          '</section> ' 
       }
     }
 
@@ -443,4 +465,5 @@
   });
 </script>
 <script src="script/datetime.js"></script>
+
 </html>
