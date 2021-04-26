@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Us</title>
     <!--Favicon logo-->
     <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
     <link
@@ -38,54 +38,50 @@
       background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);
     "
   >
-    <nav
-      class="navbar navbar-default"
-      role="navigation"
-      style="margin-bottom: auto"
-    >
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button
-          type="button"
-          class="navbar-toggle"
-          data-toggle="collapse"
-          data-target=".navbar-ex1-collapse"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="homepage.html"
-          ><img
-            src="image/Logo_color.png"
-            width="100%"
-            alt=""
-            style="width: 160px; padding: 12px; margin-bottom: 0.5rem"
-        /></a>
-      </div>
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
+          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;" /></a>
+    </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem">
-          <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
-          <li><a href="Physical_Activity.html">Physical Activity</a></li>
-          <li><a href="news.html">Resources</a></li>
-          <li><a href="aboutus.html">About us</a></li>
-          <li><a href="contactus.html">Contact us</a></li>
-          <li>
-            <div id="inner-name" style="font-weight: bold"></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
 
-            <script>
-              if (sessionStorage.getItem("UserName") != null) {
-                document.getElementById("inner-name").innerHTML =
-                  "Hi! " + sessionStorage.getItem("UserName");
-              }
-            </script>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <li><a href="Diet_and_Nutrition.html">Diet & Nutrition</a></li>
+        <li><a href="Physical_Activity.html">Physical Activity</a></li>
+        <li><a href="news.html">Resources</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li>
+          <div id="inner-name" style="font-weight: bold;"></div>
+
+
+          <script>
+
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "Hi! " + sessionStorage.getItem("UserName");
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+            }
+            
+            document.getElementById("inner-name").innerHTML = ab;
+            
+          </script>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
 
     <div class="contact-us">
       <div class="d-flex justify-content-between">
