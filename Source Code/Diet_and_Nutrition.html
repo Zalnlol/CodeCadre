@@ -171,8 +171,7 @@
       </div>
     </div>
   </section>
-
-  <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;"></div>
+</div>
   <div id="set-1"></div>
   <div id="set-2"></div>
   <div id="set-3"></div>
@@ -280,107 +279,41 @@
 
 </footer>
 </body>
-
 <script>
-
-  var data = [];
-  var id = "";
-
-  if (sessionStorage.getItem("year") != null) {
-    id = sessionStorage.getItem("year");
-  }
-  else {
-    id = "2";
-  }
-
-  if ((id != "") && (sessionStorage.getItem("BMI") != null)) {
-    id += sessionStorage.getItem("BMIId");
-  }
-  else {
-    id += "2";
-  }
-
-  console.log("truoc call(id) id=" + id);
-
-
-
-  // Lay du lieu tu json
-  readTextFile("js/Diet_and_Nutrition.json", function (text) {
-    data = JSON.parse(text);
-    call(id);
-  });
-
-
   AOS.init({
     duration: 1200,
   });
 
+  var id = "";
+  var data;
 
-  //choose age
-  function check01(age) {
+  if (sessionStorage.getItem("year") != null) {
+
+    id = sessionStorage.getItem("year");
+  }
+
+
+  function check01(gt1) {
     if (id != "") {
-      id = id.substr(1);  // lay bmi
+      id == "";
     }
-    // document.getElementById("set-1").innerHTML = "";
-    // document.getElementById("set-2").innerHTML = "";
-    // document.getElementById("set-3").innerHTML = "";
-    id = age + id;
-    call(id);
+    document.getElementById("set-1").innerHTML = "";
+    document.getElementById("set-2").innerHTML = "";
+    document.getElementById("set-3").innerHTML = "";
+    id = gt1;
+  }
+
+  function check02(gt2) {
+    if ((id != "") && (id.length < 2)) {
+      id += gt2;
+      call()
+    }
 
   }
 
-  //choose bmi
-  function check02(bmi) {
-    switch (id.length) {
-      case 0:
-        id = "22"; break;
-      case 1:
-        id += bmi;
-        break;
-      case 2:
-        id = id.substr(0, 1) + bmi;
-        break;
-    }
-
-    call(id);
-
-  }
-
-  function call(id) {
-    console.log("in call(),  id: " + id);
-
+  function call() {
     for (i = 0; i <= 11; i++) {
       if (data[i].id == id) {
-        let caption = "";
-        switch (id) {
-          case "11":
-            caption = "Age: 13 to 19 , BMI: Under 18.5 (Under weight)"; break;
-          case "12":
-            caption = "Age: 13 to 19 , BMI: 18.5 to 24.9 (Normal)"; break;
-          case "13":
-            caption = "Age: 13 to 19 , BMI: 25 to 29 (Over Weight)"; break;
-          case "14":
-            caption = "Age: 13 to 19 , BMI: 30 or higher (Obese)"; break;
-          case "21":
-            caption = "Age: 20 to 60 , BMI: Under 18.5 (Under weight)"; break;
-          case "22":
-            caption = "Age: 20 to 60  , BMI: 18.5 to 24.9 (Normal)"; break;
-          case "23":
-            caption = "Age: 20 to 60  , BMI: 25 to 29 (Over Weight)"; break;
-          case "24":
-            caption = "Age: 20 to 60  , BMI: 30 or higher (Obese)"; break;
-          case "31":
-            caption = "Age: 60 or higher , BMI: Under 18.5 (Under weight)"; break;
-          case "32":
-            caption = "Age: 60 or higher  , BMI: 18.5 to 24.9 (Normal)"; break;
-          case "33":
-            caption = "Age: 60 or higher  , BMI: 25 to 29 (Over Weight)"; break;
-          case "34":
-            caption = "Age: 60 or higher  , BMI: 30 or higher (Obese)"; break;
-        }
-
-
-        document.getElementById("set-0").innerHTML = caption;
         document.getElementById("set-1").innerHTML =
           '<section id="section3" data-aos="fade-left">' +
           '<div class="row row-sc"> ' +
@@ -421,6 +354,11 @@
 
   }
 
+  // Lay du lieu tu json
+
+  readTextFile("js/Diet_and_Nutrition.json", function (text) {
+    data = JSON.parse(text);
+  });
 
 
   function readTextFile(file, callback) {
@@ -434,6 +372,7 @@
     }
     rawFile.send(null);
   }
+
 
 
 </script>
