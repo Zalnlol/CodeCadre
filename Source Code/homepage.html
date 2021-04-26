@@ -51,7 +51,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
-          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;"/></a>
+          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,14 +64,14 @@
         <li><a href="aboutus.html">About us</a></li>
         <li><a href="contactus.html">Contact us</a></li>
         <li>
-          <div id="inner-name" style="font-weight: bold;" ></div>
+          <div id="inner-name" style="font-weight: bold;"></div>
 
 
           <script>
-            if(sessionStorage.getItem("UserName")!=null){
-              document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
+            if (sessionStorage.getItem("UserName") != null) {
+              document.getElementById("inner-name").innerHTML = "Hi! " + sessionStorage.getItem("UserName");
             }
-            
+
           </script>
         </li>
 
@@ -85,12 +85,12 @@
           <p id="title-hello">WELCOME TO FIT4LIFE</p>
         </div>
       </div>
-      <div id="checkUser" > </div>
+      <div id="checkUser"> </div>
 
       <script>
-         
-        if(sessionStorage.getItem("UserName")==null){
-          document.getElementById("checkUser").innerHTML='<div class="row" id="row-2" style="width: 30%" data-aos="fade-right"><div class="col-sm-12" style="width: auto"><div id="btn-press-here"><a href="#xmas-popup"> <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" /></a></div></div></div>';
+
+        if (sessionStorage.getItem("UserName") == null) {
+          document.getElementById("checkUser").innerHTML = '<div class="row" id="row-2" style="width: 30%" data-aos="fade-right"><div class="col-sm-12" style="width: auto"><div id="btn-press-here"><a href="#xmas-popup"> <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" /></a></div></div></div>';
         }
       </script>
 
@@ -202,75 +202,103 @@
         </div>
       </div>
     </section>
-      <footer>
-        <!---->
-        <div class="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6">
-                      <a href="#"><img style="margin-top: 5%; width: 200px; padding-left: 4rem;"  
-                              src="image/Logo_white.png" alt=""></a>
-                              <!-- Khi nào sử dụng nhớ mở -->
-                              <!-- <div>
+    <footer>
+      <!---->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#"><img style="margin-top: 5%; width: 200px; padding-left: 4rem;" src="image/Logo_white.png"
+                  alt=""></a>
+              <!-- Khi nào sử dụng nhớ mở -->
+              <!-- <div>
                                 <script src="js/platform.js" defer></script>
                                 <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
                               </div>  -->
-                  </div>
-                  <div class="col-md-6 tx1">
-                    <ul>
-                      <p class="title">FOLLOW US</p>
-                      <a href="#"><i class="fab fa-facebook-square"></i></a>
-                      <a href="#"><i class="fab fa-instagram-square"></i></a> 
-                      <a href="#"><i class="fab fa-twitter-square"></i></a>
-                      <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                      <hr>
-                      <li><a class="title" href="#">About us</a></li>
-                      <li><a href="#">Who are we?</a></li>
-                      <li><a href="#">What we do?</a></li>
-                      <li><a href="#">What is fitness and why is it important?</a></li>
-                      <li><a href="#">How many types of lifestyle are there?</a></li>
-                  </ul>
-                  </div>
-              </div>
-              <div class="row">
-                <footer class="copyright">
-                  Copy &copy; Website produced by team CodeCadre . All rights reserved.
-              </footer>
-              </div>
+            </div>
+            <div class="col-md-6 tx1">
+              <ul>
+                <p class="title">FOLLOW US</p>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                <hr>
+                <li><a class="title" href="#">About us</a></li>
+                <li><a href="#">Who are we?</a></li>
+                <li><a href="#">What we do?</a></li>
+                <li><a href="#">What is fitness and why is it important?</a></li>
+                <li><a href="#">How many types of lifestyle are there?</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <footer class="copyright">
+              Copy &copy; Website produced by team CodeCadre . All rights reserved.
+            </footer>
           </div>
         </div>
+      </div>
     </footer>
 
-  <script>
-    function kt(){
-        var Rln=document.getElementById("popup-input").value
-            var Sln=/\w{1,}/
-            if(!Sln.test(Rln)){
-                alert("Name cannot Blank");
-                return false;
-            } else{
-              sessionStorage.setItem ("UserName",Rln);
-            }
-    }
- 
-      
-   
+    <script>
+      function kt() {
+        var Rln = document.getElementById("popup-input").value
+        var Sln = /\w{1,}/
+        if (!Sln.test(Rln)) {
+          alert("Name cannot Blank");
+          return false;
+        } else {
 
-</script>
+        }
 
-  <!-- Popup  -->
-  <div id="xmas-popup" class="popup">
-    <div class="popup-content" style="background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);">
-      <a href="homepage.html" class="close">x</a>
-      <p id="popup-tilte">Please let me know your name !</p>
+        var ph = document.getElementById("popup-height").value
+        var Sln = /\d{1,}/
+        if (!Sln.test(ph)) {
+          alert("Height cannot Blank");
+          return false;
+        } else {
 
-      <form onsubmit="return kt()" action="homepage.html">
-        <input type="text" id="popup-input" placeholder="Press Name !">
-        <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name" style=" margin:auto; display: flex; margin-top: 2rem;">
-      </form>
+        }
+
+        var pw = document.getElementById("popup-weight").value
+        var Sln = /\d{1,}/
+        if (!Sln.test(pw)) {
+          alert("Weight cannot Blank");
+          return false;
+        } else {
+          sessionStorage.setItem("weight", pw);
+          sessionStorage.setItem("height", ph);
+          sessionStorage.setItem("UserName", Rln);
+        }
+
+      }
+
+
+
+
+    </script>
+
+    <!-- Popup  -->
+    <div id="xmas-popup" class="popup">
+      <div class="popup-content"
+        style="background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);">
+        <a href="homepage.html" class="close">x</a>
+        <p id="popup-tilte">Please let me know your information !</p>
+
+        <form onsubmit="return kt()" action="homepage.html">
+          <input type="text" id="popup-input" placeholder="Press Name !">
+          <br>
+          <input type="text" id="popup-height" placeholder="Press Height">
+          <br>
+          <input type="text" id="popup-weight" placeholder="Press weight">
+          <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name"
+            style=" margin:auto; display: flex; margin-top: 2rem;">
+
+        </form>
+      </div>
+
     </div>
-    
-  </div>
 
 
 
