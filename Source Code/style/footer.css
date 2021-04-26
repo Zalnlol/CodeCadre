@@ -27,12 +27,22 @@
   color: white;
   font-size: 1.4rem;
   padding: 1%;
-  margin-top: 3rem;
+  margin-top: 2%;
 }
 .eapp-visitor-counter-root-layout-component.jsx-1599241831 {
   padding: 2rem;
   margin-left: 2rem;
 }
 .kjIukz {
-  width: 70%;
+  width: 80%;
+  height: 200px;
+}
+.tx1 ul li a{
+  text-decoration: none;
+}
+.tx1 ul li a:hover{
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  transition: 0.5s;
 }

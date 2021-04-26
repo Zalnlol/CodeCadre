@@ -36,36 +36,43 @@
 
 <body>
   <!-- Phan menu -->
-  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto;">
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto; background-color: darkslategrey">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header" style="margin: auto;">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only" style="background-color: white;">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
-          style="width: 160px; padding: 12px; margin-bottom: 0.5rem;" /></a>
+      <a href="homepage.html"><img src="image/Logo_white.png" width="85%" alt=""
+          style="width: 124px; margin-left: 4rem; margin-bottom: 0.1rem; padding: 4%" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 2%; margin-right: 3rem;">
 
-        <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
-        <li><a href="Physical_Activity.html">Physical Activity</a></li>
-        <li><a href="news.html">Resources</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="Diet_and_Nutrition.html" style="color: white; font-size: 2.2rem;">Diet & Nutrition</a></li>
+        <li><a href="Physical_Activity.html" style="color: white; font-size: 2.2rem;">Physical Activity</a></li>
+        <li><a href="news.html" style="color: white; font-size: 2.2rem;">Resources</a></li>
+        <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
+        <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
         <li>
-          <div id="inner-name" style="font-weight: bold;"></div>
+          <div id="inner-name" style="font-weight: bold; color: white; font-size: 2.2rem;"></div>
 
 
           <script>
+
+            let ab = ""
             if (sessionStorage.getItem("UserName") != null) {
-              document.getElementById("inner-name").innerHTML = "Hi! " + sessionStorage.getItem("UserName");
+              ab = "<p style='text-align: center;'>Hi! " + sessionStorage.getItem("UserName")+"</p>";
             }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " <span style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</span>";
+            }
+            
+            document.getElementById("inner-name").innerHTML = ab;
 
           </script>
         </li>
@@ -112,39 +119,69 @@
               <img src="image/sesion2-1.jpg" />
             </div>
 
-            <h3 id="title1">Teen</h3>
-            <h4 id="mota">Range from 13 to 19</h4>
-          </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+          </div>
+          <div class="col-sm-5">
+            <img src="image/BMI level.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+          </div>
         </div>
       </div>
 
 
-      <div class="col-sm-4" style="padding: 2rem;">
-        <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('2')">
-            <div class="image-box">
-              <img src="image/sesion2-2.jpg" />
-            </div>
+    </div>
+    </div>
 
-            <h3 id="title1">Adult</h3>
-            <h4 id="mota">Range from 20 to 60</h4>
-          </a>
+    <br>
+    <div class="container">
+      <h3 style="font-size: 2rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
+      <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
+
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('1')">
+              <div class="image-box">
+                <img src="image/sesion2-1.jpg" />
+              </div>
+  
+              <h3 id="title1">Teen</h3>
+              <h4 id="mota">Range from 13 to 19</h4>
+            </a>
+          </div>
         </div>
-      </div>
-
-
-      <div class="col-sm-4" style="padding: 2rem;">
-        <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('3')">
-            <div class="image-box">
-              <img src="image/sesion2-3.jpg" />
-            </div>
-
-            <h3 id="title1">Orlder Adult</h3>
-            <h4 id="mota">60 years and older</h4>
-          </a>
+  
+  
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('2')">
+              <div class="image-box">
+                <img src="image/sesion2-2.jpg" />
+              </div>
+  
+              <h3 id="title1">Adult</h3>
+              <h4 id="mota">Range from 20 to 60</h4>
+            </a>
+          </div>
         </div>
-      </div>
+  
+  
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('3')">
+              <div class="image-box">
+                <img src="image/sesion2-3.jpg" />
+              </div>
+  
+              <h3 id="title1">Orlder Adult</h3>
+              <h4 id="mota">60 years and older</h4>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    
 
 
 
@@ -152,41 +189,44 @@
   </section>
   <div style="background-image: url(image/BMIbackground.png);">
   <section id="section2">
-    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 4%; font-size: 4rem; color: white;">BMI</h1>
-    <div class="row">
+    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 2%; color: white;">BMI</h1>
+    <div class="container">
+      <div class="row">
 
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
-          Below 18.5
-          (Underweight)
-        </button>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
+            Below 18.5
+            (Underweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
+            18.5 - 24.9
+            (Normal)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
+            25.0 - 29.9
+            (Overweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
+            30 or higher
+            (Obese)
+          </button>
+        </div>
+        </div>
+      </section>
       </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
-          18.5 - 24.9
-          (Normal)
-        </button>
+      <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
       </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
-          25.0 - 29.9
-          (Overweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
-          30 or higher
-          (Obese)
-        </button>
-      </div>
-      </div>
-    </section>
+      <div id="set-1"></div>
+      <div id="set-2"></div>
+      <div id="set-3"></div>
     </div>
-    <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
-    </div>
-    <div id="set-1"></div>
-    <div id="set-2"></div>
-    <div id="set-3"></div>
+    
     <!-- Cai phan dau -->
 
     <!-- <section id="section3" data-aos="fade-left">
@@ -247,49 +287,49 @@
 
     <!-- Phan footer -->
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="#"><img style="margin-top: 2%; width: 160px; padding-left: 1.2rem;" src="image/Logo_white.png"
-                alt="" /></a>
-            <div>
-              <script src="js/platform.js" defer></script>
-              <div class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
+    <footer>
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;"
+                              src="image/Logo_white.png" alt="" /></a>
+                      <div style= "width: 100%;">
+                          <script src="js/platform.js" defer></script>
+                          <div style="width: 100%;" class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 tx1">
+                      <ul>
+                          <p class="title">FOLLOW US</p>
+                          <a href="#"><i class="fab fa-facebook-square"></i></a>
+                          <a href="#"><i class="fab fa-instagram-square"></i></a>
+                          <a href="#"><i class="fab fa-twitter-square"></i></a>
+                          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                          <hr />
+                          <li><a class="title" href="#">About us</a></li>
+                          <li><a href="#">Who are we?</a></li>
+                          <li><a href="#">What we do?</a></li>
+                          <li>
+                              <a href="#">What is fitness and why is it important?</a>
+                          </li>
+                          <li><a href="#">How many types of lifestyle are there?</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                <footer class="copyright">
+                    Copy &copy; Website produced by team CodeCadre . All rights
+                    reserved.
+                </footer><br>
+                <marquee width="100%" direction="left" height="30px">
+                    <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+                </marquee><br>
             </div>
           </div>
-          <div class="col-md-6 tx1">
-            <ul>
-              <p class="title">FOLLOW US</p>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-pinterest-square"></i></a>
-              <hr />
-              <li><a class="title" href="#">About us</a></li>
-              <li><a href="#">Who are we?</a></li>
-              <li><a href="#">What we do?</a></li>
-              <li>
-                <a href="#">What is fitness and why is it important?</a>
-              </li>
-              <li><a href="#">How many types of lifestyle are there?</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <footer class="copyright">
-            Copy &copy; Website produced by team CodeCadre . All rights
-            reserved.
-          </footer><br>
-          <marquee width="100%" direction="left" height="30px">
-            <p id="current_dateandtime"
-              style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
-          </marquee><br>
-        </div>
       </div>
-    </div>
-
-    </footer>
+      
+  </footer>
 </body>
 
 <script>
@@ -423,10 +463,10 @@
           '</section>'
 
         document.getElementById("set-3").innerHTML =
-          '<section id="section5" data-aos="fade-left">'+
-          '<div class="container" style="padding: 2rem;">'+
-          '<div class="row">'+
-          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">'+
+          '<section id="section5" data-aos="fade-left">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
           '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title3 + '</p>' +
           '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text3 + ' </p>' +
           '</div>' +
@@ -436,7 +476,7 @@
 
           '</div>' +
           '</div>' +
-          '</section> ' 
+          '</section> '
       }
     }
 
@@ -465,5 +505,7 @@
   });
 </script>
 <script src="script/datetime.js"></script>
+
+
 
 </html>

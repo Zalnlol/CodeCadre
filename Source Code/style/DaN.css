@@ -63,10 +63,10 @@
 }
 
 #DaN-Button {
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 15%;
   display: inline-block;
-  height: 30%;
+  height: 15%;
 }
 .col-md-3 {
   text-align: center;
@@ -101,4 +101,10 @@
   margin-top: 1.05rem;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  border-bottom-color: white;
+  transition: 0.5s;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
 }

@@ -53,3 +53,28 @@
 @keyframes identifier {
     
 }
+.creator-thang{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(0, 150, 150);
+    text-shadow: 0 0 3px darkgrey;
+  }
+  .col-sm-2 p img:hover {
+    width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  div.container-thang3 {
+    padding: 10%;
+  }
+  .col-sm-2{
+    opacity: 0.5;
+  }
+  .col-sm-2:hover{
+    background-color:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1.0;
+  }
+  .padding-creator{
+    padding: 10rem;
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Us</title>
     <!--Favicon logo-->
     <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
     <link
@@ -33,252 +33,303 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/homepage.css" />
   </head>
-  <body
-    style="
-      background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);
-    "
-  >
+  <body>
     <nav
       class="navbar navbar-default"
       role="navigation"
-      style="margin-bottom: auto"
+      style="margin-bottom: auto; background-color: darkslategrey"
     >
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+      <div class="navbar-header" style="margin: auto">
         <button
           type="button"
           class="navbar-toggle"
           data-toggle="collapse"
           data-target=".navbar-ex1-collapse"
         >
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only" style="background-color: white"
+            >Toggle navigation</span
+          >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a href="homepage.html"
           ><img
-            src="image/Logo_color.png"
-            width="100%"
+            src="image/Logo_white.png"
+            width="85%"
             alt=""
-            style="width: 160px; padding: 12px; margin-bottom: 0.5rem"
+            style="
+              width: 124px;
+              margin-left: 4rem;
+              margin-bottom: 0.1rem;
+              padding: 4%;
+            "
         /></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem">
-          <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
-          <li><a href="Physical_Activity.html">Physical Activity</a></li>
-          <li><a href="news.html">Resources</a></li>
-          <li><a href="aboutus.html">About us</a></li>
-          <li><a href="contactus.html">Contact us</a></li>
+        <ul
+          class="nav navbar-nav navbar-right"
+          style="margin-top: 2%; margin-right: 3rem"
+        >
           <li>
-            <div id="inner-name" style="font-weight: bold"></div>
+            <a
+              href="Diet_and_Nutrition.html"
+              style="color: white; font-size: 2.2rem"
+              >Diet & Nutrition</a
+            >
+          </li>
+          <li>
+            <a
+              href="Physical_Activity.html"
+              style="color: white; font-size: 2.2rem"
+              >Physical Activity</a
+            >
+          </li>
+          <li>
+            <a href="news.html" style="color: white; font-size: 2.2rem"
+              >Resources</a
+            >
+          </li>
+          <li>
+            <a href="aboutus.html" style="color: white; font-size: 2.2rem"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="contactus.html" style="color: white; font-size: 2.2rem"
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <div
+              id="inner-name"
+              style="font-weight: bold; color: white; font-size: 2.2rem"
+            ></div>
 
             <script>
+              let ab = "";
               if (sessionStorage.getItem("UserName") != null) {
-                document.getElementById("inner-name").innerHTML =
-                  "Hi! " + sessionStorage.getItem("UserName");
+                ab = "Hi! " + sessionStorage.getItem("UserName");
               }
+              if (sessionStorage.getItem("BMI") != null) {
+                ab += " - BMI:  " + sessionStorage.getItem("BMI");
+              }
+
+              document.getElementById("inner-name").innerHTML = ab;
             </script>
           </li>
         </ul>
       </div>
     </nav>
+    <div
+      style="
+        background-image: url(image/z2453809891735_61aecf4f182661695edb4256cd5f325f.jpg);
+      "
+    >
 
-    <div class="contact-us">
-      <div class="d-flex justify-content-between">
-        <div style="text-align: center">
-          <br /><br />
-          <img
-            style="width: 480px"
-            width="100%"
-            src="image/contactus.png"
-            alt="#"
-          />
-        </div>
-      </div>
-    </div>
-    <p style="text-align: center; margin-top: 3rem; margin-bottom: 3rem">
-      <a class="btn btn-primary" data-toggle="modal" href="#modal-id"
-        >SEND FEEDBACK</a
-      >
-    </p>
-
-    <div class="modal fade" id="modal-id">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            >
-              &times;
-            </button>
-            <h4 class="modal-title">Connect to us</h4>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <form id="feedbackForm" action="https://www.facebook.com/">
-                <div class="form-group">
-                  <label class="firstname" for="firstname">First name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstname"
-                    name="firstname"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="lb" for="lastname">Last name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastname"
-                    name="lastname"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="lb" for="gender">Gender</label>
-                  <input type="radio" id="gender" name="gender" value="Male" />
-                  Male
-                  <input
-                    type="radio"
-                    id="gender"
-                    name="gender"
-                    value="Female"
-                  />
-                  Female
-                  <input
-                    type="radio"
-                    id="gender"
-                    name="gender"
-                    value="Undefinded"
-                  />
-                  Undefinded
-                </div>
-                <div class="form-group">
-                  <label class="lb" for="email">Email</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="lb" for="phone">Phone</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="lb" for="message">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <div class="modal-footer">
-                  <div class="form-group">
-                    <div
-                      style="text-align: left; font-size: 16px"
-                      id="messages"
-                    ></div>
-                  </div>
-                  <div class="form-group">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      Close
-                    </button>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.319350036688!2d106.66408561406833!3d10.786834792314465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1svi!2s!4v1602837652133!5m2!1svi!2s"
-      width="100%"
-      height="340px"
-      frameborder="0"
-      style="border: 0"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#"
-                ><img
-                  width="180px"
-                  style="margin-top: 5%; width: 200px; padding-left: 4rem"
-                  src="image/Logo_white.png"
-                  alt=""
-              /></a>
-              <div>
-                <script src="js/platform.js" defer></script>
-                <div
-                  class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"
-                ></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contact-us">
+            <div class="d-flex justify-content-between">
+              <div style="text-align: center">
+                <br /><br />
+                <img
+                  style="width: 410px; margin-top: 14%;"
+                  width="100%"
+                  src="image/contactus.png"
+                  alt="#"
+                />
               </div>
             </div>
-            <div class="col-md-6 tx1">
-              <ul>
-                <p class="title">FOLLOW US</p>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                <hr />
-                <li><a class="title" href="#">About us</a></li>
-                <li><a href="#">Who are we?</a></li>
-                <li><a href="#">What we do?</a></li>
-                <li>
-                  <a href="#">What is fitness and why is it important?</a>
-                </li>
-                <li><a href="#">How many types of lifestyle are there?</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <footer class="copyright">
-              Copy &copy; Website produced by team CodeCadre . All rights
-              reserved.
-            </footer>
-            <br />
-            <marquee width="100%" direction="left" height="30px">
-              <p
-                id="current_dateandtime"
-                style="
-                  color: white;
-                  font-size: 16px;
-                  font-family: Arial, Helvetica, sans-serif;
-                "
-              ></p> </marquee
-            ><br />
           </div>
         </div>
+
+        <div class="col-sm-5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title">Connect to us</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form id="feedbackForm" action="https://www.facebook.com/">
+                    <div class="form-group">
+                      <label class="firstname" for="firstname">First name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstname"
+                        name="firstname"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="lb" for="lastname">Last name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastname"
+                        name="lastname"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="lb" for="gender">Gender</label>
+                      <input
+                        type="radio"
+                        id="gender"
+                        name="gender"
+                        value="Male"
+                      />
+                      Male
+                      <input
+                        type="radio"
+                        id="gender"
+                        name="gender"
+                        value="Female"
+                      />
+                      Female
+                      <input
+                        type="radio"
+                        id="gender"
+                        name="gender"
+                        value="Undefinded"
+                      />
+                      Undefinded
+                    </div>
+                    <div class="form-group">
+                      <label class="lb" for="email">Email</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="lb" for="phone">Phone</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="lb" for="message">Message</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        id="message"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="form-group">
+                        <div
+                          style="text-align: left; font-size: 16px"
+                          id="messages"
+                        ></div>
+                      </div>
+                      <div class="form-group">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          Close
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
-    </footer>
+    </div>
+      
+      <!--
+      <p style="text-align: center; margin-top: 3rem; margin-bottom: 3rem">
+        <a class="btn btn-primary" data-toggle="modal" href="#modal-id"
+          >SEND FEEDBACK</a
+        >
+      </p>
+
+      <div class="modal fade" id="modal-id">
+      -->
+        
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.319350036688!2d106.66408561406833!3d10.786834792314465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1svi!2s!4v1602837652133!5m2!1svi!2s"
+        width="100%"
+        height="340px"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <footer>
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;"
+                              src="image/Logo_white.png" alt="" /></a>
+                      <div style= "width: 100%;">
+                          <script src="js/platform.js" defer></script>
+                          <div style="width: 100%;" class="elfsight-app-f96d1920-7c25-4b78-a55b-0df87325dfd6"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 tx1">
+                      <ul>
+                          <p class="title">FOLLOW US</p>
+                          <a href="#"><i class="fab fa-facebook-square"></i></a>
+                          <a href="#"><i class="fab fa-instagram-square"></i></a>
+                          <a href="#"><i class="fab fa-twitter-square"></i></a>
+                          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                          <hr />
+                          <li><a class="title" href="#">About us</a></li>
+                          <li><a href="#">Who are we?</a></li>
+                          <li><a href="#">What we do?</a></li>
+                          <li>
+                              <a href="#">What is fitness and why is it important?</a>
+                          </li>
+                          <li><a href="#">How many types of lifestyle are there?</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                <footer class="copyright">
+                    Copy &copy; Website produced by team CodeCadre . All rights
+                    reserved.
+                </footer><br>
+                <marquee width="100%" direction="left" height="30px">
+                    <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+                </marquee><br>
+            </div>
+          </div>
+      </div>
+      
+  </footer>
   </body>
   <script src="script/feedbackValidate.js"></script>
   <script src="script/menu.js"></script>
