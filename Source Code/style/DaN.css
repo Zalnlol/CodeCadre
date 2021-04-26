@@ -63,31 +63,56 @@
     transform: scale(1.4);
     
 }
-
-.section2{
-
-    background-image: url("../image/bmi.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-bottom: 10%;
-    width: auto;
+#section2{
+    background-color: black;
     height: auto;
 }
-.btn-group{
-    margin-left: 40%;
-    margin-top: 15%;
-}
-.section4{
-    background-image: url("../image/background1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-bottom: 10%;
 
-    width: auto;
-    height: auto;
+#DaN-Button{
+    margin-top: 20%;
+    margin-bottom: 30%;
+    display: inline-block;
+    height: 20%;
 }
-#inner-name {
-    text-align: center;
-    margin-top: 1rem;
-    display: flex;
+.col-md-3{
+    text-align:center;
+    height: 100%;
+
 }
+.row{
+    height: 100%;
+}
+/* Json */
+
+    .row-sc{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    #sc3-image-col-1{
+        padding-left: 5%;
+    }
+
+    /* #Title-section-1{}
+    #text-section-1{} 
+
+    /* Image */
+    .col-md-7{
+        
+        text-align:right;
+    }
+    #col-image{
+
+        display: inline-block; 
+    }
+
+    #section4{
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+
