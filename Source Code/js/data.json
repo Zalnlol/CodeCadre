@@ -1,39 +1,39 @@
 [
-    {"id":"pa01","name":"Walking", "pic":"../image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho1","name":"Walking", "pic":"../image/Walking.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
     
-    {"id":"pa02","name":"Running", "pic":"../image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+    {"id":"nho2","name":"Running", "pic":"../image/Running.JPG","description":"Lorem ipsum.","cat":"Bone"},
 
-    {"id":"pa03","name":"Swimming", "pic":"../image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho3","name":"Swimming", "pic":"../image/Swimming.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
 
-    {"id":"pa04","name":"Gymnastics", "pic":"../image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho4","name":"Gymnastics", "pic":"../image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
-    {"id":"pa05","name":"Hiking", "pic":"../image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre1","name":"Hiking", "pic":"../image/Hiking.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
 
-    {"id":"pa06","name":"Martial-Art", "pic":"../image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"phys activities"},
+    {"id":"tre2","name":"Martial-Art", "pic":"../image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"Vigorous"},
 
-    {"id":"pa07","name":"Bicycle Riding", "pic":"../image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre3","name":"Bicycle Riding", "pic":"../image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
 
-    {"id":"pa08","name":"Football", "pic":"../image/Football.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre4","name":"Football", "pic":"../image/Football.JPG","description":"Lorem ipsum.", "cat":"Vigorous"},
 
-    {"id":"pa09","name":"Tennis", "pic":"../image/Tennis.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon01","name":"Tennis", "pic":"../image/Tennis.JPG","description":"Lorem ipsum.", "cat":"Vigorous"},
 
-    {"id":"pa10","name":"Tug of war", "pic":"../image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon02","name":"Tug of war", "pic":"../image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
-    {"id":"pa11","name":"Jumping rope", "pic":"../image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon03","name":"Jumping rope", "pic":"../image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"Bone"},
 
-    {"id":"pa12","name":"Dancing", "pic":"../image/Dancing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon04","name":"Dancing", "pic":"../image/Dancing.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
     
-    {"id":"pa13","name":"Climbing", "pic":"../image/Climbing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon05","name":"Climbing", "pic":"../image/Climbing.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
-    {"id":"pa14","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon06","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
-    {"id":"pa15","name":"Weights", "pic":"../image/Weight.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon07","name":"Weights", "pic":"../image/Weight.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
-    {"id":"pa16","name":"Kayak", "pic":"../image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa16","name":"Kayak", "pic":"../image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
 
-    {"id":"pa17","name":"Golf", "pic":"../image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa17","name":"Golf", "pic":"../image/Golf.JPG","description":"Lorem ipsum.", "cat":"Moderate"},
 
-    {"id":"pa18","name":"Tai Chi", "pic":"../image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"pa18","name":"Tai Chi", "pic":"../image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"Muscle"},
 
     {"id":"fg01","name":"Vegies_beans", "pic":"../image/Vegies_beans.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
@@ -53,13 +53,11 @@
 
     {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
 
-    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
-
-    {"id":"bmilv1","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"patyp4","name":"Bone-strength","description":"Lorem ipsum.", "cat":"phys activities"}
 
 
 
