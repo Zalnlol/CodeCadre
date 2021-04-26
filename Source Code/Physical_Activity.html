@@ -28,9 +28,7 @@
         <link rel="stylesheet" href="style/Fit4Life.css">
         <link rel="stylesheet" href="style/homepage.css">
     <!--add javacript-->
-    <script>
-
-    </script>
+    <script src="script/MyLib.js"></script>
 
 <style>
     @font-face {
@@ -65,43 +63,50 @@
 <body>
 
     
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto;">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="homepage.html"><img src="image/Logo_color.png" width="100%" alt=""
-              style="width: 160px; padding: 12px; margin-bottom: 0.5rem;"/></a>
-        </div>
-    
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
-    
-            <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
-            <li><a href="Physical_Activity.html">Physical Activity</a></li>
-            <li><a href="news.html">Resources</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
-            <li>
-              <div id="inner-name" style="font-weight: bold;" ></div>
-    
-    
-              <script>
-                if(sessionStorage.getItem("UserName")!=null){
-                  document.getElementById("inner-name").innerHTML="Hi! "+sessionStorage.getItem("UserName");
-                }
-                
-              </script>
-            </li>
-    
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto; background-color: darkslategrey">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="margin: auto;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only" style="background-color: white;">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="homepage.html"><img src="image/Logo_white.png" width="85%" alt=""
+          style="width: 124px; margin-left: 4rem; margin-bottom: 0.1rem; padding: 4%" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 2%; margin-right: 1rem;">
+
+        <li><a href="Diet_and_Nutrition.html" style="color: white; font-size: 2.2rem;">Diet & Nutrition</a></li>
+        <li><a href="Physical_Activity.html" style="color: white; font-size: 2.2rem;">Physical Activity</a></li>
+        <li><a href="news.html" style="color: white; font-size: 2.2rem;">Resources</a></li>
+        <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
+        <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
+        <li>
+          <div id="inner-name" style="font-weight: bold; color: yellow; font-size: 2.2rem;"></div>
+
+
+          <script>
+
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "<p>Hi! " + sessionStorage.getItem("UserName") + "</p>";
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " <p style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI") + "  -Age: " + ConvertAge()+ " )</p>";
+            }
+
+            document.getElementById("inner-name").innerHTML = ab;
+
+          </script>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
 
         
         <!-- Phan than chuong trinh -->
