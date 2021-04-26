@@ -74,14 +74,14 @@
 
             let ab = ""
             if (sessionStorage.getItem("UserName") != null) {
-              ab = "Hi! " + sessionStorage.getItem("UserName");
+              ab = "<p style='text-align: center;'>Hi! " + sessionStorage.getItem("UserName")+"</p>";
             }
             if (sessionStorage.getItem("BMI") != null) {
-              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+              ab += " <span style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</span>";
             }
             
             document.getElementById("inner-name").innerHTML = ab;
-            
+
           </script>
         </li>
 
@@ -95,24 +95,17 @@
           <p id="title-hello">WELCOME TO FIT4LIFE</p>
         </div>
       </div>
-      <div id="checkUser"> </div>
-
-      <script>
-
-        if (sessionStorage.getItem("UserName") == null) {
-          document.getElementById("checkUser").innerHTML = '<div class="row" id="row-2" style="width: 30%" data-aos="fade-right"><div class="col-sm-12" style="width: auto"><div id="btn-press-here"><a href="#xmas-popup"> <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" /></a></div></div></div>';
-        }
-      </script>
-
-      <!-- <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
-        <div class="col-sm-12" style="width: auto">
-          <div id="btn-press-here">
-            <a href="#xmas-popup">
-              <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" />
-            </a>
+      <div id="checkUser">
+        <div class="row" id="row-2" style="width: 30%" data-aos="fade-right">
+          <div class="col-sm-12" style="width: auto">
+            <div id="btn-press-here">
+              <a href="#xmas-popup">
+                <img src="gif/click.gif" style="width: 40%; margin-left: 80%" alt="" />
+              </a>
+            </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <section class="section2" data-aos="fade-up">
@@ -247,19 +240,11 @@
                       </ul>
                   </div>
               </div>
-              <div class="row">
-                <footer class="copyright">
-                    Copy &copy; Website produced by team CodeCadre . All rights
-                    reserved.
-                </footer><br>
-                <marquee width="100%" direction="left" height="30px">
-                    <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
-                </marquee><br>
             </div>
           </div>
       </div>
-      
-  </footer>
+
+    </footer>
 
     <script src="script/MyLib.js"></script>
 
@@ -268,30 +253,47 @@
         var Rln = document.getElementById("popup-input").value
         var Sln = /\w{1,}/
         if (!Sln.test(Rln)) {
-          alert("Name cannot Blank");
+          alert("Name cannot Empty");
           return false;
         }
 
         var ph = document.getElementById("popup-height").value
         var Sln = /\d{1,}/
         if (!Sln.test(ph)) {
-          alert("Height cannot Blank or not number");
+          alert("Height cannot Empty or not number");
+          return false;
+        } else if (parseFloat(ph) < 0 || parseFloat(ph) > 3) {
+          alert("The height must be greater than 0 and less than 3 meters ");
           return false;
         }
 
         var pw = document.getElementById("popup-weight").value
         var Sln = /\d{1,}/
         if (!Sln.test(pw)) {
-          alert("Weight cannot Blank or not number");
+          alert("Height cannot Empty or not number");
+          return false;
+        } else if (parseFloat(pw) < 0 || parseFloat(pw) > 200) {
+          alert("The weight must be greater than 0 and less than 200 kg ");
+          return false;
+        }
+
+        var pe = document.getElementById("popup-age").value
+        var Sln = /\d{1,}/
+        if (!Sln.test(pe)) {
+          alert("Age cannot Empty or not number");
+          return false;
+        } else if (parseFloat(pe) < 0 || parseFloat(pe) > 100) {
+          alert("The Age must be greater than 0 and less than 100");
           return false;
         } else {
           sessionStorage.setItem("weight", pw);
           sessionStorage.setItem("height", ph);
+          sessionStorage.setItem("age", pe);
           sessionStorage.setItem("UserName", Rln);
-          let bmi = BMI(pw,ph);
-          sessionStorage.setItem("BMI",bmi);
-          let bmiId=getBmiId(bmi);
-          sessionStorage.setItem("BMIId",bmiId);
+          let bmi = BMI(pw, ph);
+          sessionStorage.setItem("BMI", bmi);
+          let bmiId = getBmiId(bmi);
+          sessionStorage.setItem("BMIId", bmiId);
         }
       }
 
@@ -306,19 +308,20 @@
 
     <!-- Popup  -->
     <div id="xmas-popup" class="popup">
-      <div class="popup-content"
-        style="background-image: url(image/formDK.png);  height: 400px; width:  450px;">
+      <div class="popup-content" style="background-image: url(image/formDK.png);  height: 400px; width:  450px;">
         <a href="homepage.html" class="close">x</a>
         <p id="popup-tilte">Please let me know your information !</p>
 
         <form onsubmit="return kt()" action="homepage.html">
-        <p style="text-align: center;">Press name</p>
-        <input type="text" id="popup-input" placeholder="" ><br>
-        <p style="text-align: center;">Press height (0met - 3met)</p>
-        <input type="text" id="popup-height" placeholder=""><br>
-        <p style="text-align: center;">Press Weight(0kg - 200kg)</p>
-        <input type="text" id="popup-weight" placeholder="">
-          <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name"
+          <p style="text-align: center;">Press name</p>
+          <input type="text" id="popup-input" placeholder=""><br>
+          <p style="text-align: center;">Press height (0met - 3met)</p>
+          <input type="text" id="popup-height" placeholder=""><br>
+          <p style="text-align: center;">Press Weight(0kg - 200kg)</p>
+          <input type="text" id="popup-weight" placeholder="">
+          <p style="text-align: center;">Press age (1-100)</p>
+          <input type="text" id="popup-age" placeholder="">
+          <input type="submit" id="popup-click" class="btn btn-primary" value="Submit"
             style=" margin:auto; display: flex; margin-top: 2rem;">
 
         </form>
@@ -338,4 +341,5 @@
   });
 </script>
 <script src="script/datetime.js"></script>
+
 </html>

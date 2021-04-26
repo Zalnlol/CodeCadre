@@ -66,14 +66,14 @@
 
             let ab = ""
             if (sessionStorage.getItem("UserName") != null) {
-              ab = "Hi! " + sessionStorage.getItem("UserName");
+              ab = "<p style='text-align: center;'>Hi! " + sessionStorage.getItem("UserName")+"</p>";
             }
             if (sessionStorage.getItem("BMI") != null) {
-              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+              ab += " <span style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</span>";
             }
             
             document.getElementById("inner-name").innerHTML = ab;
-            
+
           </script>
         </li>
 
@@ -471,58 +471,9 @@
   AOS.init({
     duration: 1200,
   });
-
-  function kt() {
-    var Rln = document.getElementById("popup-input").value
-    var Sln = /\w{1,}/
-    if (!Sln.test(Rln)) {
-      alert("Name cannot Blank");
-      return false;
-    }
-
-    var ph = document.getElementById("popup-height").value
-    var Sln = /\d{1,}/
-    if (!Sln.test(ph)) {
-      alert("Height cannot Blank or not number");
-      return false;
-    }
-
-    var pw = document.getElementById("popup-weight").value
-    var Sln = /\d{1,}/
-    if (!Sln.test(pw)) {
-      alert("Weight cannot Blank or not number");
-      return false;
-    } else {
-      sessionStorage.setItem("weight", pw);
-      sessionStorage.setItem("height", ph);
-      sessionStorage.setItem("UserName", Rln);
-      let bmi = BMI(pw, ph);
-      sessionStorage.setItem("BMI", bmi);
-      let bmiId = getBmiId(bmi);
-      sessionStorage.setItem("BMIId", bmiId);
-    }
-  }
 </script>
 <script src="script/datetime.js"></script>
 
-<div id="xmas-popup" class="popup">
-  <div class="popup-content" style="background-image: url(image/formDK.png);  height: 400px; width:  450px;">
-    <a href="homepage.html" class="close">x</a>
-    <p id="popup-tilte">Please let me know your information !</p>
 
-    <form onsubmit="return kt()" action="homepage.html">
-      <p style="text-align: center;">Press name</p>
-      <input type="text" id="popup-input" placeholder=""><br>
-      <p style="text-align: center;">Press height (0met - 3met)</p>
-      <input type="text" id="popup-height" placeholder=""><br>
-      <p style="text-align: center;">Press Weight(0kg - 200kg)</p>
-      <input type="text" id="popup-weight" placeholder="">
-      <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name"
-        style=" margin:auto; display: flex; margin-top: 2rem;">
-
-    </form>
-  </div>
-
-</div>
 
 </html>
