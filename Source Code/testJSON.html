@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   </head>
   <style>
     img {
@@ -38,8 +39,8 @@
     }
   </style>
   <body>
-    <div class="container">
-      <form id="ageandbmi" action="">
+    <div class="container" ng-app="myApp" ng-controller="myData">
+      <form action="">
         <input class="checkage" type="radio" name="age" value="a" /> a
         <input class="checkage" type="radio" name="age" value="b" /> b
         <input class="checkage" type="radio" name="age" value="c" /> c
@@ -48,120 +49,20 @@
         <input class="checkbmi" type="radio" name="bmi" value="2" /> 2
         <input class="checkbmi" type="radio" name="bmi" value="3" /> 3
         <input class="checkbmi" type="radio" name="bmi" value="4" /> 4
+        <input type="button" id="display" ng-click="loadJson()" value="Suggest">
       </form>
-      <div id="json"></div>
+      <div id="json">
+        <div class="result">
+          <div class="items" ng-repeat="x in id">
+            <img src="{{x.pic}}" alt="">
+            <p>{{x.name}}</p>
+            
+          </div>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="json.js"></script>
   <script>
-    var age; // tuoi
-    var bmi; // bmi
-
-    $("#ageandbmi input").on("change", function () {
-      age = $("input[name=age]:checked", "#ageandbmi").val();
-      $("#ageandbmi input").on("change", function () {
-        bmi = $("input[name=bmi]:checked", "#ageandbmi").val();
-        let result = age + bmi; // tim ket qua
-
-        switch (result) { // age + bmi
-          case "a1":
-            $("#json").html("");
-            $.getJSON("js/data.json", function (data) {
-              $.each(data, function (i, v) {
-                if (v.id.includes("pa")) {
-                  $("#json").append("<p>" + v.id + "</p>");
-                  console.log(v);
-                }
-              });
-            });
-
-            break;
-          case "a2":
-            $("#json").html("<div class=\"result\"></div>"); //tao div ben trong div co id json
-            var count = 0; // dem
-            $.getJSON("js/data.json", function (data) {
-              $.each(data, function (i, v) {
-                if (v.id.includes("pa")) {
-                  $(".result").append(
-                      '<div class=\"items\">' + // mo div
-                        '<img src=\"image/' + v.pic + '\" alt=\"\" >' + // img
-                        "<p>" + v.id + " " + v.name + "</p>" + // description
-                      "</div>" // dong div
-                  );
-                }
-                ++count;
-                console.log(count);
-                if (count == 3) { // neu 3 thi dung
-                  return false;
-                }
-              });
-            });
-
-            break;
-          case "a3":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "a4":
-            $("#json").html("toi la " + age + bmi);
-            break;
-
-          case "b1":
-            $("#json").html("");
-            $.getJSON("js/data.json", function (data) {
-              $.each(data, function (i, v) {
-                if (v.id.includes("fg")) {
-                  $("#json").append("<p>" + v.id + "</p>");
-                  console.log(v);
-                }
-              });
-            });
-
-            break;
-          case "b2":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "b3":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "b4":
-            $("#json").html("toi la " + age + bmi);
-            break;
-
-          case "c1":
-            $("#json").html("");
-            $.getJSON("js/data.json", function (data) {
-              $.each(data, function (i, v) {
-                if (v.id.includes("patyp")) {
-                  $("#json").append("<p>" + v.id + "</p>");
-                  console.log(v);
-                }
-              });
-            });
-
-            break;
-          case "c2":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "c3":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "c4":
-            $("#json").html("toi la " + age + bmi);
-            break;
-
-          case "d1":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "d2":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "d3":
-            $("#json").html("toi la " + age + bmi);
-            break;
-          case "d4":
-            $("#json").html("toi la " + age + bmi);
-            break;
-        }
-      });
-    });
   </script>
 </html>
