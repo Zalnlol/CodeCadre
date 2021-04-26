@@ -71,10 +71,17 @@
 
 
           <script>
-            if (sessionStorage.getItem("UserName") != null) {
-              document.getElementById("inner-name").innerHTML = "Hi! " + sessionStorage.getItem("UserName");
-            }
 
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "Hi! " + sessionStorage.getItem("UserName");
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+            }
+            
+            document.getElementById("inner-name").innerHTML = ab;
+            
           </script>
         </li>
 
@@ -254,6 +261,8 @@
       
   </footer>
 
+    <script src="script/MyLib.js"></script>
+
     <script>
       function kt() {
         var Rln = document.getElementById("popup-input").value
@@ -261,36 +270,36 @@
         if (!Sln.test(Rln)) {
           alert("Name cannot Blank");
           return false;
-        } else {
-
         }
 
         var ph = document.getElementById("popup-height").value
         var Sln = /\d{1,}/
         if (!Sln.test(ph)) {
-          alert("Height cannot Blank");
+          alert("Height cannot Blank or not number");
           return false;
-        } else {
-
         }
 
         var pw = document.getElementById("popup-weight").value
         var Sln = /\d{1,}/
         if (!Sln.test(pw)) {
-          alert("Weight cannot Blank");
+          alert("Weight cannot Blank or not number");
           return false;
         } else {
           sessionStorage.setItem("weight", pw);
           sessionStorage.setItem("height", ph);
           sessionStorage.setItem("UserName", Rln);
+          let bmi = BMI(pw,ph);
+          sessionStorage.setItem("BMI",bmi);
+          let bmiId=getBmiId(bmi);
+          sessionStorage.setItem("BMIId",bmiId);
         }
-
       }
+
 
 
       function setyear(number) {
         sessionStorage.setItem("year", number);
-        location.href="Diet_and_Nutrition.html#BMI"
+        location.href = "Diet_and_Nutrition.html#BMI"
       }
 
     </script>
@@ -303,9 +312,16 @@
         <p id="popup-tilte">Please let me know your information !</p>
 
         <form onsubmit="return kt()" action="homepage.html">
+          <br>
+          Press name
+          <br>
           <input type="text" id="popup-input" placeholder="Press Name !">
           <br>
+          press height (0met - 3met)
+          <br>
           <input type="text" id="popup-height" placeholder="Press Height (Metter)">
+          <br>
+          Press Weight(0kg - 200kg)
           <br>
           <input type="text" id="popup-weight" placeholder="Press weight (Kg)">
           <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name"
