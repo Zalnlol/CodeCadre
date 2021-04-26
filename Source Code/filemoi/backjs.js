@@ -17,27 +17,27 @@ $(document).ready(function () {
 
         let result = weight/(height*height);
 
-        if (result < 18) {
-            var resultBmi = 'Tennis';
+        if (result <= 18.5) {
+            var resultBmi = 'Moderate';
         }
 
-        else if (result < 18) {
-            var resultBmi = 'Tennis';
+        else if (result > 18.5 && result <= 25 ) {
+            var resultBmi = 'Muscle';
         }
 
-        else if (result < 18) {
-            var resultBmi = 'Tennis';
+        else if (result > 25 && result <= 29.9 ) {
+            var resultBmi = 'Vigorous';
         }
         else {
-            var resultBmi = 'Tennis';
+            var resultBmi = 'Bone';
         }
 
         var key = age;
 
-        console.log(resultBmi);
+        console.log(key);
 
         let re = new RegExp(key);
-        let subdata = data.filter(item => item.id.search(re) >= 0 && item.cat.search(resultBmi) >= 0);
+        let subdata = data.filter(item => item.id.search(key) >= 0 && item.cat.search(resultBmi) >= 0);
 
         displayData(subdata);
     });
