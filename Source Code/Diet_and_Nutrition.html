@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="style/menu.css" />
   <link rel="stylesheet" href="style/footer.css" />
   <link rel="stylesheet" href="style/DaN.css" />
+  <link rel="stylesheet" href="style/homepage.css" />
   <!--add javacript-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
@@ -53,7 +54,7 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" style="margin-top: 0.7rem;">
 
-        <li><a href="Diet_and_Nutrition.html">Healthy Nutrition</a></li>
+        <li><a href="Diet_and_Nutrition.html">Diet & Nutrition</a></li>
         <li><a href="Physical_Activity.html">Physical Activity</a></li>
         <li><a href="news.html">Resources</a></li>
         <li><a href="aboutus.html">About us</a></li>
@@ -63,10 +64,17 @@
 
 
           <script>
-            if (sessionStorage.getItem("UserName") != null) {
-              document.getElementById("inner-name").innerHTML = "Hi! " + sessionStorage.getItem("UserName");
-            }
 
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "Hi! " + sessionStorage.getItem("UserName");
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+            }
+            
+            document.getElementById("inner-name").innerHTML = ab;
+            
           </script>
         </li>
 
@@ -77,26 +85,27 @@
 
   <section id="section1">
     <div class="container">
-    <h1 style="text-align: center; font-size: 3.4rem;">Food Essentials</h1>
-    <p style="font-size: 1.8rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups.
-      Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
-      Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 col-sm-offset-1">
-          <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
-        </div>
-        <div class="col-sm-5">
-          <img src="image/BMI level.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+      <h1 style="text-align: center; font-size: 3.4rem;">Food Essentials</h1>
+      <p style="font-size: 1.8rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the
+        Five Food Groups.
+        Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
+        Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+          </div>
+          <div class="col-sm-5">
+            <img src="image/BMI level.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+          </div>
         </div>
       </div>
+
+
     </div>
-        
-       
-      </div>
-      </div>
-    
+    </div>
+
     <br>
     <div class="container">
       <h3 style="font-size: 2.4rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
@@ -151,34 +160,37 @@
 
   </section>
   <div style="background-image: url(image/BMIbackground.png);">
-  <section id="section2">
-    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 4%; font-size: 4rem; color: white;">BMI</h1>
-    <div class="row">
+    <section id="section2">
+      <a href="homepage.html#xmas-popup">
+        <h1 id="BMI"
+          style="font-family: BebasNeue; text-align: center; padding-top: 4%; font-size: 4rem; color: white;">BMI</h1>
+      </a>
+      <div class="row">
 
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
-          Below 18.5
-          (Underweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
-          18.5 - 24.9
-          (Normal)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
-          25.0 - 29.9
-          (Overweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
-          30 or higher
-          (Obese)
-        </button>
-      </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
+            Below 18.5
+            (Underweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
+            18.5 - 24.9
+            (Normal)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
+            25.0 - 29.9
+            (Overweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
+            30 or higher
+            (Obese)
+          </button>
+        </div>
     </section>
 
     <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
@@ -423,10 +435,10 @@
           '</section>'
 
         document.getElementById("set-3").innerHTML =
-          '<section id="section5" data-aos="fade-left">'+
-          '<div class="container" style="padding: 2rem;">'+
-          '<div class="row">'+
-          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">'+
+          '<section id="section5" data-aos="fade-left">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
           '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title3 + '</p>' +
           '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text3 + ' </p>' +
           '</div>' +
@@ -436,7 +448,7 @@
 
           '</div>' +
           '</div>' +
-          '</section> ' 
+          '</section> '
       }
     }
 
@@ -463,7 +475,58 @@
   AOS.init({
     duration: 1200,
   });
+
+  function kt() {
+    var Rln = document.getElementById("popup-input").value
+    var Sln = /\w{1,}/
+    if (!Sln.test(Rln)) {
+      alert("Name cannot Blank");
+      return false;
+    }
+
+    var ph = document.getElementById("popup-height").value
+    var Sln = /\d{1,}/
+    if (!Sln.test(ph)) {
+      alert("Height cannot Blank or not number");
+      return false;
+    }
+
+    var pw = document.getElementById("popup-weight").value
+    var Sln = /\d{1,}/
+    if (!Sln.test(pw)) {
+      alert("Weight cannot Blank or not number");
+      return false;
+    } else {
+      sessionStorage.setItem("weight", pw);
+      sessionStorage.setItem("height", ph);
+      sessionStorage.setItem("UserName", Rln);
+      let bmi = BMI(pw, ph);
+      sessionStorage.setItem("BMI", bmi);
+      let bmiId = getBmiId(bmi);
+      sessionStorage.setItem("BMIId", bmiId);
+    }
+  }
 </script>
 <script src="script/datetime.js"></script>
+
+<div id="xmas-popup" class="popup">
+  <div class="popup-content" style="background-image: url(image/formDK.png);  height: 400px; width:  450px;">
+    <a href="homepage.html" class="close">x</a>
+    <p id="popup-tilte">Please let me know your information !</p>
+
+    <form onsubmit="return kt()" action="homepage.html">
+      <p style="text-align: center;">Press name</p>
+      <input type="text" id="popup-input" placeholder=""><br>
+      <p style="text-align: center;">Press height (0met - 3met)</p>
+      <input type="text" id="popup-height" placeholder=""><br>
+      <p style="text-align: center;">Press Weight(0kg - 200kg)</p>
+      <input type="text" id="popup-weight" placeholder="">
+      <input type="submit" id="popup-click" class="btn btn-primary" value="Enter Name"
+        style=" margin:auto; display: flex; margin-top: 2rem;">
+
+    </form>
+  </div>
+
+</div>
 
 </html>
