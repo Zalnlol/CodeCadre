@@ -327,7 +327,28 @@ AOS.init({
       sessionStorage.setItem("BMIId", bmiId);
     }
 
+
+
   }
+
+    if(sessionStorage.getItem("UserName")!=null){
+      document.getElementById("popup-input").value=sessionStorage.getItem("UserName");
+    }
+
+    if(sessionStorage.getItem("height")!=null){
+      document.getElementById("popup-height").value=sessionStorage.getItem("UserName");
+    }
+    if(sessionStorage.getItem("weight")!=null){
+      document.getElementById("popup-weight").value=sessionStorage.getItem("UserName");
+    }
+
+    if(sessionStorage.getItem("ageID")!=null){
+      switch(sessionStorage.getItem("ageID")){
+        case "1": document.getElementById("option1").selected=true; break;
+        case "2": document.getElementById("option2").selected=true;break
+        case "3": document.getElementById("option3").selected=true; break
+      }
+    }
 
 </script>
 <script src="script/datetime.js"></script>
