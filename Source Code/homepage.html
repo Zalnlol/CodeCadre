@@ -216,84 +216,7 @@
     </footer>
     <script src="script/MyLib.js"></script>
 
-    <script>
-      function kt() {
-        var Rln = document.getElementById("popup-input").value
-        var Sln = /\w{1,}/
-        if (!Sln.test(Rln)) {
-          alert("Name cannot Empty");
-          return false;
-        }
-
-        var ph = document.getElementById("popup-height").value
-        var Sln = /\d{1,}/
-        if (!Sln.test(ph)) {
-          alert("Height cannot Empty or not number");
-          return false;
-        } else if (parseFloat(ph) < 0 || parseFloat(ph) > 3) {
-          alert("The height must be greater than 0 and less than 3 meters ");
-          return false;
-        }
-
-        var pw = document.getElementById("popup-weight").value
-        var Sln = /\d{1,}/
-        if (!Sln.test(pw)) {
-          alert("Height cannot Empty or not number");
-          return false;
-        } else if (parseFloat(pw) < 0 || parseFloat(pw) > 200) {
-          alert("The weight must be greater than 0 and less than 200 kg ");
-          return false;
-        }
-
-        if (document.getElementById("option0").selected){
-          alert("Please choose Age!!");
-          return false;
-        }
-
-        if (document.getElementById("option1").selected){
-          sessionStorage.setItem("weight", pw);
-          sessionStorage.setItem("height", ph);
-          sessionStorage.setItem("ageID", document.getElementById("option1").value);
-          sessionStorage.setItem("UserName", Rln);
-          let bmi = BMI(pw, ph);
-          sessionStorage.setItem("BMI", bmi);
-          let bmiId = getBmiId(bmi);
-          sessionStorage.setItem("BMIId", bmiId);
-        }
-        if (document.getElementById("option2").selected){
-          sessionStorage.setItem("weight", pw);
-          sessionStorage.setItem("height", ph);
-          sessionStorage.setItem("ageID", document.getElementById("option2").value);
-          sessionStorage.setItem("UserName", Rln);
-          let bmi = BMI(pw, ph);
-          sessionStorage.setItem("BMI", bmi);
-          let bmiId = getBmiId(bmi);
-          sessionStorage.setItem("BMIId", bmiId);
-        }
-        if (document.getElementById("option3").selected){
-          sessionStorage.setItem("weight", pw);
-          sessionStorage.setItem("height", ph);
-          sessionStorage.setItem("ageID", document.getElementById("option3").value);
-          sessionStorage.setItem("UserName", Rln);
-          let bmi = BMI(pw, ph);
-          sessionStorage.setItem("BMI", bmi);
-          let bmiId = getBmiId(bmi);
-          sessionStorage.setItem("BMIId", bmiId);
-        }
     
-       
-          
-        
-      }
-
-
-
-      function setyear(number) {
-        sessionStorage.setItem("year", number);
-        location.href = "Diet_and_Nutrition.html#BMI"
-      }
-
-    </script>
 
     <!-- Popup  -->
     <div id="xmas-popup" class="popup">
@@ -330,10 +253,82 @@
 <!--
   
 -->
+
+
+
+
 <script>
-  AOS.init({
+//Load Scoll 
+AOS.init({
     duration: 1200,
   });
+//Check Popup
+  function kt() {
+    var Rln = document.getElementById("popup-input").value
+    var Sln = /\w{1,}/
+    if (!Sln.test(Rln)) {
+      alert("Name cannot Empty");
+      return false;
+    }
+
+    var ph = document.getElementById("popup-height").value
+    var Sln = /\d{1,}/
+    if (!Sln.test(ph)) {
+      alert("Height cannot Empty or not number");
+      return false;
+    } else if (parseFloat(ph) < 0 || parseFloat(ph) > 3) {
+      alert("The height must be greater than 0 and less than 3 meters ");
+      return false;
+    }
+
+    var pw = document.getElementById("popup-weight").value
+    var Sln = /\d{1,}/
+    if (!Sln.test(pw)) {
+      alert("Height cannot Empty or not number");
+      return false;
+    } else if (parseFloat(pw) < 0 || parseFloat(pw) > 200) {
+      alert("The weight must be greater than 0 and less than 200 kg ");
+      return false;
+    }
+
+    if (document.getElementById("option0").selected){
+      alert("Please choose Age!!");
+      return false;
+    }
+
+    if (document.getElementById("option1").selected){
+      sessionStorage.setItem("weight", pw);
+      sessionStorage.setItem("height", ph);
+      sessionStorage.setItem("ageID", document.getElementById("option1").value);
+      sessionStorage.setItem("UserName", Rln);
+      let bmi = BMI(pw, ph);
+      sessionStorage.setItem("BMI", bmi);
+      let bmiId = getBmiId(bmi);
+      sessionStorage.setItem("BMIId", bmiId);
+    }
+    if (document.getElementById("option2").selected){
+      sessionStorage.setItem("weight", pw);
+      sessionStorage.setItem("height", ph);
+      sessionStorage.setItem("ageID", document.getElementById("option2").value);
+      sessionStorage.setItem("UserName", Rln);
+      let bmi = BMI(pw, ph);
+      sessionStorage.setItem("BMI", bmi);
+      let bmiId = getBmiId(bmi);
+      sessionStorage.setItem("BMIId", bmiId);
+    }
+    if (document.getElementById("option3").selected){
+      sessionStorage.setItem("weight", pw);
+      sessionStorage.setItem("height", ph);
+      sessionStorage.setItem("ageID", document.getElementById("option3").value);
+      sessionStorage.setItem("UserName", Rln);
+      let bmi = BMI(pw, ph);
+      sessionStorage.setItem("BMI", bmi);
+      let bmiId = getBmiId(bmi);
+      sessionStorage.setItem("BMIId", bmiId);
+    }
+
+  }
+
 </script>
 <script src="script/datetime.js"></script>
 

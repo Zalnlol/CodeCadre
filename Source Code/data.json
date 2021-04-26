@@ -33,7 +33,7 @@
 
     {"id":"2 3","name":"Golf", "pic":"image/Golf.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"1 2 3","name":"Tai Chi", "pic":"image/Tai_chi.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"3","name":"Tai Chi", "pic":"image/Tai_chi.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
     {"id":"1 2 3","name":"Basketball", "pic":"image/Basketball.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
@@ -41,7 +41,7 @@
 
     {"id":"1 2 3","name":"Body Weight", "pic":"image/Plank.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"2 3","name":"Gardening", "pic":"image/Gardening.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
+    {"id":"3","name":"Gardening", "pic":"image/Gardening.jpg","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
     {"id":"1 2","name":"Roller Skate", "pic":"image/Roller_skate.jpg","description":"Lorem ipsum.", "cat":"under normal over"},
 
