@@ -23,3 +23,13 @@ function BMI(w, h) {
     return bmiId;
 
   }
+
+  function ConvertAge(){
+    
+    switch (sessionStorage.getItem("ageID")){
+      case "1": return "(from 13 to 19)"; break;
+      case "2": return "(from 20 to 60)"; break;
+      case "3": return "(from 60 or Older)" ;break;
+    }
+
+  }
