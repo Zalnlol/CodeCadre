@@ -53,7 +53,8 @@ body {
   background-size: 100% 100%;
 }
 #title-section-2 {
-  padding-left: 26%;
+  margin-top: 6%;
+  padding-left: 27.6%;
   font-family: BebasNeue;
   color: white;
   font-size: 8rem;
@@ -294,28 +295,16 @@ body {
   margin-left: 1.3rem;
   margin-right: 1.3rem;
 }
-.creator-thang{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 4rem;
-  text-align: center;
-  color: rgb(0, 150, 150);
-  text-shadow: 0 0 3px darkgrey;
+
+
+.navbar-default .navbar-nav>li>a:hover{
+  border-bottom-color: white;
+  transition: 0.5s;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
 }
-.col-sm-2 p img:hover {
-  width: 160px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-div.container-thang3 {
-  padding: 10%;
-}
-.col-sm-2{
-  opacity: 0.5;
-}
-.col-sm-2:hover{
-  background-color:none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  opacity: 1.0;
-}
-.padding-creator{
-  padding: 10rem;
+
+div.VisitorCounter__VisitorCounterComponent-sc-6fdjkh-0 .kjIukz{
+  width: 100px;
+  height: 300px;
 }
