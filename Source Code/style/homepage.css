@@ -66,10 +66,10 @@ body {
   border: none;
   margin-right: 10rem;
   width: 100%;
-  height: 100%;
+  height: 50%;
   border: solid;
   border-color: white;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 #title1 {
   text-align: center;
@@ -98,13 +98,13 @@ body {
   width: 15rem;
   height: auto;
   padding: 1% 0;
-  border-radius: 30%;
+  border-radius: 30px;
   color: white;
   background-color: #29b30b;
   border-color: #29b30b;
   margin-top: 2%;
   font-size: 17pt;
-  margin-left: 18.8%;
+  margin-left: 18%;
 }
 #Guidelines-1:hover {
   background-color: #3bed15;
@@ -203,7 +203,7 @@ body {
   width: 15rem;
   height: auto;
   padding: 1% 0;
-  border-radius: 30%;
+  border-radius: 30px;
   color: white;
   background-color: #000000;
   border-color: #000000;

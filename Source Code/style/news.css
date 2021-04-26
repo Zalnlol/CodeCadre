@@ -1,8 +1,7 @@
 .news1 {
     border: solid;
     border-width: 0.1px;
-    height: 100%;
-    padding-bottom: 10%;
+    height: 74rem;
     width: auto;
     background-image: url("../image/news1.jpg");
     background-repeat: no-repeat;
@@ -10,55 +9,78 @@
 }
 
 .news2 {
-    height: 100%;
+    border: solid;
+    border-width: 0.1px;
+    height: 74rem;
+    width: auto;
     background-image: url("../image/news2.jpg");
-    background-size: 70%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .news3 {
-    background-image: url("../image/news3.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 70rem;
+    border: solid;
+    border-width: 0.1px;
+    height: 74rem;
     width: auto;
+    background-image: url("../image/news3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .news4 {
-    padding-bottom: 25%;
+    border: solid;
+    border-width: 0.1px;
+    height: 74rem;
+    width: auto;
     background-image: url("../image/news4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #row-1 {
-    padding-left: 2rem;
+    margin-top: 16%;
+}
+
+#row-1-1{
+    padding-left: 2%;
+    margin-top: 1%;
 }
 
 #row-2 {
-    padding-left: 30%;
-    width: 100%;
+    margin-top: 20%;
+    float: right;
+}
+
+#row-3{
+    margin-top: 14%;
 }
 
 #title-hello {
-    padding-left: 5%;
+    padding-left: 4%;
     font-family: BebasNeue;
-    font-size: 10rem;
+    font-size: 6.4rem;
 }
 
 #title-hello2 {
-    font-size: 4.95rem;
+    font-size: 40px;
     font-family: bebasNeue;
     color: rgb(224, 182, 133)
 }
+#title-hello2:hover {
+    text-decoration: none;
+}
 
 #btn-press-here {
-    height: 10rem;
-    width: 30rem;
+    height: 8rem;
+    width: 24rem;
     border: solid;
     background-color: none;
     border: none;
     background-image: url("../image/home-btn-c4m-noclick.png");
     background-repeat: no-repeat;
     background-size: 100% 100%; 
-
+    margin-left: 2%;
 }
 
 #btn-press-here:hover{
@@ -88,8 +110,8 @@
 }
 
 #title1{
-    Text-align:center;
-     color: white;
+    text-align:center;
+    color: white;
 }
 
 #mota{
@@ -112,14 +134,15 @@
 
 #Guidelines-1{
     font-family: bebasNeue;
-    width: 15%;
+    width: 15rem;
     height: auto;
-    border-radius: 35px;
+    padding: 1% 0;
+    border-radius: 30px;
     color: white;
     background-color: #1bcaff;
     border-color: #1bcaff;
-    font-size: 20pt;
-    margin-left: 45%;
+    font-size: 17pt;
+    margin-left: 18.8%;
 }
 
 #Guidelines-1:hover{
@@ -133,8 +156,8 @@
 }
 
 #row-3-1{  
-padding-top: 2rem;
-text-align: center;
+    padding-left: 4rem;
+    font-size: 5rem;
 }
 
 #title-section-3 {
@@ -147,11 +170,9 @@ text-align: center;
 #title-section-4 {
     font-family: BebasNeue;
     color:rgb(247, 167, 19);
-    margin-top: 40%;
-    font-size: 7rem;
-    background-repeat: no-repeat;
-    padding-top: 40%;
-    text-align: center;
+    margin-top: 30rem;
+    padding-left: 6%;
+    font-size: 6rem;
 }
 
 #title-section-4:hover {
