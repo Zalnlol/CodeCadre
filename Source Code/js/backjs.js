@@ -1,7 +1,9 @@
 $(document).ready(function () {
     var data = [];
-    var age = '1';
-    var result = 5;
+    var age = sessionStorage.getItem('ageID').toString();
+    var result = sessionStorage.getItem('BMI');
+
+    console.log(result);
 
     $.getJSON("data.json", function (items) {
         // console.log(items);
