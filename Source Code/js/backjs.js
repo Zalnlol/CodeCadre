@@ -10,15 +10,15 @@ $(document).ready(function () {
         if (result < 18.5) { //gay
             switch (age) {
                 case '1': //tre
-                    tuvan.innerHTML = ''; //tre gay nen lam gi do
+                    tuvan.innerHTML = 'Children with low BMI level should add extra calorie to their daily consumption and participate in moderate - intensity activity like bicycle riding, swimming & gymnastics'; //tre gay nen lam gi do
 
                     break;
                 case '2': //nglon
-                    tuvan.innerHTML = ''; //nguoi lon gay nen lam gi do
+                    tuvan.innerHTML = 'Adults who are more physically active are better able to perform everyday tasks without undue fatigue. Increased amounts of moderate-tovigorous physical activity are associated with improved cardiorespiratory and muscular ftness, including a healthier body weight and body composition'; //nguoi lon gay nen lam gi do
 
                     break;
                 case '3': //gia
-                    tuvan.innerHTML = ''; //gia gay nen lam gi do
+                    tuvan.innerHTML = 'Older adult with low BMI level may participate in Yoga, Tai Chi for muscle strengthening or certain aerobic activities like dancing, hiking and golf. '; //gia gay nen lam gi do
 
                     break;
             }
@@ -27,15 +27,15 @@ $(document).ready(function () {
         else if (result > 18.5 && result <= 25 ) { //binh thuong
             switch (age) {
                 case '1': //tre
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'It is important to provide young people opportunities and encouragement to participate in physical activities that are appropriate for their age, that are enjoyable, and that offer variety. Children and adolescents ages 6 through 17 years should do 60 minutes (1 hour) or more of moderate-to-vigorous physical activity daily.';
 
                     break;
                 case '2': //nglon
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Adults who are physically active are healthier, feel better, and are less likely to develop many chronic diseases, such as cardiovascular disease, type 2 diabetes, and several types of cancer than are adults who are inactive.';
 
                     break;
                 case '3': //gia
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Older adult with normal BMI level may participate in Yoga, Tai Chi for muscle strengthening or certain aerobic activities like basketball, hiking and golf.';
 
                     break;
             }
@@ -44,15 +44,15 @@ $(document).ready(function () {
         else if (result > 25 && result <= 29.9 ) { //thua can
             switch (age) {
                 case '1': //tre
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'It is important to provide young people opportunities and encouragement to participate in physical activities that are appropriate for their age, that are enjoyable, and that offer variety. Children and adolescents ages 6 through 17 years should do 60 minutes (1 hour) or more of moderate-to-vigorous physical activity daily.';
 
                     break;
                 case '2': //nglon
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Adults who are more physically active are better able to perform everyday tasks without undue fatigue. Increased amounts of moderate-tovigorous physical activity are associated with improved cardiorespiratory and muscular ftness, including a healthier body weight and body composition';
 
                     break;
                 case '3': //gia
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Older adult with high BMI level may participate in Yoga, Tai Chi for muscle strengthening or certain aerobic activities like jogging, hiking and golf.';
 
                     break;
             }
@@ -60,15 +60,15 @@ $(document).ready(function () {
         else { //beo phi
             switch (age) {
                 case '1': //tre
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'It is important to provide young people opportunities and encouragement to participate in physical activities that are appropriate for their age, that are enjoyable, and that offer variety. Children and adolescents ages 6 through 17 years should do 60 minutes (1 hour) or more of moderate-to-vigorous physical activity daily.';
 
                     break;
                 case '2': //nglon
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Adults who are physically active are healthier, feel better, and are less likely to develop many chronic diseases, such as cardiovascular disease, type 2 diabetes, and several types of cancer than are adults who are inactive. ';
 
                     break;
                 case '3': //gia
-                    tuvan.innerHTML = '';
+                    tuvan.innerHTML = 'Older Adults should move more and sit less throughout the day. Some physical activity is better than none. Adults who sit less and do any amount of moderate-to-vigorous physical activity gain some health benefts.';
 
                     break;
             }
