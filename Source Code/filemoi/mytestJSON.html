@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Bootraps CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </head>
+  <style>
+    img {
+      padding: 0;
+      width: 100%;
+    }
+    .result {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .result items {
+      position: relative;
+    }
+    .result items p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 5%;
+      color: white;
+      font-weight: bold;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- Selection -->
+    <div class="container" ng-app="myApp" ng-controller="myData">
+      <form id="formSearch" action="">
+        <input class="checkage" type="radio" name="age" value="pa" /> 3-5
+        <input class="checkage" type="radio" name="age" value="fg" /> 6-17
+        <input class="checkage" type="radio" name="age" value="patyp" /> 18-64
+        <input class="checkage" type="radio" name="age" value="d" /> 65+ <br />
+        <input class="checkheight" type="text" name="height" /> height
+        <input class="checkweight" type="text" name="weight" /> weight
+        
+        <input
+          type="button"
+          id="display"
+          value="Suggest"
+        />
+      </form>
+      <div id="row">
+        <div id="tuvan"></div>
+        <div class="result col-md-4 col-lg-4">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="backjs.js"></script>
+  <script></script>
+</html>
