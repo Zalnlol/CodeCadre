@@ -84,8 +84,8 @@
 
   <section id="section1">
     <div class="container">
-      <h1 style="text-align: center; font-size: 3.4rem;">Food Essentials</h1>
-      <p style="font-size: 1.8rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the
+      <h1 style="text-align: center;">Food Essentials</h1>
+      <p style="font-size: 2rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the
         Five Food Groups.
         Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
         Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
@@ -107,52 +107,52 @@
 
     <br>
     <div class="container">
-      <h3 style="font-size: 2.4rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
+      <h3 style="font-size: 2rem; padding: 1rem;">Get recommendation by telling us about you with: </h3>
+      <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
+
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('1')">
+              <div class="image-box">
+                <img src="image/sesion2-1.jpg" />
+              </div>
+  
+              <h3 id="title1">Teen</h3>
+              <h4 id="mota">Range from 13 to 19</h4>
+            </a>
+          </div>
+        </div>
+  
+  
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('2')">
+              <div class="image-box">
+                <img src="image/sesion2-2.jpg" />
+              </div>
+  
+              <h3 id="title1">Adult</h3>
+              <h4 id="mota">Range from 20 to 60</h4>
+            </a>
+          </div>
+        </div>
+  
+  
+        <div class="col-sm-4" style="padding: 2rem;">
+          <div id="home-box-1">
+            <a href="#BMI" style="text-decoration: none;" onclick="return check01('3')">
+              <div class="image-box">
+                <img src="image/sesion2-3.jpg" />
+              </div>
+  
+              <h3 id="title1">Orlder Adult</h3>
+              <h4 id="mota">60 years and older</h4>
+            </a>
+          </div>
+        </div>
     </div>
 
-
-    <div class="row" id="row-1-1" style="margin: auto" data-aos="fade-right">
-
-      <div class="col-sm-4" style="padding: 2rem;">
-        <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('1')">
-            <div class="image-box">
-              <img src="image/sesion2-1.jpg" />
-            </div>
-
-            <h3 id="title1">Teen</h3>
-            <h4 id="mota">Range from 13 to 19</h4>
-          </a>
-        </div>
-      </div>
-
-
-      <div class="col-sm-4" style="padding: 2rem;">
-        <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('2')">
-            <div class="image-box">
-              <img src="image/sesion2-2.jpg" />
-            </div>
-
-            <h3 id="title1">Adult</h3>
-            <h4 id="mota">Range from 20 to 60</h4>
-          </a>
-        </div>
-      </div>
-
-
-      <div class="col-sm-4" style="padding: 2rem;">
-        <div id="home-box-1">
-          <a href="#BMI" style="text-decoration: none;" onclick="return check01('3')">
-            <div class="image-box">
-              <img src="image/sesion2-3.jpg" />
-            </div>
-
-            <h3 id="title1">Orlder Adult</h3>
-            <h4 id="mota">60 years and older</h4>
-          </a>
-        </div>
-      </div>
+    
 
 
 
@@ -160,41 +160,44 @@
   </section>
   <div style="background-image: url(image/BMIbackground.png);">
   <section id="section2">
-    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 4%; font-size: 4rem; color: white;">BMI</h1>
-    <div class="row">
+    <h1 id="BMI" style="font-family: BebasNeue; text-align: center; padding-top: 2%; color: white;">BMI</h1>
+    <div class="container">
+      <div class="row">
 
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
-          Below 18.5
-          (Underweight)
-        </button>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('1')">
+            Below 18.5
+            (Underweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
+            18.5 - 24.9
+            (Normal)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
+            25.0 - 29.9
+            (Overweight)
+          </button>
+        </div>
+        <div class="col-md-3" id="col-button">
+          <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
+            30 or higher
+            (Obese)
+          </button>
+        </div>
+        </div>
+      </section>
       </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('2')">
-          18.5 - 24.9
-          (Normal)
-        </button>
+      <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
       </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('3')">
-          25.0 - 29.9
-          (Overweight)
-        </button>
-      </div>
-      <div class="col-md-3" id="col-button">
-        <button class="btn btn-primary" id="DaN-Button" onclick="return check02('4')">
-          30 or higher
-          (Obese)
-        </button>
-      </div>
-      </div>
-    </section>
+      <div id="set-1"></div>
+      <div id="set-2"></div>
+      <div id="set-3"></div>
     </div>
-    <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
-    </div>
-    <div id="set-1"></div>
-    <div id="set-2"></div>
-    <div id="set-3"></div>
+    
     <!-- Cai phan dau -->
 
     <!-- <section id="section3" data-aos="fade-left">
