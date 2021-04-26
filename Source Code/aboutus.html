@@ -55,20 +55,22 @@
           <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
           <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
           <li>
-            <div id="inner-name" style="font-weight:bold; color: yellow; font-size: 2.2rem;"></div>
-            <script>
-  
-              let ab = ""
-              if (sessionStorage.getItem("UserName") != null) {
-                ab = "<p>Hi! " + sessionStorage.getItem("UserName")+"</p>";
-              }
-              if (sessionStorage.getItem("BMI") != null) {
-                ab += " <p style='font-size: 1.4rem; margin-bottom:2rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</p>";
-              }
-              
-              document.getElementById("inner-name").innerHTML = ab;
-  
-            </script>
+            <div id="inner-name" style="font-weight: bold; color: yellow; font-size: 2.2rem;"></div>
+
+
+          <script>
+
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "<p>Hi! " + sessionStorage.getItem("UserName") + "</p>";
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " <p style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI") + "  -Age: " + ConvertAge()+ " )</p>";
+            }
+
+            document.getElementById("inner-name").innerHTML = ab;
+
+          </script>
           </li>
   
         </ul>
