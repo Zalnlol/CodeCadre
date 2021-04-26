@@ -2,8 +2,24 @@ var suggest = angular.module('myApp', []);
 var result;
 var display = document.getElementById('display');
 
+
+
+
+
 suggest.controller('myData', function($scope) {
+
+    document.getElementById('tuvan').innerHTML = 'gggjhh';
+
+    $scope.id = [ // thu cong
+        {"id":"pa01","name":"Walking", "pic":"image/Walking.jpg","description":"Lorem ipsum.", "cat":"phys activities"},
+    
+        {"id":"pa02","name":"Running", "pic":"image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+
+        {"id":"pa03","name":"Swimming", "pic":"image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"}
+    ];
+    
     display.addEventListener('click', function() {
+
         var age = $(".checkage:checked").val(); //giu gia tri age
         var bmi = $(".checkbmi:checked").val(); //giu gia tri bmi
     
@@ -18,6 +34,9 @@ suggest.controller('myData', function($scope) {
         switch(result) { // xoay tua gia tri
         case 'a1': // 3-5 age & underweight
             console.log(result); // debug
+
+            document.getElementById('tuvan').innerHTML = 'gggjhh';
+
             $scope.id = [ // thu cong
                 {"id":"pa01","name":"Walking", "pic":"image/Walking.jpg","description":"Lorem ipsum.", "cat":"phys activities"},
             
