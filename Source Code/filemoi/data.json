@@ -1,39 +1,39 @@
 [
-    {"id":"pa01","name":"Walking", "pic":"../image/Walking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon gia","name":"Walking", "pic":"../image/Walking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
     
-    {"id":"pa02","name":"Running", "pic":"../image/Running.JPG","description":"Lorem ipsum.","cat":"phys activities"},
+    {"id":"nho tre nglon","name":"Running", "pic":"../image/Running.JPG","description":"Lorem ipsum.","cat":"under normal over obsese"},
 
-    {"id":"pa03","name":"Swimming", "pic":"../image/Swimming.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon","name":"Swimming", "pic":"../image/Swimming.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"pa04","name":"Gymnastics", "pic":"../image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon","name":"Gymnastics", "pic":"../image/Gymnastics.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa05","name":"Hiking", "pic":"../image/Hiking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon gia","name":"Hiking", "pic":"../image/Hiking.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"pa06","name":"Martial-Art", "pic":"../image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"phys activities"},
+    {"id":"tre nglon gia","name":"Martial-Art", "pic":"../image/Martial_Art.JPG","description":"Lorem ipsum", "cat":"under normal over"},
 
-    {"id":"pa07","name":"Bicycle Riding", "pic":"../image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon gia","name":"Bicycle Riding", "pic":"../image/Bicycle_Riding.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"pa08","name":"Football", "pic":"../image/Football.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon","name":"Football", "pic":"../image/Football.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa09","name":"Tennis", "pic":"../image/Tennis.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon gia","name":"Tennis", "pic":"../image/Tennis.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa10","name":"Tug of war", "pic":"../image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon","name":"Tug of war", "pic":"../image/Tug_of_war.JPG","description":"Lorem ipsum.", "cat":"normal over obsese"},
 
-    {"id":"pa11","name":"Jumping rope", "pic":"../image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon gia","name":"Jumping rope", "pic":"../image/Jumping_rope.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa12","name":"Dancing", "pic":"../image/Dancing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon","name":"Dancing", "pic":"../image/Dancing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
     
-    {"id":"pa13","name":"Climbing", "pic":"../image/Climbing.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nho tre nglon","name":"Climbing", "pic":"../image/Climbing.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa14","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon gia","name":"Yoga", "pic":"../image/Yoga.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa15","name":"Weights", "pic":"../image/Weight.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon","name":"Weights", "pic":"../image/Weight.JPG","description":"Lorem ipsum.", "cat":"under normal over "},
 
-    {"id":"pa16","name":"Kayak", "pic":"../image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"tre nglon","name":"Kayak", "pic":"../image/Kayaking.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
-    {"id":"pa17","name":"Golf", "pic":"../image/Golf.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon gia","name":"Golf", "pic":"../image/Golf.JPG","description":"Lorem ipsum.", "cat":"under normal over obsese"},
 
-    {"id":"pa18","name":"Tai Chi", "pic":"../image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"phys activities"},
+    {"id":"nglon gia","name":"Tai Chi", "pic":"../image/Tai_chi.JPG","description":"Lorem ipsum.", "cat":"under normal over"},
 
     {"id":"fg01","name":"Vegies_beans", "pic":"../image/Vegies_beans.JPG","description":"Lorem ipsum.", "cat":"nutrition"},
 
