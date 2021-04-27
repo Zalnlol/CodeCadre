@@ -106,16 +106,14 @@
 
     </div>
   </section>
-  <div style="background-image: url(image/BMIbackground.png);">
 
 
-
-  </div>
-  <div id="set-0" style="font-size: 1.5rem; color: tomato; padding: 1rem; font-weight: bold; text-indent: 3rem;">
-  </div>
-  <div id="set-1"></div>
-  <div id="set-2"></div>
-  <div id="set-3"></div>
+  <div style="margin-left: 10%;">
+    <div id="set-0" style="font-size: 2rem; color: black; padding: 1rem; margin-left: 30% ; border: solid 1px; width: 30%;">
+    </div>
+    <div id="set-1"></div>
+    <div id="set-2"></div>
+    <div id="set-3"></div>
   </div>
 
   <!-- Cai phan dau -->
@@ -297,33 +295,33 @@
         let caption = "";
         switch (id) {
           case "11":
-            caption = "Age: 13 to 19 , BMI: Under 18.5 (Under weight)"; break;
+            caption = "<br> Age: 13 to 19 <br> BMI: Under 18.5 (Under weight)"; break;
           case "12":
-            caption = "Age: 13 to 19 , BMI: 18.5 to 24.9 (Normal)"; break;
+            caption = "Age: 13 to 19 <br> BMI: 18.5 to 24.9 (Normal)"; break;
           case "13":
-            caption = "Age: 13 to 19 , BMI: 25 to 29 (Over Weight)"; break;
+            caption = "Age: 13 to 19 <br> BMI: 25 to 29 (Over Weight)"; break;
           case "14":
-            caption = "Age: 13 to 19 , BMI: 30 or higher (Obese)"; break;
+            caption = "Age: 13 to 19 <br> BMI: 30 or higher (Obese)"; break;
           case "21":
-            caption = "Age: 20 to 60 , BMI: Under 18.5 (Under weight)"; break;
+            caption = "Age: 20 to 60 <br> BMI: Under 18.5 (Under weight)"; break;
           case "22":
-            caption = "Age: 20 to 60  , BMI: 18.5 to 24.9 (Normal)"; break;
+            caption = "Age: 20 to 60  <br> BMI: 18.5 to 24.9 (Normal)"; break;
           case "23":
-            caption = "Age: 20 to 60  , BMI: 25 to 29 (Over Weight)"; break;
+            caption = "Age: 20 to 60  <br> BMI: 25 to 29 (Over Weight)"; break;
           case "24":
-            caption = "Age: 20 to 60  , BMI: 30 or higher (Obese)"; break;
+            caption = "Age: 20 to 60  <br> BMI: 30 or higher (Obese)"; break;
           case "31":
-            caption = "Age: 60 or higher , BMI: Under 18.5 (Under weight)"; break;
+            caption = "Age: 60 or higher <br> BMI: Under 18.5 (Under weight)"; break;
           case "32":
-            caption = "Age: 60 or higher  , BMI: 18.5 to 24.9 (Normal)"; break;
+            caption = "Age: 60 or higher  <br> BMI: 18.5 to 24.9 (Normal)"; break;
           case "33":
-            caption = "Age: 60 or higher  , BMI: 25 to 29 (Over Weight)"; break;
+            caption = "Age: 60 or higher  <br> BMI: 25 to 29 (Over Weight)"; break;
           case "34":
-            caption = "Age: 60 or higher  , BMI: 30 or higher (Obese)"; break;
+            caption = "Age: 60 or higher  <br> BMI: 30 or higher (Obese)"; break;
         }
 
 
-        document.getElementById("set-0").innerHTML = caption;
+        document.getElementById("set-0").innerHTML ="<p  style='text-align: center; color:tomato;' >INFORMATION</p>  Name: "+sessionStorage.getItem("UserName")+"<br> Height :" +sessionStorage.getItem("height")+"<br> Weight :"+sessionStorage.getItem("weight")+"<br>"+caption;
         document.getElementById("set-1").innerHTML =
           '<section id="section3" data-aos="fade-left">' +
           '<div class="container" style="padding: 2rem;">' +
