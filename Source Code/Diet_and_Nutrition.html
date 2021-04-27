@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Nutrition</title>
+  <!--Favicon logo-->
+  <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
+
+  <!--Bootraps CDN-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="script/MyLib.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!--add css-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/animation.css" />
+  <link rel="stylesheet" href="style/menu.css" />
+  <link rel="stylesheet" href="style/footer.css" />
+  <link rel="stylesheet" href="style/DaN.css" />
+  <link rel="stylesheet" href="style/Fit4life.css">
+  <!--add javacript-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <style></style>
+</head>
+
+<body>
+  <!-- Phan menu -->
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto; background-color: darkslategrey">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="margin: auto;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only" style="background-color: white;">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="homepage.html"><img src="image/Logo_white.png" width="85%" alt=""
+          style="width: 124px; margin-left: 4rem; margin-bottom: 0.1rem; padding: 4%" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 2%; margin-right: 1rem;">
+
+        <li><a href="Diet_and_Nutrition.html" style="color: white; font-size: 2.2rem;">Healthy Nutrition</a></li>
+        <li><a href="Physical_Activity.html" style="color: white; font-size: 2.2rem;">Physical Activity</a></li>
+        <li><a href="news.html" style="color: white; font-size: 2.2rem;">Resources</a></li>
+        <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
+        <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
+        <li>
+          <div id="inner-name" style="font-weight: bold; color: yellow; font-size: 2.2rem;"></div>
+
+
+          <script>
+
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "<p>Hi! " + sessionStorage.getItem("UserName") + "</p>";
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " <p style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI") + "  -Age: " + ConvertAge()+ " )</p>";
+            }
+
+            document.getElementById("inner-name").innerHTML = ab;
+
+          </script>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Phan than chuong trinh -->
+
+  <section id="section1">
+    <div class="container">
+      <h1 style="text-align: center;">Food Essentials</h1>
+      <p style="font-size: 2rem;">The key to eating well is to enjoy a variety of nutritious foods from each of the
+        Five Food Groups.
+        Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to diets.
+        Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="homepage.html#xmas-popup">
+              <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+            </a>
+          </div>
+          <div class="col-md-6" style=" margin-top: 2rem;">
+            <table id="BmiWeight" style="width: 100%; ">
+              <tr>
+                <th>BMI</th>
+                <th>Weight status</th>
+              </tr>
+              <tr id ="bmi1" onclick="changeBMI(1)">
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr d ="bmi2" onclick="changeBMI(2)">
+                <td>18.5-24.9</td>
+                <td>Normal weight</td>
+              </tr>
+              <tr d ="bmi3" onclick="changeBMI(3)">
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr> 
+              <tr d ="bmi4" onclick="changeBMI(4)">
+                <td>Above 30</td>
+                <td>Obesity</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    </div>
+  </section>
+
+
+  <div style="margin-left: 10%;">
+    <div id="set-0"
+      style="font-size: 2rem; color: black; padding: 1rem; margin-left: 30% ; border: solid 1px; width: 30%;">
+    </div>
+    <div id="set-1"></div>
+    <div id="set-2"></div>
+    <div id="set-3"></div>
+  </div>
+
+  <!-- Cai phan dau -->
+
+  <!-- <section id="section3" data-aos="fade-left">
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        <div class="col-md-4">
+
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
+      </div>
+      </div>
+
+
+     
+
+  </section>  -->
+
+  <!-- Cai phan hai -->
+  <!-- <section id="section4" data-aos="fade-right">
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-4">
+
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        
+      </div>
+  </section>  -->
+  <!-- Cai phan ba -->
+  <!-- <section id="section5" data-aos="fade-left">>
+    <div class="container" style="padding: 2rem;">
+      <div class="row">
+        <div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">
+          <p id="Title-section-1" style="font-size: 3.2rem;">Breakfast</p>
+          <p id="text-section-1" style="font-size: 1.6rem;">Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of
+            peanut butter spread) </p>
+        </div>
+        <div class="col-md-4">
+
+          <img src="image/bananaCrispbreadsWithPeanutButterSpread.jpg" style="width: 100%;" id="col-image" alt="">
+  
+        </div>
+      </div>
+
+  </section>  -->
+
+  <!-- Phan footer -->
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;" src="image/Logo_white.png"
+                alt="" /></a>
+            <div style="width: 100%;">
+              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+              <div class="elfsight-app-37a3058a-02c9-4fc3-b4ae-850ea37a403d"></div>
+            </div>
+          </div>
+          <div class="col-md-6 tx1">
+            <ul>
+              <p class="title">FOLLOW US</p>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <hr />
+              <li><a class="title" href="#">About us</a></li>
+              <li><a href="#">Who are we?</a></li>
+              <li><a href="#">What we do?</a></li>
+              <li>
+                <a href="#">What is fitness and why is it important?</a>
+              </li>
+              <li><a href="#">How many types of lifestyle are there?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <footer class="copyright">
+            Copy &copy; Website produced by team CodeCadre . All rights
+            reserved.
+          </footer><br>
+          <marquee width="100%" direction="left" height="30px">
+            <p id="current_dateandtime"
+              style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+          </marquee><br>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+<script>
+
+  var data = [];
+  var id = "";
+
+  if (sessionStorage.getItem("ageID") != null) {
+    id = sessionStorage.getItem("ageID");
+  }
+  else {
+    id = "2";
+  }
+
+  if ((id != "") && (sessionStorage.getItem("BMI") != null)) {
+    id += sessionStorage.getItem("BMIId");
+  }
+  else {
+    id += "2";
+  }
+
+  console.log("truoc call(id) id=" + id);
+
+
+
+  // Lay du lieu tu json
+  readTextFile("js/Diet_and_Nutrition.json", function (text) {
+    data = JSON.parse(text);
+    call(id);
+  });
+
+
+  AOS.init({
+    duration: 1200,
+  });
+
+
+  //choose age
+  function check01(age) {
+    if (id != "") {
+      id = id.substr(1);  // lay bmi
+    }
+    // document.getElementById("set-1").innerHTML = "";
+    // document.getElementById("set-2").innerHTML = "";
+    // document.getElementById("set-3").innerHTML = "";
+    id = age + id;
+    call(id);
+
+  }
+
+  //choose bmi
+  function check02(bmi) {
+    switch (id.length) {
+      case 0:
+        id = "22"; break;
+      case 1:
+        id += bmi;
+        break;
+      case 2:
+        id = id.substr(0, 1) + bmi;
+        break;
+    }
+
+    call(id);
+
+  }
+
+  function call(id) {
+    console.log("in call(),  id: " + id);
+
+    for (i = 0; i <= 11; i++) {
+      if (data[i].id == id) {
+        let caption = "";
+        switch (id) {
+          case "11":
+            caption = "<br> Age: 13 to 19 <br> BMI: Under 18.5 (Under weight)"; break;
+          case "12":
+            caption = "Age: 13 to 19 <br> BMI: 18.5 to 24.9 (Normal)"; break;
+          case "13":
+            caption = "Age: 13 to 19 <br> BMI: 25 to 29 (Over Weight)"; break;
+          case "14":
+            caption = "Age: 13 to 19 <br> BMI: 30 or higher (Obese)"; break;
+          case "21":
+            caption = "Age: 20 to 60 <br> BMI: Under 18.5 (Under weight)"; break;
+          case "22":
+            caption = "Age: 20 to 60  <br> BMI: 18.5 to 24.9 (Normal)"; break;
+          case "23":
+            caption = "Age: 20 to 60  <br> BMI: 25 to 29 (Over Weight)"; break;
+          case "24":
+            caption = "Age: 20 to 60  <br> BMI: 30 or higher (Obese)"; break;
+          case "31":
+            caption = "Age: 60 or higher <br> BMI: Under 18.5 (Under weight)"; break;
+          case "32":
+            caption = "Age: 60 or higher  <br> BMI: 18.5 to 24.9 (Normal)"; break;
+          case "33":
+            caption = "Age: 60 or higher  <br> BMI: 25 to 29 (Over Weight)"; break;
+          case "34":
+            caption = "Age: 60 or higher  <br> BMI: 30 or higher (Obese)"; break;
+        }
+        let str="";
+
+        if (sessionStorage.getItem("UserName")!=null){
+          str="Name: " + sessionStorage.getItem("UserName") + "<br> Height :" + sessionStorage.getItem("height") + " m<br> Weight :" + sessionStorage.getItem("weight") + " kg<br>";
+        } else{
+          str="";
+        }
+
+        document.getElementById("set-0").innerHTML = "<p  style='text-align: center; color:tomato;' >PERSONAL INFORMATION</p>"+str + caption;
+        document.getElementById("set-1").innerHTML =
+          '<section id="section3" data-aos="fade-left">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title1 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text1 + ' </p>' +
+          '</div>' +
+          '<div class="col-md-4">' +
+          '<img src="' + data[i].image1 + '" style="width: 100%;" id="col-image" alt="">' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
+          '</section> '
+        document.getElementById("set-2").innerHTML =
+          '<section id="section4" data-aos="fade-right">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-4">' +
+
+          '<img src="' + data[i].image2 + '" style="width: 100%;" id="col-image" alt="">' +
+
+          '</div>' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title2 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text2 + ' </p>' +
+          '</div>' +
+          '</div>' +
+          '</section>'
+
+        document.getElementById("set-3").innerHTML =
+          '<section id="section5" data-aos="fade-left">' +
+          '<div class="container" style="padding: 2rem;">' +
+          '<div class="row">' +
+          '<div class="col-md-6" id="sc3-image-col-1" style="margin-top: 2rem;">' +
+          '<p id="Title-section-1" style="font-size: 3.2rem;">' + data[i].title3 + '</p>' +
+          '<p id="text-section-1" style="font-size: 1.6rem;">' + data[i].text3 + ' </p>' +
+          '</div>' +
+          '<div class="col-md-4">' +
+
+          '<img src="' + data[i].image3 + '" style="width: 100%;" id="col-image" alt="">' +
+
+          '</div>' +
+          '</div>' +
+          '</section> '
+      }
+    }
+
+
+  }
+
+
+
+  function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function () {
+      if (rawFile.readyState === 4 && rawFile.status == "200") {
+        callback(rawFile.responseText);
+      }
+    }
+    rawFile.send(null);
+  }
+
+  function changeBMI(i){
+    sessionStorage.setItem("BMIId",i);
+    window.location="Diet_and_Nutrition.html";
+    console.log("Chay ham!")
+  }
+
+
+</script>
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
+<script src="script/datetime.js"></script>
+
+
+
+</html>
