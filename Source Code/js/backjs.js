@@ -130,35 +130,11 @@ function displayData(items) {
     console.log(key);
 
     for (let i = 0; i < key.length; i++) { //xuat ket qua theo so luong key
-        s +=    `<div class="items col-md-3">
+        s +=    `<div class="col-sm-6  col-md-3">
                     <img class="physical-img" src="${items[key[i]].pic}" alt="">
                     <p>${items[key[i]].name}</p>
                 </div>`;
     }
-
-    // while (count != 3) {
-    //     s +=    `<div class="items">
-    //                 <img class="physical-img" src="${items[getValue.next().value].pic}" alt="">
-    //                 <p>${items[getValue.next().value].name}</p>
-    //             </div>`;
-
-    //     count++;
-    //     console.log(count);
-    // }
-    
-
-    // $.each(items, function (k, v) {
-        
-    //     if (count == 3) { //limit 3
-    //         return false;
-    //     }
-
-    //     count++;
-    //     s +=    `<div class="items">
-    //                 <img class="physical-img" src="${v.pic}" alt="">đ
-    //                 <p>${v.name}</p>
-    //             </div>`;
-    // });
 
     $(".result").html(s);
     
@@ -167,10 +143,21 @@ function displayData(items) {
 function displayVideo(items) {
     let s = ``;
     let randomSrc = Math.floor(Math.random() * items.length); //bat dau random
-
+   
     console.log(randomSrc);
-    
-    s += `<iframe src="${items[randomSrc].src}" frameborder="0" style=" height: 100%; top: 0;left: 0;right: 0;bottom: 0; position: absolute; width: 100%;"></iframe>`
+
+    let next = (randomSrc== (items.length+1)) ?0: randomSrc+1
+
+    console.log( "next = " +next)
+
+    s += ` <div class="col-md-6">
+    <iframe src="${items[randomSrc].src}" frameborder="0" width="100%" height="300" ></iframe> </div>`;
+
+    s += ` <div class="col-md-6">
+    <iframe src="${items[next].src}" frameborder="0" width="100%" height="300" ></iframe> </div>`;
+
+    s+= `</div>`
+
 
     $("#suggestVideo").html(s);
 }
