@@ -2,11 +2,11 @@
     {
         "id": "11",
         "title1": "Breakfast",
-        "text1": "Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of peanut butter spread) ",
+        "text1": "Banana <br>2 medium banana<br> <br> 3 crispbreads <br> 1T of peanut butter spread<br> ",
         "title2": "Lunch",
-        "text2": "Egg, cheese and salad sandwich (3 x slices of wholemeal bread, 2 boiled egg, 40g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Egg<br>cheese and salad sandwich <br> 3 x slices of wholemeal bread <br> 2 boiled egg<br> 40g/1 slice reduced fat cheese<br> 1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Crumpet (2 crumpet with a light spread of margarine) Glass of milk (1 cup/450ml reduced fat milk)",
+        "text3": "Crumpet <br> 2 crumpet with a light spread of margarine <br> Glass of milk <br>1 cup/450ml reduced fat milk",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -14,11 +14,11 @@
     {
         "id": "12",
         "title1": "Breakfast",
-        "text1": "Wheat biscuit with milk and yoghurt (2 wheat biscuit, 2 cup reduced fat milk, 400g yoghurt)",
+        "text1": "Wheat biscuit with milk and yoghurt <br> 2 wheat biscuit <br> 2 cup reduced fat milk <br> 400g yoghurt<br>",
         "title2": "Lunch",
-        "text2": "Egg, cheese and salad sandwich (2 x slices of wholemeal bread, 1 boiled egg, 20g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Egg<br>cheese and salad sandwich <br> 2 x slices of wholemeal bread <br> 1 boiled egg <br> 20g/1 slice reduced fat cheese<br> 1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Lamb kebab with vegetables (80g cooked lamb kebab, 2 small boiled potato, 1 cup cooked carrot, 1 cup cooked beans)",
+        "text3": "Lamb kebab with vegetables <br> 80g cooked lamb kebab <br> 2 small boiled potato <br> 1 cup cooked carrot <br> 1 cup cooked beans",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -26,11 +26,11 @@
     {
         "id": "13",
         "title1": "Breakfast",
-        "text1": "Wheat biscuit with milk and yoghurt (1 wheat biscuit, ½ cup reduced fat milk, 200g yoghurt)",
+        "text1": "Wheat biscuit with milk and yoghurt  <br> 1 wheat biscuit<br>½ cup reduced fat milk <br> 200g yoghurt",
         "title2": "Lunch",
-        "text2": "Egg, cheese and salad sandwich (1 x slices of wholemeal bread, 1 boiled egg, 10g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Egg<br>cheese and salad sandwich <br> 1 x slices of wholemeal bread <br> 1 boiled egg <br> 10g/1 slice reduced fat cheese <br> 1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Lamb kebab with vegetables (40g cooked lamb kebab, 1 small boiled potato, 1/2 cup cooked carrot, 1 cup cooked beans)",
+        "text3": "Lamb kebab with vegetables <br> 40g cooked lamb kebab <br> 1 small boiled potato <br> 1/2 cup cooked carrot<br> 1 cup cooked beans",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -38,11 +38,11 @@
     {
         "id": "14",
         "title1": "Breakfast",
-        "text1": "Banana (2 medium banana) Crispbreads with peanut butter spread (3 crispbreads, 1T of peanut butter spread)",
+        "text1": "Banana <br>2 medium banana<br> Crispbreads with peanut butter spread  <br> 3 crispbreads <br> 1T of peanut butter spread",
         "title2": "Lunch",
-        "text2": "Egg, cheese and salad sandwich (1 x slices of wholemeal bread, 1 boiled egg, 20g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Egg<br>cheese and salad sandwich <br> 1 x slices of wholemeal bread <br> 1 boiled egg <br> 20g/1 slice reduced fat cheese<br> 1 cup mixed salad",
         "title3": "Afternoon Break",
-        "text3": "Crumpet (2 crumpet with a light spread of margarine) Glass of milk (1 cup/450ml reduced fat milk)",
+        "text3": "Crumpet <br>2 crumpet with a light spread of margarine<br> <br> Glass of milk <br>1 cup/450ml reduced fat milk<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -50,11 +50,11 @@
     {
         "id": "21",
         "title1": "Breakfast",
-        "text1": "Wholemeal toast with baked beans and grilled tomato (3 slices of wholemeal bread, 1 can of baked beans, 2 medium tomato) <br>Glass of milk (1 cup/400ml reduced fat milk)",
+        "text1": "Wholemeal toast with baked beans and grilled tomato <br> 3 slices of wholemeal bread<br> 1 can of baked beans<br> 2 medium tomato <br>Glass of milk <br>1 cup/400ml reduced fat milk",
         "title2": "Lunch",
-        "text2": "Roast beef, salad and cheese sandwich (3 x slices of wholemeal bread, 80g roast beef, 40g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Roast beef<br> salad and cheese sandwich <br>3 x slices of wholemeal bread<br> 80g roast beef<br>40g/1 slice reduced fat cheese<br> 1 cup mixed salad",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (400mL- small/medium size) Unsalted mixed nuts (60g – small handful)",
+        "text3": "Coffee with milk <br>400mL- small/medium size<br> Unsalted mixed nuts <br>60g – small handful",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -62,11 +62,11 @@
     {
         "id": "22",
         "title1": "Breakfast",
-        "text1": "Wholemeal toast with baked beans and grilled tomato (2 slices of wholemeal bread, ½ can of baked beans, 1 medium tomato) <br>Glass of milk (1 cup/250ml reduced fat milk)",
+        "text1": "Wholemeal toast with baked beans and grilled tomato <br>2 slices of wholemeal bread<br>½ can of baked beans<br> 1 medium tomato <br>Glass of milk <br>1 cup/250ml reduced fat milk",
         "title2": "Lunch",
-        "text2": "Roast beef, salad and cheese sandwich (2 x slices of wholemeal bread, 65g roast beef, 20g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Roast beef<br> salad and cheese sandwich <br>2 x slices of wholemeal bread<br> 65g roast beef<br>20g/1 slice reduced fat cheese<br>1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (200mL- small/medium size) Unsalted mixed nuts (30g – small handful)",
+        "text3": "Coffee with milk <br>200mL- small/medium size<br> Unsalted mixed nuts <br>30g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -74,11 +74,11 @@
     {
         "id": "23",
         "title1": "Breakfast",
-        "text1": "Wholemeal toast with baked beans and grilled tomato (1 slices of wholemeal bread, ½ can of baked beans, 1 medium tomato) <br>Glass of milk (1 cup/100ml reduced fat milk)",
+        "text1": "Wholemeal toast with baked beans and grilled tomato <br>1 slices of wholemeal bread<br>½ can of baked beans<br>1 medium tomato<br> <br>Glass of milk <br>1 cup/100ml reduced fat milk<br>",
         "title2": "Lunch",
-        "text2": "Roast beef, salad and cheese sandwich (1 x slices of wholemeal bread, 40g roast beef, 10g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Roast beef<br>salad and cheese sandwich <br>1 x slices of wholemeal bread<br>40g roast beef<br>10g/1 slice reduced fat cheese<br>1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (100mL- small/medium size) Unsalted mixed nuts (20g – small handful)",
+        "text3": "Coffee with milk <br>100mL- small/medium size<br> Unsalted mixed nuts <br>20g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -86,11 +86,11 @@
     {
         "id": "24",
         "title1": "Breakfast",
-        "text1": "Wholemeal toast with baked beans and grilled tomato (1 slices of wholemeal bread, ½ can of baked beans, 1 medium tomato) <br>Glass of milk (1 cup/50ml reduced fat milk)",
+        "text1": "Wholemeal toast with baked beans and grilled tomato <br>1 slices of wholemeal bread<br>½ can of baked beans<br>1 medium tomato<br> <br>Glass of milk <br>1 cup/50ml reduced fat milk<br>",
         "title2": "Lunch",
-        "text2": "Roast beef, salad and cheese sandwich (1 x slices of wholemeal bread, 20g roast beef, 10g/1 slice reduced fat cheese, 1 cup mixed salad)",
+        "text2": "Roast beef<br>salad and cheese sandwich <br>1 x slices of wholemeal bread<br>20g roast beef<br>10g/1 slice reduced fat cheese<br>1 cup mixed salad<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (50mL- small/medium size) Unsalted mixed nuts (10g – small handful)",
+        "text3": "Coffee with milk <br>50mL- small/medium size<br> Unsalted mixed nuts <br>10g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -98,11 +98,11 @@
     {
         "id": "31",
         "title1": "Breakfast",
-        "text1": "Wholegrain breakfast cereal with reduced fat milk (80g cereal plus 1 cup/400mL milk) Reduced fat yogurt (small tub/200g)",
+        "text1": "Wholegrain breakfast cereal with reduced fat milk <br>80g cereal plus 1 cup/400mL milk<br> Reduced fat yogurt <br>small tub/200g<br>",
         "title2": "Lunch",
-        "text2": "Coffee with milk (600mL- small/medium size) Unsalted mixed nuts (50g – small handful)",
+        "text2": "Coffee with milk <br>600mL- small/medium size<br> Unsalted mixed nuts <br>50g – small handful<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (400mL- small/medium size) Unsalted mixed nuts (40g – small handful)",
+        "text3": "Coffee with milk <br>400mL- small/medium size<br> Unsalted mixed nuts <br>40g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -110,11 +110,11 @@
     {
         "id": "32",
         "title1": "Breakfast",
-        "text1": "Wholegrain breakfast cereal with reduced fat milk (60g cereal plus 1 cup/250mL milk) Reduced fat yogurt (small tub/100g)",
+        "text1": "Wholegrain breakfast cereal with reduced fat milk <br>60g cereal plus 1 cup/250mL milk<br> Reduced fat yogurt <br>small tub/100g<br>",
         "title2": "Lunch",
-        "text2": "Coffee with milk (400mL- small/medium size) Unsalted mixed nuts (30g – small handful)",
+        "text2": "Coffee with milk <br>400mL- small/medium size<br> Unsalted mixed nuts <br>30g – small handful<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (400mL- small/medium size) Unsalted mixed nuts (30g – small handful)",
+        "text3": "Coffee with milk <br>400mL- small/medium size<br> Unsalted mixed nuts <br>30g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -122,11 +122,11 @@
     {
         "id": "33",
         "title1": "Breakfast",
-        "text1": "Wholegrain breakfast cereal with reduced fat milk (40g cereal plus 1 cup/200mL milk) Reduced fat yogurt (small tub/100g)",
+        "text1": "Wholegrain breakfast cereal with reduced fat milk <br>40g cereal plus 1 cup/200mL milk<br> Reduced fat yogurt <br>small tub/100g<br>",
         "title2": "Lunch",
-        "text2": "Coffee with milk (300mL- small/medium size) Unsalted mixed nuts (30g – small handful)",
+        "text2": "Coffee with milk <br>300mL- small/medium size<br> Unsalted mixed nuts <br>30g – small handful<br>",
         "title3": "Afternoon Break",
-        "text3": "Coffee with milk (150mL- small/medium size) Unsalted mixed nuts (20g – small handful)",
+        "text3": "Coffee with milk <br>150mL- small/medium size<br> Unsalted mixed nuts <br>20g – small handful<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
@@ -134,11 +134,11 @@
     {
         "id": "34",
         "title1": "Breakfast",
-        "text1": "Wholegrain breakfast cereal with reduced fat milk (20g cereal plus 1 cup/100mL milk) Reduced fat yogurt (small tub/100g)",
+        "text1": "Wholegrain breakfast cereal with reduced fat milk <br>20g cereal plus 1 cup/100mL milk<br> Reduced fat yogurt <br>small tub/100g<br>",
         "title2": "Lunch",
-        "text2": "Wholegrain breakfast cereal with reduced fat milk (20g cereal plus 1 cup/100mL milk) Reduced fat yogurt (small tub/100g)",
+        "text2": "Wholegrain breakfast cereal with reduced fat milk <br>20g cereal plus 1 cup/100mL milk<br> Reduced fat yogurt <br>small tub/100g<br>",
         "title3": "Afternoon Break",
-        "text3": "Wholegrain breakfast cereal with reduced fat milk (20g cereal plus 1 cup/100mL milk) Reduced fat yogurt (small tub/100g)",
+        "text3": "Wholegrain breakfast cereal with reduced fat milk <br>20g cereal plus 1 cup/100mL milk<br> Reduced fat yogurt <br>small tub/100g<br>",
         "image1": "image/bananaCrispbreadsWithPeanutButterSpread.jpg",
         "image2": "image/roastBeef.jpg",
         "image3": "image/crumpetGlassOfMilk.jpg"
