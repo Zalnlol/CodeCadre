@@ -225,39 +225,39 @@
                         </div>
                     </div>
                 </form> -->
-                <div class="container d-flex">
-                  <div>
-                    <a href="homepage.html#xmas-popup">
-                      <img src="image/BMI formmula.png" style="width:100%; padding: 2rem;">
-                    </a>
-                    <!-- <img src="image/BMI formmula.png" style="float:left;width:48%;height:100%;">
-                    <img src="image/BMI level.png" style="float:left;width:48%;height:100%;"> -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="homepage.html#xmas-popup" title="Click here for change personal information">
+                        <img src="image/BMI formmula.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+                      </a>
+                    </div>
+                    <div class="col-md-6" style=" margin-top: 2rem;">
+                      <table id="BmiWeight" style="width: 100%; ">
+                        <tr>
+                          <th>BMI</th>
+                          <th>Weight status</th>
+                        </tr>
+                        <tr id ="bmi1" onclick="changeBMI(1)" title="Click here for change BMI">
+                          <td>Below 18.5</td>
+                          <td>Underweight</td>
+                        </tr>
+                        <tr d ="bmi2" onclick="changeBMI(2)"title="Click here for change BMI">
+                          <td>18.5-24.9</td>
+                          <td>Normal weight</td>
+                        </tr>
+                        <tr d ="bmi3" onclick="changeBMI(3)"title="Click here for change BMI">
+                          <td>25.0 - 29.9</td>
+                          <td>Overweight</td>
+                        </tr> 
+                        <tr d ="bmi4" onclick="changeBMI(4)"title="Click here for change BMI">
+                          <td>Above 30</td>
+                          <td>Obesity</td>
+                        </tr>
+                      </table>
+                    </div>
                   </div>
-                  <div>
-                    <table id="BmiWeight" style="width: 100%; height: 100%;">
-                      <tr>
-                        <th>BMI</th>
-                        <th>Weight status</th>
-                      </tr>
-                      <tr>
-                        <td>Below 18.5</td>
-                        <td>Underweight</td>
-                      </tr>
-                      <tr>
-                        <td>18.5-24.9</td>
-                        <td>Normal weight</td>
-                      </tr>
-                      <tr>
-                        <td>25.0 - 29.9</td>
-                        <td>Overweight</td>
-                      </tr> 
-                      <tr>
-                        <td>Above 30</td>
-                        <td>Obesity</td>
-                      </tr>
-                  </table>
                 </div>
-              </div>
               <br>
                 <div class="container">
                   <div id="row">
@@ -322,6 +322,13 @@
   </footer>
 </body>
 <script>
+        function changeBMI(i){
+    sessionStorage.setItem("BMIId",i);
+    window.location="Physical_Activity.html";
+    // location.href="#set-0"
+    // window.location.hash="#set-0";
+    console.log("Chay ham!")
+  }
 
   </script>
 <script>

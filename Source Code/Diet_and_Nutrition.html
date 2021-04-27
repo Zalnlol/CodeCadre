@@ -257,9 +257,10 @@
   }
   else {
     id = "2";
+    sessionStorage.setItem("ageID",id);
   }
 
-  if ((id != "") && (sessionStorage.getItem("BMI") != null)) {
+  if ((id != "") && (sessionStorage.getItem("BMIId") != null)) {
     id += sessionStorage.getItem("BMIId");
   }
   else {
