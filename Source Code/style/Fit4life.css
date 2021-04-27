@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Float four columns side by side */
-
-
-/* Column for Gallery page*/
-.column-gallery {
-    float: left;
-    width: 25%;
-    padding: 0 50px;
-}
-/* Column for Panguin page*/
-.column-4 {
-    float: left;
-    width: 25%;
-    padding: 0px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -286,7 +270,7 @@ pre {
   
   #BmiWeight td, #customers th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 16px;
     text-align: center;
   }
   
@@ -295,8 +279,8 @@ pre {
   #BmiWeight tr:hover {background-color: #ddd;}
   
   #BmiWeight th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     background-color: #2F4F4F;
     color: white;
