@@ -1,245 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <!--Favicon logo-->
-    <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <!--Favicon logo-->
+  <link rel="icon" href="image/icon.png" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="script/MyLib.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!--add css-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style/aboutus.css" />
-    <link rel="stylesheet" href="style/animation.css" />
-    <link rel="stylesheet" href="style/menu.css" />
-    <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/homepage.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto; background-color: darkslategrey">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header" style="margin: auto;">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only" style="background-color: white;">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="homepage.html"><img src="image/Logo_white.png" width="85%" alt=""
-            style="width: 124px; margin-left: 4rem; margin-bottom: 0.1rem; padding: 4%" /></a>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script/MyLib.js"></script>
+
+  <!--add css-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/aboutus.css" />
+  <link rel="stylesheet" href="style/animation.css" />
+  <link rel="stylesheet" href="style/menu.css" />
+  <link rel="stylesheet" href="style/footer.css" />
+  <link rel="stylesheet" href="style/homepage.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation" style="margin-bottom: auto; background-color: darkslategrey">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="margin: auto;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only" style="background-color: white;">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="homepage.html"><img src="image/Logo_white.png" width="85%" alt=""
+          style="width: 124px; margin-left: 4rem; margin-bottom: 0.1rem; padding: 4%" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 2%; margin-right: 1rem;">
+
+        <li><a href="Diet_and_Nutrition.html" style="color: white; font-size: 2.2rem;">Healthy Nutrition</a></li>
+        <li><a href="Physical_Activity.html" style="color: white; font-size: 2.2rem;">Physical Activity</a></li>
+        <li><a href="news.html" style="color: white; font-size: 2.2rem;">Resources</a></li>
+        <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
+        <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
+        <li>
+          <div id="inner-name" style="font-weight: bold; color: yellow; font-size: 2.2rem;"></div>
+
+
+          <script>
+
+            let ab = ""
+            if (sessionStorage.getItem("UserName") != null) {
+              ab = "<p>Hi! " + sessionStorage.getItem("UserName") + "</p>";
+            }
+            if (sessionStorage.getItem("BMI") != null) {
+              ab += " <p style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI") + "  -Age: " + ConvertAge() + " )</p>";
+            }
+
+            document.getElementById("inner-name").innerHTML = ab;
+
+          </script>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="about-us">
+    <div class="introduction" id="banner">
+      <img src="image/aboutus-banner.png" alt="" />
+    </div>
+    <div class="introduction">
+      <img src="image/whoarewe.png" alt="#" />
+      <div class="text" style="left: 50%; top: 57%; font-size: 90%; width: 50%">
+        <h1 class="title" style="font-size: 2.8rem">WHO ARE WE?</h1>
+        <p class="description" style="font-size: 1.4rem">
+          We begin our journey in 1990. With the desire to help all people
+          improve their health, our company - Fit4Life carries a noble
+          mission, we ensure 100% our clients have the best fitness and
+          lifestyle after hear and follow our tutorial.
+        </p>
       </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right" style="margin-top: 2%; margin-right: 1rem;">
-  
-          <li><a href="Diet_and_Nutrition.html" style="color: white; font-size: 2.2rem;">Healthy Nutrition</a></li>
-          <li><a href="Physical_Activity.html" style="color: white; font-size: 2.2rem;">Physical Activity</a></li>
-          <li><a href="news.html" style="color: white; font-size: 2.2rem;">Resources</a></li>
-          <li><a href="aboutus.html" style="color: white; font-size: 2.2rem;">About us</a></li>
-          <li><a href="contactus.html" style="color: white; font-size: 2.2rem;">Contact us</a></li>
-          <li>
-            <div id="inner-name" style="font-weight: bold; color: yellow; font-size: 2.2rem;"></div>
-  
-  
-            <script>
-  
-              let ab = ""
-              if (sessionStorage.getItem("UserName") != null) {
-                ab = "<p>Hi! " + sessionStorage.getItem("UserName") + "</p>";
-              }
-              if (sessionStorage.getItem("BMI") != null) {
-                ab += " <p style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI") + "  -Age: " + ConvertAge()+ " )</p>";
-              }
-  
-              document.getElementById("inner-name").innerHTML = ab;
-  
-            </script>
-          </li>
-  
-        </ul>
-      </div>
-    </nav>
-    <div class="about-us">
-      <div class="introduction" id="banner">
-        <img src="image/aboutus-banner.png" alt="" />
-      </div>
+    </div>
+    <div>
       <div class="introduction">
-        <img src="image/whoarewe.png" alt="#" />
-        <div
-          class="text"
-          style="left: 50%; top: 57%; font-size: 90%; width: 50%"
-        >
-          <h1 class="title" style="font-size: 2.8rem">WHO ARE WE?</h1>
-          <p class="description" style="font-size: 1.4rem">
-            We begin our journey in 1990. With the desire to help all people
-            improve their health, our company - Fit4Life carries a noble
-            mission, we ensure 100% our clients have the best fitness and
-            lifestyle after hear and follow our tutorial.
+        <img src="image/aboutus-whatwedo.jpg" alt="#" />
+        <div class="text" style="left: 70%; top: 32%; font-size: 90%; width: 45%">
+          <h1 class="title" style="font-size: 3rem">What we do?</h1>
+          <p class="description" style="font-size: 1.7rem">
+            We are the professional consultant in fitness and lifestyle. Our
+            recipe about health are the combination between traning and
+            healthy eating.
           </p>
         </div>
       </div>
-      <div>
-        <div class="introduction">
-          <img src="image/aboutus-whatwedo.jpg" alt="#" />
-          <div
-            class="text"
-            style="left: 70%; top: 32%; font-size: 90%; width: 45%"
-          >
-            <h1 class="title" style="font-size: 3rem">What we do?</h1>
-            <p class="description" style="font-size: 1.7rem">
-              We are the professional consultant in fitness and lifestyle. Our
-              recipe about health are the combination between traning and
-              healthy eating.
-            </p>
-          </div>
-        </div>
-        <div class="introduction">
-          <img src="image/aboutus-whatandwhy.png" alt="#" />
-          <div
-            class="text"
-            style="
+      <div class="introduction">
+        <img src="image/aboutus-whatandwhy.png" alt="#" />
+        <div class="text" style="
               left: 50%;
               top: 30%;
               right: 0;
               margin: 0 auto;
               font-size: 90%;
               width: 50%;
-            "
-          >
-            <h1 class="title" style="font-size: 3rem">
-              What is fitness and why is it important?
-            </h1>
-            <p class="description" style="font-size: 1.55rem">
-              Physical activity or exercise can improve your health and reduce
-              the risk of developing several diseases like type 2 diabetes,
-              cancer and cardiovascular disease. Physical activity and exercise
-              can have immediate and long-term health benefits. Most
-              importantly, regular activity can improve your quality of life.
-            </p>
-            <div class="button">
-              <button class="btn btn-help">LEARN MORE</button>
+            ">
+          <h1 class="title" style="font-size: 3rem">
+            What is fitness and why is it important?
+          </h1>
+          <p class="description" style="font-size: 1.55rem">
+            Physical activity or exercise can improve your health and reduce
+            the risk of developing several diseases like type 2 diabetes,
+            cancer and cardiovascular disease. Physical activity and exercise
+            can have immediate and long-term health benefits. Most
+            importantly, regular activity can improve your quality of life.
+          </p>
+          <div class="button">
+            <button class="btn btn-help">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <h1 class="creator-thang" style="font-family: 'Lato', sans-serif; margin-top: -2rem;">WEB CREATORS</h1>
+    <div class="padding-creator">
+      <div class="container-fluid" style="margin-bottom: 5%;">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-1">
+            <img src="image/thanhNhan.jpg" alt="Random Name" width="160" height="160"
+              style="border-radius: 50%; padding-left: 0.5rem;">
+            <div class="name-id">
+              <h5>Le Nguyen Thanh Nhan</h5><span>ID: Student1277226</span><br>
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <img src="image/ngocThien.jpg" alt="Random Name" width="160" height="160"
+              style="border-radius: 50%; padding-left: 0.5rem;">
+            <div class="name-id">
+              <h5>Nguyen Ngoc Thien</h5><span>ID: Student1275248</span><br>
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <img src="image/quocThang.jpg" alt="Random Name" width="160" height="160"
+              style="border-radius: 50%; padding-left: 0.5rem;">
+            <div class="name-id">
+              <h5>Pham Quoc Thang</h5><span>ID: Student1273525</span><br>
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <img src="image/ducTam.jpg" alt="Random Name" width="160" height="160"
+              style="border-radius: 50%; padding-left: 0.5rem;">
+            <div class="name-id">
+              <h5>Le Duc Tam</h5><span>ID: Student1269333</span><br>
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <img src="image/leHac.jpg" alt="Random Name" width="160" height="160"
+              style="border-radius: 50%; padding-left: 0.5rem;">
+            <div class="name-id">
+              <h5>Nguyen Tran Le Hac</h5><span>ID: Student1270692</span><br>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-3 text-center">
-      <h1 class="creator-thang" style="font-family: 'Lato', sans-serif; margin-top: -2rem;">WEB CREATORS</h1>
-      <div class="padding-creator">
-          <div class="container-fluid" style="margin-bottom: 5%;">
-              <div class="row">
-                  <div class="col-sm-2 col-sm-offset-1">
-                      <img src="image/thanhNhan.jpg" alt="Random Name" width="160" height="160"
-                          style="border-radius: 50%; padding-left: 0.5rem;">
-                      <div class="name-id">
-                          <h5>Le Nguyen Thanh Nhan</h5><span>ID: Student1277226</span><br>
-                      
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                      <img src="image/ngocThien.jpg" alt="Random Name" width="160" height="160"
-                          style="border-radius: 50%; padding-left: 0.5rem;">
-                      <div class="name-id">
-                          <h5>Nguyen Ngoc Thien</h5><span>ID: Student1275248</span><br>
-                          
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                      <img src="image/quocThang.jpg" alt="Random Name" width="160" height="160"
-                          style="border-radius: 50%; padding-left: 0.5rem;">
-                      <div class="name-id">
-                          <h5>Pham Quoc Thang</h5><span>ID: Student1273525</span><br>
-                         
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                      <img src="image/ducTam.jpg" alt="Random Name" width="160" height="160"
-                          style="border-radius: 50%; padding-left: 0.5rem;">
-                      <div class="name-id">
-                          <h5>Le Duc Tam</h5><span>ID: Student1269333</span><br>
-                        
-                      </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <img src="image/leHac.jpg" alt="Random Name" width="160" height="160"
-                        style="border-radius: 50%; padding-left: 0.5rem;">
-                    <div class="name-id">
-                        <h5>Nguyen Tran Le Hac</h5><span>ID: Student1270692</span><br>
-                       
-                    </div>
-                </div>
-              </div>
-          </div>
-      </div>
   </div>
   </div>
   <footer>
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;"
-                            src="image/Logo_white.png" alt="" /></a>
-                    <div style= "width: 100%;">
-                        <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=e4bb0bdb6158b54d5f8d46a1c1c159b83ad5c3f8'></script>
-                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/821031/t/0"></script>
-                      </div>
-                </div>
-                <div class="col-md-6 tx1">
-                    <ul>
-                        <p class="title">FOLLOW US</p>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                        <hr />
-                        <li><a class="title" href="#">About us</a></li>
-                        <li><a href="#">Who are we?</a></li>
-                        <li><a href="#">What we do?</a></li>
-                        <li>
-                            <a href="#">What is fitness and why is it important?</a>
-                        </li>
-                        <li><a href="#">How many types of lifestyle are there?</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#"><img style="margin-top: 1.2%; width: 140px; padding-left: 1.2rem;" src="image/Logo_white.png"
+                alt="" /></a>
+            <div style="width: 100%;">
+              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+              <div class="elfsight-app-37a3058a-02c9-4fc3-b4ae-850ea37a403d"></div>
             </div>
-            <div class="row">
-              <footer class="copyright">
-                  Copy &copy; Website produced by team CodeCadre . All rights
-                  reserved.
-              </footer><br>
-              <marquee width="100%" direction="left" height="30px">
-                  <p id="current_dateandtime" style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
-              </marquee><br>
+          </div>
+          <div class="col-md-6 tx1">
+            <ul>
+              <p class="title">FOLLOW US</p>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <hr />
+              <li><a class="title" href="#">About us</a></li>
+              <li><a href="#">Who are we?</a></li>
+              <li><a href="#">What we do?</a></li>
+              <li>
+                <a href="#">What is fitness and why is it important?</a>
+              </li>
+              <li><a href="#">How many types of lifestyle are there?</a></li>
+            </ul>
           </div>
         </div>
+        <div class="row">
+          <footer class="copyright">
+            Copy &copy; Website produced by team CodeCadre . All rights
+            reserved.
+          </footer><br>
+          <marquee width="100%" direction="left" height="30px">
+            <p id="current_dateandtime"
+              style="color: white;font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></p>
+          </marquee><br>
+        </div>
+      </div>
     </div>
-    
-</footer>
-  </body>
-  <script src="script/menu.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-    });
-  </script>
-  <script src="script/datetime.js"></script>
+
+  </footer>
+</body>
+<script src="script/menu.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
+<script src="script/datetime.js"></script>
+
 </html>
