@@ -66,14 +66,14 @@
 
             let ab = ""
             if (sessionStorage.getItem("UserName") != null) {
-              ab = "Hi! " + sessionStorage.getItem("UserName");
+              ab = "<p style='text-align: center;'>Hi! " + sessionStorage.getItem("UserName")+"</p>";
             }
             if (sessionStorage.getItem("BMI") != null) {
-              ab += " - BMI:  " + sessionStorage.getItem("BMI");
+              ab += " <span style='font-size: 1.3rem;'> ( BMI:  " + sessionStorage.getItem("BMI")+" - Age: "+sessionStorage.getItem("age")+" )</span>";
             }
             
             document.getElementById("inner-name").innerHTML = ab;
-            
+
           </script>
         </li>
 
