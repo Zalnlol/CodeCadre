@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="style/menu.css" />
   <link rel="stylesheet" href="style/footer.css" />
   <link rel="stylesheet" href="style/DaN.css" />
+  <link rel="stylesheet" href="style/Fit4Life.css">
   <!--add javacript-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
@@ -98,10 +99,33 @@
             </a>
           </div>
           <div class="col-sm-5">
-            <img src="image/BMI level.png" style="float:left;width:100%;height:100%; padding: 2rem;">
+            <table id="BmiWeight" style="width: 100%;">
+              <tr>
+                <th>BMI</th>
+                <th>Weight status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5-24.9</td>
+                <td>Normal weight</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr> 
+              <tr>
+                <td>Above 30</td>
+                <td>Obesity</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
+
+      
 
 
     </div>
@@ -109,7 +133,8 @@
 
 
   <div style="margin-left: 10%;">
-    <div id="set-0" style="font-size: 2rem; color: black; padding: 1rem; margin-left: 30% ; border: solid 1px; width: 30%;">
+    <div id="set-0"
+      style="font-size: 2rem; color: black; padding: 1rem; margin-left: 30% ; border: solid 1px; width: 30%;">
     </div>
     <div id="set-1"></div>
     <div id="set-2"></div>
@@ -321,7 +346,7 @@
         }
 
 
-        document.getElementById("set-0").innerHTML ="<p  style='text-align: center; color:tomato;' >INFORMATION</p>  Name: "+sessionStorage.getItem("UserName")+"<br> Height :" +sessionStorage.getItem("height")+"<br> Weight :"+sessionStorage.getItem("weight")+"<br>"+caption;
+        document.getElementById("set-0").innerHTML = "<p  style='text-align: center; color:tomato;' >PERSONAL INFORMATION</p>  Name: " + sessionStorage.getItem("UserName") + "<br> Height :" + sessionStorage.getItem("height") + " m<br> Weight :" + sessionStorage.getItem("weight") + " kg<br>" + caption;
         document.getElementById("set-1").innerHTML =
           '<section id="section3" data-aos="fade-left">' +
           '<div class="container" style="padding: 2rem;">' +
